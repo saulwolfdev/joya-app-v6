@@ -1,0 +1,46 @@
+
+.vidrieristas-lista {
+
+	.admin-sintesis {
+		.stat .btn-small {margin-top: 8px; }
+	}
+	
+	//Modificaciones a tabla
+	td.cell-activo {color: $text-dark-secondary; }
+	td.cell-recorridosmes, td.cell-recorridostotales {text-align: center;  }
+	
+	//Color-coding clientes
+		tr.vidrierista-nuevo {
+			td.cell-nombre {
+				@include tag-nuevo; 
+				&:after {
+					content: "1er mes";
+				}
+			}
+		}
+		tr.vidrierista-suspendido {
+			opacity: 0.5;
+		}
+		tr.vidrierista-postulante {
+			td.cell-nombre {
+				@include tag-nuevo; 
+				&:after {
+					background-color: $c-warning;
+					color: $text-dark;
+					content: "Postulante";
+				}
+			}
+		}
+
+	a.cli-warning {
+		margin-left: 8px; 
+		&:after {
+			font-family: $font-icons;
+			color: $c-error; 
+			content: "\f06a";
+		}
+	}
+	@media (max-width: $end-md) {
+		.cell-activo {display: none; }
+	}
+}

@@ -1,0 +1,28 @@
+.filter-row {
+	@include centered-flex-row; 
+	flex-wrap: wrap; 
+	font-size: 13px;
+	margin-bottom: 18px; 
+	
+	
+	.filtro {
+		@include centered-flex-row; 
+		padding: 0; 
+		.label, select { margin-top: 0; margin-bottom: 0;  white-space: nowrap;}
+		.label {padding-right: 10px; }
+		
+	}
+	.title,	.filtro, .expansible-search {
+
+		&:not(:last-child) {padding-right: 30px; }
+		margin-bottom: 15px; 
+	}
+	.expansible-search {
+		margin-left: auto; 
+	}
+
+	@media (max-width: $end-md) {
+		.title {display: none; }
+		.expansible-search { margin-left: 0; }
+	}
+}

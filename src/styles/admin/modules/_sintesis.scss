@@ -1,0 +1,81 @@
+.admin-sintesis {
+	@include bg-light-1; 
+	border-bottom: 1px solid $border-color; 
+
+	.sintesis-header {
+		padding-top: 45px; padding-bottom: 23px; 
+		align-items: center; 
+	}
+
+	.stat {
+		padding: 22px 38px; 
+		border-left: 1px solid $border-color;
+		&:first-child {
+			padding-left: $side-padding;
+			border-left: none; 
+		}
+		.aclaracion, .label {
+			font: 400 13px/1.15em $font;
+			margin-bottom: 0; 
+		}
+		.label { color: $text-dark-secondary; }
+		.value {
+			margin-top: 8px; margin-bottom: 8px;
+			font: 400 30px/1.2em $font-display;
+			.strong {font-weight: 700; }
+
+			i {font-size: 11px; }
+			&.worse {color: $c-error; }
+			&.better {color: $c-success; }
+		}
+		.interpretation {
+			* {
+				font-family: $font; 
+				font-size: 13px; 
+			}
+			.value {
+				font-weight: bold; 
+				margin-bottom: 4px; 
+			}
+			.aclaracion {color: $text-dark-secondary; }
+		}
+		&.block-start {
+			border-left: 1px solid $border-color; 
+		}
+	}
+	.btn-set {justify-self: flex-end; margin-left: auto; }
+	.row.stats {
+		border-top: 1px solid $border-color; border-bottom: none; //padding-bottom: 6px; 
+	}
+	.stat {
+		border-left: none; border-right: none; 
+	}
+
+	.btn {
+		margin-top: 0;
+		i:last-child {margin-left: 8px; }
+	}
+	.breadcrumb {
+		margin-bottom: 13px; 
+	}
+	@media (max-width: $end-md) {
+		.stat {
+			padding-left: 14px; border: none; 
+		}	
+		.stat.block-start {border-left: none; }
+	}
+
+}
+.vidrierista-individual, .cliente-individual {
+	.admin-sintesis {
+		border-bottom: none; 
+		.btn-set {justify-self: flex-end; margin-left: auto; }
+		.row.stats {
+			border-top: 1px solid $border-color; 
+			border-bottom: 1px solid $border-color; 
+		}
+	}
+	.more-content .menu {
+		border-bottom: 1px solid $border-color;
+	}
+}

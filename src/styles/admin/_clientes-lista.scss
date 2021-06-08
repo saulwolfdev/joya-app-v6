@@ -1,0 +1,48 @@
+.clientes-lista {
+	//Modificaciones a tabla
+	td.cell-activo {color: $text-dark-secondary; }
+	td.cell-locales, td.cell-pedidos {text-align: center;  }
+	//Color-coding clientes
+		tr.cliente-nuevo {
+			td.cell-nombre {
+				@include tag-nuevo; 
+			}
+		}
+		//Pago suscripción
+		tr.suscripcion-no {
+			td.cell-suscripcion {
+				color: $text-dark-secondary; 
+			}
+		}
+		tr.suscripcion-vigente {
+			td.cell-suscripcion {
+				color: $c-success; 
+			}
+		}
+		tr.suscripcion-pendiente {
+			td.cell-suscripcion {
+				color: $c-error; 
+			}
+		}
+
+	a.cli-warning {
+		margin-left: 8px; 
+		&:after {
+			font-family: $font-icons;
+			color: $c-error; 
+			content: "\f06a";
+		}
+	}
+	@media (max-width: $end-md) {
+		.cell-activo {display: none; }
+	}
+}
+
+.locales-lista {
+	tr.local-nuevo {
+		td.cell-nombre {
+			@include tag-nuevo; 
+		}
+	}
+	tr.accion-pendiente { td.cell-estado {color: $c-error; }}
+}

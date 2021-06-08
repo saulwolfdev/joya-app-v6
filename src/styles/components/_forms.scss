@@ -1,0 +1,186 @@
+
+
+
+
+//Form input[type=range] customization
+
+//$form-range-track-width:          100%;
+$form-range-track-height:         4px;
+//$form-range-track-cursor:         pointer;
+$form-range-track-bg:             rgba($text-dark, 0.5);
+$form-range-track-border-radius:  $form-range-track-height/2;
+//$form-range-track-box-shadow:     $box-shadow-inset;
+
+$form-range-thumb-width:                   18px;
+$form-range-thumb-height:                  $form-range-thumb-width;
+$form-range-thumb-bg:                      $c-primary;
+$form-range-thumb-border:                  0;
+$form-range-thumb-border-radius:           50%;
+$form-range-thumb-box-shadow:              0 .1rem .25rem rgba(green, .1);
+//$form-range-thumb-focus-box-shadow:        0 0 0 1px $body-bg, $input-focus-box-shadow;
+//$form-range-thumb-focus-box-shadow-width:  $input-focus-width; // For focus box shadow issue in Edge
+$form-range-thumb-active-bg:               $c-primary;
+//$form-range-thumb-disabled-bg:             $gray-500;
+//$form-range-thumb-transition:              background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+@import 'node_modules/bootstrap/scss/forms';
+
+$form-radius: 2px; 
+$form-single-line-height: 40px;
+
+.form-control {
+    border-radius: $form-radius; 
+    border-color: $border-color;
+}
+.form-text {
+    font: 400 14px $font;
+    margin-bottom: 0; 
+    margin-top: 0.75rem;
+    color: $text-dark;
+}
+.form-element {
+    padding-bottom: 22px; 
+}
+input {
+    &[type=text], &[type=textarea], &[type=password], &[type=number], &[type=email], &[type=date] {
+        &.invalid {border-bottom-color: $c-error; }
+        &:active, &:focus {border-bottom-color: $c-primary; }
+    }
+
+    &[type=checkbox] {margin-right: 8px; }
+
+    &[type=range] {
+        //--primary-color: $c-primary; 
+        //--fill-color: $c-primary;
+
+        /*Chrome*/
+        /*@media screen and (-webkit-min-device-pixel-ratio:0) {
+            
+            overflow: hidden;
+         
+            -webkit-appearance: none;
+            //background-color: #9a905d;
+            
+            &::-webkit-slider-runnable-track {
+              
+              -webkit-appearance: none;
+              color: rgba($text-dark, 0.5);
+              margin-top: -1px;
+            }
+        }*/
+        /** FF*/
+        &::-moz-range-progress {
+          background-color: $c-primary; 
+        }
+        &::-moz-range-track {  
+          background-color: rgba($text-dark, 0.5);
+        }
+        /* IE*/
+        &::-ms-fill-lower {
+          background-color: $c-primary; 
+        }
+        &::-ms-fill-upper {  
+          background-color: rgba($text-dark, 0.5);
+        }
+    }
+}
+.input-group-btn {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+
+    .btn-round {
+        position: absolute; 
+        z-index: 2;
+        right: 0px; top: 0px; 
+        margin: 0; 
+        
+    }
+}
+.input-group {
+    .input-group-text {
+        background-color: transparent; 
+        z-index: 1;
+        &:first-child {border-right: none; padding-right: 0;}
+        &:last-child {border-left: none;}
+
+    }
+    .form-control {
+        &:first-child {border-right: none;}
+        &:last-child {border-left: none;}
+    }
+    &.invalid {
+        .input-group-text {border-bottom-color: $c-error; }
+    }
+}
+.form-rounded {
+    $input-margin-y: 1.5rem; 
+    input.form-control, select.form-select {
+        height: $btn-height-big;  
+        border-radius: $btn-height-big/2; 
+        padding-left: $btn-height-big/3;
+        margin: $input-margin-y 0;
+    }
+    input.form-control {   padding-right: $btn-height-big/3; }
+    input[type=text], input[type=textarea], input[type=password], input[type=number], input[type=email], input[type=date] {
+        &.invalid {border-color: $c-error; }
+        &:active, &:focus {border-color: $c-primary; }
+    }
+    .input-group {
+        .input-group-text {
+            height: $btn-height-big; 
+            //color: green; 
+            margin: $input-margin-y 0;
+
+            &:first-child {
+                border-top-left-radius: $btn-height-big/2;
+                border-bottom-left-radius: $btn-height-big/2; 
+                padding-left: $btn-height-big/3;
+            }
+        }
+        &.invalid {
+            .input-group-text {border-color: $c-error;}
+        }
+         
+    }
+    &.form-small {
+        input.form-control, select.form-select {
+            height: $btn-height-small;  
+            border-radius: $btn-height-small/2; 
+            padding-left: $btn-height-small/3;
+        }
+        input.form-control {   padding-right: $btn-height-small/3; }
+        .input-group {
+            .input-group-text {
+                height: $btn-height-small; 
+                
+                &:first-child {
+                    border-top-left-radius: $btn-height-small/2;
+                    border-bottom-left-radius: $btn-height-small/2; 
+                    padding-left: $btn-height-small/3;
+                }
+            }
+        }
+    }
+}
+
+
+.form .label {@extend label; } 
+
+
+
+
+
+.error-msg {
+    color: $c-error;
+    font-size: 14px;
+
+    &:not(:empty)  {
+        margin-top: 10px; 
+    }
+
+    i {margin-right: 8px; }
+}
+

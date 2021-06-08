@@ -1,0 +1,7 @@
+
+.cliente-sintesis, .more-content .menu {
+	@include bg-light-1; 
+}
+.cliente-sintesis {
+	h3 {padding-left: $side-padding; }
+}

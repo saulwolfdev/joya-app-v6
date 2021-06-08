@@ -1,0 +1,95 @@
+.clean-wizard {
+	$steps-height-lg: 90px; 
+
+	@include card-page; 
+	
+	background: #F7F7F7 url("../assets/img/wizard-bg.jpg") no-repeat top center; 
+	background-size: 100%; 
+	.wizard-steps {
+		height: $steps-height-lg; 
+
+		ul {
+			@include horizontal-nav; 
+			margin-bottom: 0; 
+
+			li {
+				font: 400 15px $font-display; 
+				line-height: $steps-height-lg;
+				border-bottom: 3px solid #fff;
+
+				&.title {font-weight: 600; }
+				&:first-child {padding-left: 0; }
+
+			}
+		}
+	}
+	.wizard-content, .wizard-footer {
+		&:before {
+			@include fake-shadow;
+		} 
+	}
+	
+	.wizard-footer {
+		.calc-precio {
+			.currency { font: bold 24px $font-display;}
+			.precio { font: bold 36px $font-display;}
+			.small { font: 400 13px $font; color: $text-dark-secondary; display: inline-block; }
+		}
+		@media (min-width: $start-sm) {
+			text-align: left; 
+			.inner-container {justify-content: flex-end;}
+			
+		}
+		@media (min-width: $start-md) {
+			.btn {width: auto;}
+		}
+	}	
+}
+
+//Change step display (may not be necessary in app)
+@mixin active-step {
+	border-bottom-color: $c-primary;
+	i {position: relative; }
+	i:after {
+		$inner-height: 6px; 
+		$border-width: 2px; 
+		$full-size: $inner-height + 2 * $border-width; 
+		content: "";
+		background-color: $c-primary; 
+		width: $full-size; height: $full-size; 
+		display: block; 
+		position: absolute; top: -0.5 * $full-size; right: -0.5 * $full-size; 
+		border: $border-width solid #fff; 
+		border-radius: 50%;
+
+	}
+}
+
+
+
+//For dev purposes only
+.clean-wizard {
+	&.step1 {
+		.wizard-steps li.step1 {
+			@include active-step;
+		}
+		&.localnuevo {
+			.block-alternative:not(.localnuevo) {display: none; }
+		}
+		&.localexistente {
+			.block-alternative:not(.localexistente) {display: none; }
+		}
+	}
+
+	&.step2 {
+		.wizard-steps li.step2 {
+			@include active-step;
+		}
+	}
+	&.step3 {
+		.wizard-steps li.step3 {
+			@include active-step; 
+		}
+	}
+}
+

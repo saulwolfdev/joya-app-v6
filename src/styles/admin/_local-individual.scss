@@ -1,0 +1,17 @@
+.admin-local-individual {
+	@include card-page; 
+	@include grey-bar; 
+
+	.pedidos-all {
+		.cell-bullet, .cell-fecha {padding-right: 0; }
+		.cell-bullet .circle {margin-right: 0; }
+		.alerta-pendiente .cell-alerta {color: $c-error; }
+		.vidrierista a {color: $text-dark; }
+		.cell-hora {color: $text-dark-secondary;}
+	}
+
+	
+	h4 {
+		margin-bottom: 20px; 
+	}
+}

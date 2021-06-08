@@ -1,0 +1,192 @@
+.mis-pedidos {
+	
+	@include card-page; 
+	background: #F7F7F7 url("../assets/img/pedidos.jpg") no-repeat top center; 
+	
+
+	.section-header {
+		padding-top: 45px; 
+		padding-bottom: 20px; 
+		color: $text-light; 
+
+		h4 {
+			color: $c-secondary; 
+			padding: 0 1rem;
+		}
+		
+	}
+	
+	.card-page-content {
+		padding-top: 70px; padding-bottom: 70px; 
+	}
+	.menu-header {
+		align-items: center; 
+		padding-bottom: 25px; 
+
+		.menu-item {
+			font: 700 20px/1.2em $font-display; 
+			a {
+				color: $text-dark-secondary; 
+				&.active {color: $text-dark; }
+			}
+		}
+		.btn-set { margin-left: auto; }
+		.btn { font-size: 30px; font-weight: normal;  }
+	}
+
+	
+
+	.visitas-mobile-dropdown {
+		.btn-misc {
+			display: flex; flex-direction: row; 
+			padding:15px 0; margin-top: 0;
+			font: 700 30px/1.2em $font-display; 
+			width: 100%; 
+			align-items: center; 
+			*, a {color: $text-dark;}
+
+			i {
+				font-size: 16px; 
+				display: inline-block; margin-left: auto; 
+				transition: transform 0.2s ease-in-out;
+			}
+			&:not(.collapsed) {
+				border-bottom: 1px solid $text-dark;
+			}
+			&.show, &:not(.collapsed) {
+				i {
+					transform: rotate(-180deg);
+					
+				}
+			}
+		}
+		#mobileVisitaMenu {
+			height: 104px; 
+			.menu {
+				margin: 0; padding: 0; list-style: none; 
+				li {
+					a {
+						display: block;
+						margin: 15px 0;
+						font: 400 24px/1.2em $font-display; 
+						color: $text-dark; 
+						&.active {font-weight: 700; }
+						&:hover, &:active, &:focus {
+							background-color: $bg-light-1;
+						}
+					}
+				}
+			}
+
+		}
+	}
+	.local-pedido {
+		border-top: 2px solid $text-dark;
+		
+
+		.aclaracion {
+			color: $text-dark-secondary; margin-bottom: 0;
+		}
+		.pedido, .data {
+			padding-top: 20px; padding-bottom: 20px; 
+		}
+		.data {
+			border-bottom: 1px solid $border-color; 
+			background-color: $bg-light-1;
+			h5, h4 {margin-bottom: 0; font-size: 20px;}
+		}
+		.pedido {
+			border-bottom: 1px solid $border-color; 
+			&:last-child {border-bottom: none; }
+
+			h5 { 
+				span {font-weight: normal; }
+			}
+			.descripcion {margin-bottom: 0;}
+		}
+		.fecha {
+			text-align: center; width: 50px;
+			.dia {font: 700 20px/27px $font-display;}
+			.mes {text-transform: uppercase; color: $text-dark-secondary;}
+		}
+		.acciones {
+			i {color: $text-dark-secondary;}
+		}
+	}
+	.pedidos-pasados {
+		border-top: 2px solid $text-dark;
+	}
+	.visita-pasada {
+		padding-top: 25px; padding-bottom: 25px; border-bottom: 1px solid $border-color;
+		p {margin-bottom: 0; }
+		.col.nombre-local, .col.detalle h5 {
+			font: 600 15px/22px $font-display;
+		}
+		.col.nombre-local {
+			width: 120px; 
+			flex-grow: 0; flex-shrink: 0; flex-basis: auto;
+			
+		}
+		.col.detalle {
+			span {font-weight: normal; }
+			.aclaracion {color: $text-dark-secondary;}
+		}
+		.acciones a {
+			color: $text-dark;
+			padding: 0 15px; 
+			&:hover, &:focus, &:active {text-decoration: underline;}
+		}
+	}
+	@media (max-width: $end-sm) {
+		.container-fluid {
+			padding-left: 0;
+	    	padding-right: 0;
+		}
+		.card-page-container {
+			margin-top: 0; 
+		
+		}
+	}
+	@media (min-width: $start-md) {
+		.section-header {
+			padding-bottom: 40px; padding-top: 55px;
+			h4 {padding: 0; }
+		}
+		.menu-header .btn { 
+			width: auto; font-weight: bold;
+			font-size: 1rem; 
+			padding-left: 25px; padding-right: 25px; 
+		}
+		.local-pedido {
+			padding-top: 5px; padding-bottom: 5px; 
+			.pedido, .data {
+				padding-top: 30px; padding-bottom: 30px; 
+			}
+			.data {
+				background-color: transparent;
+				border-bottom: none; 
+				padding-right: 40px;
+				h5, h4 {margin-bottom: 0; font-size: 16	px;}
+			}
+		}
+		.visita-pasada {
+			.col.nombre-local {
+				width: 145px; 
+			}
+		}
+	}
+	@media (min-width: $start-lg) {
+		background-size: 100%;
+		.menu-header {
+			.menu-item { font-size: 26px; }
+			.btn { 
+				padding-left: 50px; padding-right: 50px; 
+			}
+		}
+	}
+	@media (min-width: $start-xl) {
+		.menu-header {
+			.menu-item { font-size: 30px; }
+		}
+	}
+}

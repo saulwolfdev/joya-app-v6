@@ -1,0 +1,72 @@
+table.admin-table {
+	i.circle {
+		display: inline-block; 
+		width: 12px; height: 12px; 
+		border-radius: 50%; 
+		background-color: $c-primary;
+		margin-right: 0;  
+	}
+	.ordenable {
+		cursor: pointer;
+		&:after {
+			font-family: $font-icons; 
+			content: "\f078";
+			color: $text-dark-secondary;
+			margin-left: 8px;
+		    font-size: 12px;
+		    font-weight: 300;
+
+		}
+		&.up:after {
+			color: $text-dark; 
+			content: "\f077";
+			font-weight: 600; 
+		}
+		&.down:after {
+			color: $text-dark; 
+			font-weight: 600; 
+		}
+	}
+	thead tr {
+		@include light-gradient;
+		border-top: 1px solid $border-color; 
+		border-bottom: 1px solid $border-color; 
+
+		th {border-bottom: none; }
+	}
+	td, th {
+		padding: 17px 15px; 
+		vertical-align: middle; 
+
+		.aclaracion {
+			display: block; color: $text-dark-secondary; 
+		}
+		i:first-child {margin-right: 8px; }
+
+	}
+	.btn {margin-top: 0; }
+
+	@media (max-width: $end-md) {
+		font-size: 15px; 
+		.btn-small {
+			padding-left: 25px; padding-right: 25px; 
+			font-size: 0.9em; 
+		}
+		td, th { padding: 7px 5px; }
+	}
+}
+.table-pagination {
+	width: 100%; 
+	margin-top: 20px;
+    margin-bottom: 30px;
+	.pagination {
+		justify-content: center; 
+	}
+	.page-link {
+		color: $text-dark;
+	}
+	.page-item.active .page-link {
+		background-color: $c-primary; border-color: $c-primary; 
+	}
+
+}

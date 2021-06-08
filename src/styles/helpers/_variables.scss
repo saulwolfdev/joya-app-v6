@@ -1,0 +1,66 @@
+// Use for variables of colors and sizes that will be used repeatedly in the site.
+
+$font: 'Source Sans Pro', sans-serif;
+$font-display:'Bai Jamjuree', sans-serif;
+$font-icons: 'Font Awesome 5 Pro';
+
+// TEXT
+$text-light: #fff;
+
+$text-dark: #262626;
+$text-dark-secondary: rgba($text-dark, 0.54);
+
+$rem: 16px; 
+/*
+// ON LIGHT BACKGROUND
+$on-light-primary-text: rgba($dark-text, 1);
+$on-light-secondary-text: rgba($dark-text, 0.54);
+$on-light-disabled-text: rgba($dark-text, 0.38);
+$on-light-box-shadow: rgba($dark-text, 0.05);
+$on-light-text-shadow: rgba($dark-text, 0.12);
+
+// ON DARK BACKGROUND
+$on-dark-primary-text: rgba($light-text, 1);
+$on-dark-secondary-text: rgba($light-text, 0.7);
+$on-dark-disabled-text: rgba($light-text, 0.3);
+
+// PRIMARY HIGHLIGHT VARIATIONS 
+*/
+$c-primary:#0040EF;
+$c-secondary: #48FFEA;
+$c-vidrio: #EBF4FD; 
+
+//Warnings
+$c-error: #E61010;
+$c-warning: #D5C129;
+$c-success: #7CAC2B; 
+
+$gradient-secondary-start: $c-secondary;
+$gradient-secondary-end: #92EDA0;
+
+//BACKGROUNDS
+$bg-dark: $text-dark;
+$bg-light-1: #F7F7f7;
+$bg-light: #FFFFFF;
+
+/*$c-primary-light: #428E92;
+$c-primary-dark: #00363A; 
+
+// SECONDARY HIGHLIGHT VARIATIONS 
+
+//$c-secondary-light: #324AB8;
+//$c-secondary-dark: #2F429B;
+
+$green-gradient-end: $c-primary;
+$green-gradient-start: #24CF5F;
+
+$warning: #EC3434;
+
+// BASE COLORS
+
+$base-tr: #eaeeee;
+
+
+$border-radius: 4px;*/
+
+$border-color: rgba(#000000, 0.16);

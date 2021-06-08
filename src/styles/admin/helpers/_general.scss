@@ -1,0 +1,84 @@
+.card {
+	border: 1px solid $border-color; 
+	border-radius: 3px; 
+}
+
+.more-content {
+	.menu {
+		ul {
+			@include centered-flex-row; 
+			justify-content: flex-start; 
+			padding-left: 0; 
+			margin-bottom: 0; 
+
+			li {
+				list-style: none; 
+				//border-bottom: 3px solid transparent;
+			}
+			a {	
+				display: block; 
+				padding: 23px $side-padding; 
+				color: $text-dark-secondary; 
+				position: relative; 
+
+				&:after {
+					content: ""; 
+					display: block; 
+					position: absolute; 
+					bottom: -1px; left: 50%; transform: translateX(-50%);
+					width: 0; height: 3px;
+					transition: width 0.3s ease-in; 
+				}
+
+				&:hover {
+					&:after {
+						background-color: $text-dark-secondary; 
+						width: 100%
+					}
+				}
+			}
+			li.active {
+				//border-bottom-color: $c-primary;
+				a {
+					color: $text-dark; 
+					&:after {
+						width: 100%; 
+						background-color: $c-primary; 
+					}
+				}
+			}
+
+		}
+	}
+	.content-block {
+		padding-top: 35px; 
+	}
+}
+
+.header-row {
+	@include centered-flex-row;
+	margin-bottom: 8px; 
+	h4, button, a.btn {margin-bottom: 0; margin-top: 0; }
+
+	.dropdown.filter {
+		.dropdown-menu {min-width: 0; }
+		.btn {color: $text-dark-secondary;}
+		.dropdown-toggle::after {
+			border: none; 
+			content: "\f078";
+			font: 400 12px/24px $font-icons; 
+			margin-left: 8px;
+		}
+	}
+	
+}
+
+.data-piece {
+	.label {
+		color: $text-dark-secondary; 
+		margin-bottom: 0; 
+	}
+	.aclaracion {
+		color: $text-dark-secondary; 
+	}
+}

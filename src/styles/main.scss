@@ -1,0 +1,65 @@
+
+@use 'sass:math';
+
+///Bootstrap add_ons
+@import "./helpers/bootstrap"; //Esto se puede poner acá? NO SE DEBE USAR BOOTSTRAP COMPLETO
+@import "./helpers/bootstrap-add_ons";
+
+//INTERNAL CONFIG
+@import "./helpers/variables";
+@import "./helpers/mixins-6v";
+@import "./helpers/dev-only"; //ELIMINAR ANTES DE PUBLICAR
+@import "./styleguide"; //ELIMINAR ANTES DE PUBLICAR
+
+//ESTILOS COMPARTIDOS
+@import "./helpers/general"; 
+@import "./helpers/text"; 
+@import "./helpers/color-blocks";
+@import "./components/buttons";
+@import "./components/forms";
+@import "./components/modal";
+
+//////////LAYOUT - CLIENTE /////////
+@import "./components/header";
+@import "./components/footer";
+
+
+//CLIENTE - HOME //
+@import "./components/hero";
+@import "./cliente/home";
+@import "./components/home-vidrieristas";
+
+//CLIENTE - LOGIN
+@import "./cliente/login"; 
+
+//CLIENTE - SOLICITUD DE LIMPIEZA //
+@import "./cliente/solicitud-limpieza/paso1";
+@import "./cliente/solicitud-limpieza/paso2";
+@import "./cliente/solicitud-limpieza/paso3";
+@import "./cliente/solicitud-limpieza";
+@import "./cliente/pedidos";
+
+
+///////////VIDRERISTA///////////////
+@import "./vidrierista/home"; 
+
+
+ ////////ADMIN/////////////
+@import "./admin/header";
+@import "./admin/footer";
+@import "./admin/helpers/warnings";
+@import "./admin/helpers/variables";
+@import "./admin/helpers/general";
+
+//Secciones
+@import "./admin/modules/sintesis";
+@import "./admin/modules/table";
+@import "./admin/modules/table-filter";
+@import "./admin/modules/search";
+@import "./admin/modules/locales";
+@import "./admin/clientes-lista";
+@import "./admin/cliente-individual";
+@import "./admin/local-individual";
+@import "./admin/locales-lista";
+@import "./admin/vidrieristas-lista";
+@import "./admin/vidrierista-individual";

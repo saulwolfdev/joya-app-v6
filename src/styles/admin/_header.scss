@@ -1,0 +1,42 @@
+
+header.admin-header  {
+	a, .a {font: 400 16px/24px $font; vertical-align: -webkit-baseline-middle; }
+	i.fa-chevron-down {
+		font: 400 12px/24px $font-icons; 
+		margin-left: 8px; 
+		&:before {vertical-align: text-top; }
+	}
+	.menu li {
+		padding: 0 13px; 
+	}
+	li.dropdown .sub-menu li {
+		&, a {
+	    	font: 400 16px/1.2em $font, sans-serif;
+
+	    }
+	}
+
+	@media (max-width: $hamburger-end) {
+		.admin-menu {
+			li .sub-menu {
+				transition: height 0.5s ease-in; 
+				overflow: hidden; 
+				padding-bottom: 20px; 
+			}
+
+			li.dropdown.closed {
+				.sub-menu {
+					height: 0; 
+				}
+			}
+			li:not(.closed) {
+				> a, > .a {
+					border-bottom: 1px solid $border-color; 
+				}
+				.sub-menu {
+					height: auto; 
+				}
+			}
+		}
+	}
+}

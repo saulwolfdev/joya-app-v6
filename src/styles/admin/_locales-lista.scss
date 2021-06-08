@@ -1,0 +1,9 @@
+
+.locales-lista {
+	tr.local-nuevo {
+		td.cell-nombre {
+			@include tag-nuevo; 
+		}
+	}
+	tr.accion-pendiente { td.cell-estado {color: $c-error; }}
+}
