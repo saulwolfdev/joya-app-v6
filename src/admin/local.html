@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Joya - Solicitar limpieza - Paso 1</title>
-	<meta name="title" content="Joya - Solicitar limpieza - Paso 1">
+    <title>Joya - Admin - Local</title>
+	<meta name="title" content="Joya - Admin - Local">
 	<meta name="description" content="Lorem ipsum sid dolor amet" />
 
 	<link rel="icon" href="/favicons/favicon.ico"><!-- 32×32 -->
@@ -94,7 +94,6 @@
 		                        			<span class="a">
 		                        				<i class="far fa-user-circle d-none d-lg-inline"></i>
 		                        				<span class="d-none d-xl-block">Carolina</span>
-		                        				<span class="d-xl-none">Ajustes</span>
 		                        				<i class="far fa-chevron-down"></i>
 		                        			</span>
 		                        			<ul class="sub-menu">
@@ -118,7 +117,7 @@
 	    			<div class="row">
 	    				<div class="col-12 breadcrumb">
 	    					<div class="inner-container">
-	    						<a href="#"><i class="far fa-arrow-left"></i> Volver</a>
+	    						<a href="admin-locales.html"><i class="far fa-arrow-left"></i> Volver</a>
 	    					</div>
 	    				</div>
 	    				<div class="col-12 card-page-container">
@@ -223,228 +222,230 @@
 					    							<option value="c">Sin alertas</option>
 					    						</select>
 					    					</div>
-					    					<!-- Based on: https://codepen.io/912lab/pen/LsplC -->
-					    					<input class="expansible-search expansible-search-right" type="search" placeholder="Buscar">
+					    					<div class="col-12 col-md expansible-search-right">	
+		    									<input class="expansible-search" type="search" placeholder="Buscar">
+		    								</div>
 					    				</div>
 
 
 					    				<div class="pedidos-all">
-					    					<table class="table admin-table table-hover">
-											  <thead>
-											    <tr>
-											      <th scope="col" class="cell-bullet"></th>
-											      <th scope="col" class="cell-fecha ordenable">Fecha</th>
-											      <th scope="col" class="cell-hora"></th>
-											      <th scope="col" class="cell-monto ordenable down">Monto</th>
-											      <th scope="col" class="cell-estado ordenable up">Estado</th>
-											      <th scope="col" class="cell-alerta ordenable">Alertas</th>
-											      <th scope="col" class="cell-vidrierista ordenable">Vidrierista</th>
+					    					<div class="table-responsive">
+						    					<table class="table admin-table table-hover">
+												  <thead>
+												    <tr>
+												      <th scope="col" class="cell-bullet"></th>
+												      <th scope="col" class="cell-fecha ordenable">Fecha</th>
+												      <th scope="col" class="cell-hora"></th>
+												      <th scope="col" class="cell-monto ordenable down">Monto</th>
+												      <th scope="col" class="cell-estado ordenable up">Estado</th>
+												      <th scope="col" class="cell-alerta ordenable">Alertas</th>
+												      <th scope="col" class="cell-vidrierista ordenable">Vidrierista</th>
 
-											    </tr>
-											  </thead>
-											  <tbody>
-											    <tr class="alerta-pendiente">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+												    </tr>
+												  </thead>
+												  <tbody>
+												    <tr class="alerta-pendiente">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="alerta-pendiente">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="alerta-pendiente">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="alerta-pendiente">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="alerta-pendiente">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="alerta-pendiente">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="alerta-pendiente">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="alerta-pendiente">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="alerta-pendiente">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="alerta-pendiente">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="alerta-pendiente">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="alerta-pendiente">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="alerta-pendiente">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											    <tr class="">
-											    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
-													<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"><a title="Reporte de vidrierista"><i class="far fa-exclamation-triangle"></i>Reporte</a></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												    <tr class="">
+												    	<td scope="col" class="cell-bullet"><i class="circle"></i></td>
+														<td scope="col" class="cell-fecha">Mie 07/04/2020 <!-- que se vea el día de la semana --></td>
 
-													<td scope="col" class="cell-hora">11:00 - 17:00</td>
-													<td scope="col" class="cell-monto">$7186</td>
-													<td scope="col" class="cell-estado">Completado</td>
-													<td scope="col" class="cell-alerta"></td>
-													<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
-											    </tr>
-											  </tbody>
-											</table>
-
+														<td scope="col" class="cell-hora">11:00 - 17:00</td>
+														<td scope="col" class="cell-monto">$7186</td>
+														<td scope="col" class="cell-estado">Completado</td>
+														<td scope="col" class="cell-alerta"></td>
+														<td scope="col" class="cell-vidrierista"><a href="">Juan Perez</a></td>
+												    </tr>
+												  </tbody>
+												</table>
+											</div>
 											<div class="btn-set">
 												<nav aria-label="..." class="table-pagination">
 													<ul class="pagination">
@@ -483,7 +484,5 @@
 			</div>
 		</footer>
 	</div>
-	
-	<script type="text/javascript" src="/dist/js/adminJS.js"></script>
 </body>
 </html>

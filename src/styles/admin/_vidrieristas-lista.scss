@@ -1,13 +1,16 @@
-
 .vidrieristas-lista {
 
 	.admin-sintesis {
 		.stat .btn-small {margin-top: 8px; }
+
 	}
 	
 	//Modificaciones a tabla
 	td.cell-activo {color: $text-dark-secondary; }
-	td.cell-recorridosmes, td.cell-recorridostotales {text-align: center;  }
+	td.cell-recorridosmes, td.cell-recorridostotales {text-align: center;}
+	td.cell-recorridosmes, td.cell-recorridostotales, td.cell-nombre, td.cell-estado {
+		min-width: 100px; 
+	}
 	
 	//Color-coding clientes
 		tr.vidrierista-nuevo {

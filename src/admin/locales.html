@@ -96,7 +96,6 @@
 		                        			<span class="a">
 		                        				<i class="far fa-user-circle d-none d-lg-inline"></i>
 		                        				<span class="d-none d-xl-block">Carolina</span>
-		                        				<span class="d-xl-none">Ajustes</span>
 		                        				<i class="far fa-chevron-down"></i>
 		                        			</span>
 		                        			<ul class="sub-menu">
@@ -120,10 +119,10 @@
     				<div class="row sintesis-header">
 	    				<h3 class="col-auto">Locales</h3>	
 	    				<div class="btn-set col-auto">
-	    					<button class="btn btn-outline btn-small">Descargar CSV <i class="far fa-chevron-down"></i></button>
+	    					<button class="btn btn-outline btn-small"><span class="d-md-inline d-none">Descargar</span> CSV</button>
 	    				</div>
     				</div>
-    				<div class="row stats">
+    				<div class="row stats d-none d-md-flex">
     					<div class="col-auto stat">
     						<p class="label">Total</p>
     						<p class="value"><span class="number strong">105</span></p>
@@ -182,389 +181,391 @@
 	    							<option value="c">Almagro</option>
 	    						</select>
 	    					</div>
-	    					<!-- Based on: https://codepen.io/912lab/pen/LsplC -->
-	    					<input class="expansible-search expansible-search-right" type="search" placeholder="Buscar">
+	    					<div class="col-12 col-md expansible-search-right">	
+	    						<input class="expansible-search" type="search" placeholder="Buscar">
+	    					</div>
 	    				</div>
 
 
 	    				<div class="clientes-all">
-	    					<table class="table admin-table table-hover">
-							  <thead>
-							    <tr>
-							      <th scope="col" class="cell-estado"></th>
-							      <th scope="col" class="cell-nombre ordenable">Local</th>
-							      <th scope="col" class="cell-barrio ordenable up">Barrio</th>
-							      <th scope="col" class="cell-superficie ordenable down">Sup.</th>
-							      <th scope="col" class="cell-cliente ordenable">Cliente</th>
-							      <th scope="col" class="cell-ultpedido ordenable">Últ. pedido</th>
-							      <th scope="col" class="cell-estado ordenable">Estado</th>
-							      <th scope="col" class="cell-accion"></th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr class="accion-pendiente">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="accion-pendiente">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
- <tr class="accion-pendiente">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="accion-pendiente">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							     <tr class="accion-pendiente">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="accion-pendiente">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							     <tr class="accion-pendiente">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="accion-pendiente">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							     <tr class="accion-pendiente">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="accion-pendiente">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>
-							    <tr class="">
-							    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-									<td scope="col" class="cell-nombre">
-										Café Valerio
-										<span class="aclaracion">Desde 07/04/2020</span>
-									</td>
-									<td scope="col" class="cell-barrio">
-										Balvanera
-										<span class="aclaracion">Jujuy 232</span>
-									</td>
-									<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
-									<td scope="col" class="cell-cliente">Grant Marshall</td>
-									<td scope="col" class="cell-ultpedido">7 May</td>
-									<td scope="col" class="cell-estado"></td>
-									<td scope="col" class="cell-accion">
-										<a href="#" class="btn btn-outline btn-small">Editar</a>
-									</td>
-							    </tr>							    
-							  </tbody>
-							</table>
-
+	    					<div class="table-responsive">
+		    					<table class="table admin-table table-hover">
+								  <thead>
+								    <tr>
+								      <th scope="col" class="cell-estado"></th>
+								      <th scope="col" class="cell-nombre ordenable">Local</th>
+								      <th scope="col" class="cell-barrio ordenable up">Barrio</th>
+								      <th scope="col" class="cell-superficie ordenable down">Sup.</th>
+								      <th scope="col" class="cell-cliente ordenable">Cliente</th>
+								      <th scope="col" class="cell-ultpedido ordenable">Últ. pedido</th>
+								      <th scope="col" class="cell-estado ordenable">Estado</th>
+								      <th scope="col" class="cell-accion"></th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr class="accion-pendiente">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="accion-pendiente">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+	 								<tr class="accion-pendiente">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="accion-pendiente">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								     <tr class="accion-pendiente">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="accion-pendiente">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								     <tr class="accion-pendiente">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="accion-pendiente">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								     <tr class="accion-pendiente">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="accion-pendiente">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"><a title="Revisar fachada"><i class="far fa-exclamation-triangle"></i>Revisar</a></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
+										<td scope="col" class="cell-nombre">
+											Café Valerio
+											<span class="aclaracion">Desde 07/04/2020</span>
+										</td>
+										<td scope="col" class="cell-barrio">
+											Balvanera
+											<span class="aclaracion">Jujuy 232</span>
+										</td>
+										<td scope="col" class="cell-superficie">58 m<sup>2</sup></td>
+										<td scope="col" class="cell-cliente">Grant Marshall</td>
+										<td scope="col" class="cell-ultpedido">7 May</td>
+										<td scope="col" class="cell-estado"></td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Editar</a>
+										</td>
+								    </tr>							    
+								  </tbody>
+								</table>
+							</div>
 							<div class="btn-set">
 								<nav aria-label="..." class="table-pagination">
 									<ul class="pagination">
@@ -599,7 +600,5 @@
 			</div>
 		</footer>
 	</div>
-
-	<script type="text/javascript" src="/dist/js/adminJS.js"></script>
 </body>
 </html>

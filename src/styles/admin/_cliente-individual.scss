@@ -5,3 +5,9 @@
 .cliente-sintesis {
 	h3 {padding-left: $side-padding; }
 }
+
+.cliente-individual {
+	@media (max-width: $end-sm) {
+		.more-content .menu {border-top: 1px solid $border-color; }
+	}
+}

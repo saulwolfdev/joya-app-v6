@@ -4,10 +4,13 @@ table.admin-table {
 		width: 12px; height: 12px; 
 		border-radius: 50%; 
 		background-color: $c-primary;
-		margin-right: 0;  
+
+		margin: 0 8px; 
 	}
+	
 	.ordenable {
 		cursor: pointer;
+		min-width: 100px; 
 		&:after {
 			font-family: $font-icons; 
 			content: "\f078";
@@ -27,6 +30,10 @@ table.admin-table {
 			font-weight: 600; 
 		}
 	}
+	td.cell-nombre {
+		min-width: 150px; 
+	}
+
 	thead tr {
 		@include light-gradient;
 		border-top: 1px solid $border-color; 

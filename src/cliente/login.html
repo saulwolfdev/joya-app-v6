@@ -10,8 +10,6 @@
 	<meta name="title" content="Joya - Homepage con login">
 	<meta name="description" content="Lorem ipsum sid dolor amet" />
 
-	<!--<base href="file:///D:/BitBucket%20Repos/joya-front-end/">-->
-
 	<link rel="icon" href="/favicons/favicon.ico"><!-- 32×32 -->
 	<link rel="icon" href="/favicons/icon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png"><!-- 180×180 -->
@@ -153,9 +151,24 @@
 	    	<div class="section">
 	    		<div class="container-fluid">
 		    		<div class="dev-note">De los botones a continuación se debe tomar <code>data-bs-target</code> y <code>data-bs-toggle</code> a fin de activar los modales de registro y login. Esto se podrá aplicar a elementos tipo <code>buttton</code> o <code>a</code>. Los links que aparecen al final de cada modal ("No tenés cuenta? Registrate") cierran el modal que está abierto y abren otro. En ese caso hay que incluir el atributo <code>data-bs-modal-dismiss</code></div>
+		    		<p class="label  mt-5">Simples:</p>
+		    		<div class="btn-set">
+		    			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</button>
+		    			&nbsp;&nbsp;
+		    			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModal">Registrate</button>
+					</div>
+					<p class="label mt-5">Con notificación (una notificación por vez únicamente):</p>
+					<div class="btn-set">
+		    			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModalNotificacion">Iniciar sesión</button>
+		    			&nbsp;&nbsp;
+		    			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModalNotificacion">Registrate</button>
 
-		    		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</button>
-		    		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModal">Registrate</button>
+		    		</div>
+		    		<!--PENDIENTE 
+		    		<p class="label mt-5">Pastilla de notificación:</p>
+					<div class="btn-set">
+		    			<button type="button" id="notification-trigger" class="btn btn-primary">Notificación</button>
+		    		</div>-->
 		    	</div>
 	    	</div>
 	    </div>
@@ -207,6 +220,7 @@
 			</div>
 		</footer>
 	</div>
+	<!-- Modal Registro - con estilos de un campo inválido -->
 	<div class="modal fade accountModal" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
@@ -247,6 +261,8 @@
 	    </div>
 	  </div>
 	</div>
+
+	<!-- Modal Login -->
 	<div class="modal fade accountModal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
@@ -272,6 +288,107 @@
 	      </div>
 	    </div>
 	  </div>
+	</div>
+
+	<!-- Modal Registro - con notificación de éxito-->
+	<div class="modal fade accountModal" id="registroModalNotificacion" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      <div class="modal-body">
+	        <h4>Estás a un paso de tus vidrieras limpias</h4>
+	        <p>Completá tus datos para terminar de registrar tu pedido.</p>
+
+	        <form class="form">
+	        	<div class="row">
+	        		<div class="col form-element">
+						<label for="nombre" class="form-label">Nombre</label>
+						<input type="text" class="form-control" name="nombre" disabled>
+					</div>
+					<div class="col form-element">
+						<label for="apellido" class="form-label">Apellido</label>
+						<input type="text" class="form-control" name="apellido" disabled>
+					</div>
+	        	</div>
+	        	<div class="form-element">
+					<label for="email" class="form-label">Email</label>
+					<input type="email" class="form-control" name="email" disabled>
+				</div>
+				<div class="form-element">
+					<label for="password" class="form-label">Contraseña</label>
+					<input type="password" class="form-control" name="password" disabled>
+				</div>
+				<div class="form-element">
+					<p><input type="checkbox" disabled/>Quiero recibir novedades</p>
+				</div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	      	<div class="form-notification success">
+	      		Tu registro se ha realizado con éxito! Por favor, ingresá a tu mail para completar el proceso. 
+	      	</div>
+	        <!-- No se pone el botón (analizar el UX para cada notificación) -->
+	        <p>Ya tenés cuenta en Joya? <a href="#"  data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal">Ingresá</a> </p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal Login - con notificaciones warning/error (usar una por vez) -->
+	<div class="modal fade accountModal" id="loginModalNotificacion" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      <div class="modal-body">
+	        <h4>Estás a un paso de tus vidrieras limpias</h4>
+	        <p>Accedé a tu cuenta para registrar tu pedido.</p>
+
+	        <form class="form">
+	        	<div class="form-element">
+					<label for="email" class="form-label">Email</label>
+					<input type="email" class="form-control" name="email">
+				</div>
+				<div class="form-element">
+					<label for="password" class="form-label">Contraseña</label>
+					<input type="password" class="form-control" name="password">
+				</div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	      	<!-- Importante: nunca poner más de un mensaje de notificación en un form! -->
+	      	<div class="form-notification warning">
+	      		Para poder acceder al sistema, es necesario que valides tu mail. <a href="#">Reenviar mail de validación</a>. 
+	      	</div>
+	      	<div class="form-notification error">
+	      		Para poder acceder al sistema, es necesario que valides tu mail. <a href="#">Reenviar mail de validación</a>. 
+	      	</div>
+	        <button type="button" class="btn btn-primary">Ingresar</button>
+	        <p>No tenés cuenta en Joya aún? <a href="#" data-bs-target="#registroModal" data-bs-toggle="modal" data-bs-dismiss="modal">Registrate</a> </p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Pastilla notificación PENDIENTE -->
+	<!--<div class="ns-box ns-growl ns-effect-slide ns-type-notice ns-show">
+		<div class="ns-box-inner">
+			<p>This is a message</p>
+		</div>
+		<span class="ns-close"></span>
+	</div>-->
+	<!-- Acá adentro se ponen las alertas, stackean -->
+	<div class="toast-container">
+	<!--
+	  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+	    <div class="toast-header">
+	      <img src="..." class="rounded me-2" alt="...">
+	      <strong class="me-auto">Bootstrap</strong>
+	      <small class="text-muted">just now</small>
+	      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+	    </div>
+	    <div class="toast-body">
+	      See? Just like this.
+	    </div>
+	  </div>-->
 	</div>
 </body>
 </html>

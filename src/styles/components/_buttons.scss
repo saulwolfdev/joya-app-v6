@@ -7,7 +7,9 @@ $btn-height-big: 60px;
 	box-shadow: none;
 }
 
-
+button {
+	padding-top: 0; padding-bottom: 0; 
+}
 .btn, a.btn {
 	
 	font-size: 1rem; 
@@ -143,6 +145,10 @@ a.btn-primary, a.btn-secondary, a.btn-outline {display: inline-block;}
 	background: transparent;
 	cursor: pointer;
 	color: $text-dark;
+
+	line-height: $btn-height - 2px;  //consider border!
+	&.btn-big { line-height: $btn-height-big - 2px; }
+	&.btn-small { line-height: $btn-height-small - 2px; }
 }
 .btn-outline-form {
 	border-radius: 6px; 

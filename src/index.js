@@ -5,7 +5,7 @@ const mainNav = require("./assets/js/main-nav");
 const wizard = require('./assets/js/solicitud-limpieza');
 
 document.addEventListener('DOMContentLoaded', function() {
-    mainNav.initiateNav(false); //Hay diferencias en el menú admin vs usuario
+    mainNav.initiateNav(); 
 	wizard.init();
 });
 

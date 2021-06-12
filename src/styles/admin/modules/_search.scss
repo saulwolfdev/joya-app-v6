@@ -1,4 +1,4 @@
-
+// Based on: https://codepen.io/912lab/pen/LsplC
 input[type=search].expansible-search {
     outline: none;
     -webkit-appearance: textfield;
@@ -19,50 +19,10 @@ input[type=search].expansible-search {
         border: solid 1px $border-color;
         box-shadow: 0 0 5px rgba(109,207,246,.5);
     }
-
-    &.expansible-search-right {
-
+}
+.expansible-search-right {
+    display: flex; 
+    .expansible-search {
+        @media (min-width: $start-md) {margin-left: auto; }
     }
 }
-
-
-
-/*input {
-    
-}
-input[type=search] {
-    -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
-    font-family: inherit;
-    font-size: 100%;
-}
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
-    display: none; 
-}
-*/
-
-
-/* Demo 2 */
-/*#demo-2 input[type=search] {
-    width: 15px;
-    padding-left: 10px;
-    color: transparent;
-    cursor: pointer;
-}
-#demo-2 input[type=search]:hover {
-    background-color: #fff;
-}
-#demo-2 input[type=search]:focus {
-    width: 130px;
-    padding-left: 32px;
-    color: #000;
-    background-color: #fff;
-    cursor: auto;
-}
-#demo-2 input:-moz-placeholder {
-    color: transparent;
-}
-#demo-2 input::-webkit-input-placeholder {
-    color: transparent;
-}*/

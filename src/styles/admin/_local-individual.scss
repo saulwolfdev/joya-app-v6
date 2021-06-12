@@ -4,14 +4,20 @@
 
 	.pedidos-all {
 		.cell-bullet, .cell-fecha {padding-right: 0; }
-		.cell-bullet .circle {margin-right: 0; }
+		//.cell-bullet .circle {margin-right: 0; }
 		.alerta-pendiente .cell-alerta {color: $c-error; }
 		.vidrierista a {color: $text-dark; }
-		.cell-hora {color: $text-dark-secondary;}
+		.cell-hora, .cell-fecha, .cell-alerta, .cell-vidrierista {color: $text-dark-secondary; min-width: 100px; }
 	}
 
 	
 	h4 {
 		margin-bottom: 20px; 
+	}
+	@media (max-width: $end-sm) {
+		.local-imagen {
+			order: -1; 
+			margin-bottom: 1.5rem; 
+		}
 	}
 }

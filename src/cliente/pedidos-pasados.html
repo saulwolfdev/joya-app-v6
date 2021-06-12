@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Joya - Cliente - Visitas próximas</title>
-	<meta name="title" content="Joya - Cliente - Visitas próximas">
+    <title>Joya - Cliente - Visitas pasadas</title>
+	<meta name="title" content="Joya - Cliente - Visitas pasadas">
 	<meta name="description" content="Lorem ipsum sid dolor amet" />
 
 	<link rel="icon" href="/favicons/favicon.ico"><!-- 32×32 -->
@@ -91,24 +91,25 @@
 	    					<div class="card-page-content">
 	    						<div class="inner-container">
 	    							<div class="d-md-none menu-header-mobile">
-	    								<div class="visitas-mobile-dropdown">
-	    								 	<a class="btn btn-misc collapsed" data-bs-toggle="collapse" href="#mobileVisitaMenu" role="button" aria-expanded="false" aria-controls="mobileVisitaMenu">
-										    	Visitas próximas <i class="far fa-chevron-down"></i>	
-										  	</a>
-		    								<div class="collapse" id="mobileVisitaMenu">
-											    <ul class="menu" aria-labelledby="localesFilter">
-												    <li><a class="item" href="pedidos-proximos.html" >Visitas próximas</a></li>
-													<li><a class="item" href="pedidos-pasados.html">Visitas pasadas</a></li>
-												  </ul>
-											</div>
-	    								</div>
+	    								<!-- Menu modificado! -->
+	    								<div class="dropdown visitas-mobile-dropdown">
+										  <a class="btn btn-misc dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+										    Visitas próximas <i class="far fa-chevron-down"></i>	
+										  </a>
+
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="mobileVisitaMenu">
+										    <li><a class="item active" href="pedidos-proximos.html">Visitas próximas</a></li>
+											<li><a class="item" href="pedidos-pasados.html">Visitas pasadas</a></li>
+										  </ul>
+										</div>
+										<!-- fin menú modificado -->
 	    							</div>
 		    						<div class="row menu-header d-none d-md-flex">
 		    							<div class="col-auto menu-item">
-		    								<a href="pedidos-proximos.html" class="active">Visitas próximas</a>
+		    								<a href="pedidos-proximos.html" class="">Visitas próximas</a>
 		    							</div>
 		    							<div class="col-auto menu-item">
-		    								<a href="pedidos-pasados.html" class="">Visitas pasadas</a>
+		    								<a href="pedidos-pasados.html" class="active">Visitas pasadas</a>
 		    							</div>
 		    							<div class="col-auto btn-set">
 		    								<a href="#" class="btn btn-primary btn-round">
@@ -119,77 +120,90 @@
 		    							</div>
 		    						</div>
 
-		    						<div class="pedidos-proximos">
-		    							<div class="local-pedido row">
-		    								<div class="data col-md-3">
-		    									<h5>Kentucky Santa Fe</h5>
-		    									<p class="aclaracion">Av. Santa Fe 2702, C1425, CABA.</p>
+		    						<div class="pedidos-pasados">
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Kentucky Santa Fe
 		    								</div>
-		    								<div class="pedidos col-md-9">
-		    									<div class="pedido row">
-		    										<div class="col-auto fecha">
-		    											<div class="dia">7</div>
-		    											<div class="mes">Dic</div>
-		    										</div>
-		    										<div class="col detalle">
-		    											<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
-		    											<p class="descripcion">Recurrente: Lu - Mi - Vi / $150 por visita</p>
-		    										</div>
-		    										<div class="col-auto acciones">
-		    											<i class="far fa-ellipsis-h"></i>
-		    										</div>
-		    									</div>
-		    									<div class="pedido row">
-		    										<div class="col-auto fecha">
-		    											<div class="dia">7</div>
-		    											<div class="mes">Dic</div>
-		    										</div>
-		    										<div class="col detalle">
-		    											<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
-		    											<p class="descripcion">Recurrente: Lu - Mi - Vi / $150 por visita</p>
-		    										</div>
-		    										<div class="col-auto acciones">
-		    											<i class="far fa-ellipsis-h"></i>
-		    										</div>
-		    									</div>
-		    								</div>
+    										<div class="col detalle">
+												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
+												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
+											</div>
+    										<div class="col-auto acciones">
+    											<a href="#">Detalles</a>
+    										</div>
 		    							</div>
-		    							<div class="local-pedido row">
-		    								<div class="data col-md-3">
-		    									<h5>Kentucky Santa Fe</h5>
-		    									<p class="aclaracion">Av. Santa Fe 2702, C1425, CABA.</p>
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Kentucky Santa Fe
 		    								</div>
-		    								<div class="pedidos col-md-9">
-		    									<div class="pedido row">
-		    										<div class="col-auto fecha">
-		    											<div class="dia">7</div>
-		    											<div class="mes">Dic</div>
-		    										</div>
-		    										<div class="col detalle">
-		    											<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
-		    											<p class="descripcion">Recurrente: Lu - Mi - Vi / $150 por visita</p>
-		    										</div>
-		    										<div class="col-auto acciones">
-		    											<i class="far fa-ellipsis-h"></i>
-		    										</div>
-		    									</div>
-		    									<div class="pedido row">
-		    										<div class="col-auto fecha">
-		    											<div class="dia">7</div>
-		    											<div class="mes">Dic</div>
-		    										</div>
-		    										<div class="col detalle">
-		    											<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
-		    											<p class="descripcion">Recurrente: Lu - Mi - Vi / $150 por visita</p>
-		    										</div>
-		    										<div class="col-auto acciones">
-		    											<i class="far fa-ellipsis-h"></i>
-		    										</div>
-		    									</div>
-		    								</div>
+    										<div class="col detalle">
+												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
+												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
+											</div>
+    										<div class="col-auto acciones">
+    											<a href="#">Detalles</a>
+    										</div>
 		    							</div>
-		    							<a href="pedidos-pasados.html">Ver visitas pasadas</a>
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Kentucky Santa Fe
+		    								</div>
+    										<div class="col detalle">
+												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
+												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
+											</div>
+    										<div class="col-auto acciones">
+    											<a href="#">Detalles</a>
+    										</div>
+		    							</div>
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Kentucky Santa Fe
+		    								</div>
+    										<div class="col detalle">
+												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
+												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
+											</div>
+    										<div class="col-auto acciones">
+    											<a href="#">Detalles</a>
+    										</div>
+		    							</div>
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Kentucky Santa Fe
+		    								</div>
+    										<div class="col detalle">
+												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
+												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
+											</div>
+    										<div class="col-auto acciones">
+    											<a href="#">Detalles</a>
+    										</div>
+		    							</div>
 		    						</div>
+		    						<div class="btn-set">
+										<nav aria-label="..." class="table-pagination">
+											<ul class="pagination">
+												<li class="page-item disabled">
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Anterior">
+													<span aria-hidden="true">&laquo;</span>
+													</a>
+											    </li>
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item active" aria-current="page">
+													<a class="page-link" href="#">2</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Siguiente">
+													<span aria-hidden="true">&raquo;</span>
+													</a>
+											    </li>
+											</ul>
+										</nav>
+									</div>
 	    						</div>
 	    					</div>
 	    				</div>
