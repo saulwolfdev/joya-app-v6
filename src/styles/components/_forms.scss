@@ -169,10 +169,6 @@ input {
 
 .form .label {@extend label; } 
 
-
-
-
-
 .error-msg {
     color: $c-error;
     font-size: 14px;
@@ -184,3 +180,7 @@ input {
     i {margin-right: 8px; }
 }
 
+
+.form-block {
+    margin-bottom: 50px; 
+}

@@ -7,8 +7,8 @@ module.exports = {
     dropdown: document.querySelectorAll('header .dropdown'),
     isAdmin: false,
 
-    initiateNav: function(isAdmin) {
-        this.isAdmin = isAdmin; 
+    initiateNav: function() {
+        this.isAdmin = document.querySelector('header.fixed-top').classList.contains('admin-header'); 
         let self = this;
         this.initiateStickyMenu();
         this.trigger.forEach(function(trigger) {

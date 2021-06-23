@@ -28,21 +28,50 @@ const plugins = [
   }),
   //Cliente final
   new HtmlWebpackPlugin({
-    template: "./src/login.html",
-    filename: "./login.html",
+    template: "./src/cliente/login.html",
+    filename: "./cliente-login.html",
   }),
   new HtmlWebpackPlugin({
-    template: "./src/home-cliente.html",
-    filename: "./home-cliente.html",
+    template: "./src/cliente/notificaciones.html",
+    filename: "./notificaciones.html",
   }),
   new HtmlWebpackPlugin({
-    template: "./src/pedidos-proximos.html",
-    filename: "./pedidos-proximos.html",
+    template: "./src/cliente/home.html",
+    filename: "./cliente-home.html",
   }),
   new HtmlWebpackPlugin({
-    template: "./src/pedidos-pasados.html",
-    filename: "./pedidos-pasados.html",
+    template: "./src/cliente/cuenta.html",
+    filename: "./cliente-cuenta.html",
   }),
+  new HtmlWebpackPlugin({
+    template: "./src/cliente/locales.html",
+    filename: "./cliente-locales.html",
+  }),
+  new HtmlWebpackPlugin({
+    template: "./src/cliente/local.html",
+    filename: "./cliente-local.html",
+  }),
+  new HtmlWebpackPlugin({
+    template: "./src/cliente/pedidos-proximos.html",
+    filename: "./cliente-pedidos-proximos.html",
+  }),
+  new HtmlWebpackPlugin({
+    template: "./src/cliente/pedidos-pasados.html",
+    filename: "./cliente-pedidos-pasados.html",
+  }),
+  new HtmlWebpackPlugin({
+    template: "./src/cliente/solicitar-limpieza/paso1.html",
+    filename: "./cliente-paso1.html",
+  }),
+  new HtmlWebpackPlugin({
+    template: "./src/cliente/solicitar-limpieza/paso2.html",
+    filename: "./cliente-paso2.html",
+  }),
+  new HtmlWebpackPlugin({
+    template: "./src/cliente/solicitar-limpieza/paso3.html",
+    filename: "./cliente-paso3.html",
+  }),
+
   //Vidrierista
   new HtmlWebpackPlugin({
     template: "./src/home-vidrierista.html",
@@ -74,18 +103,7 @@ const plugins = [
     template: "./src/admin/vidrierista.html",
     filename: "./admin-vidrierista.html",
   }),
-  new HtmlWebpackPlugin({
-    template: "./src/solicitar-limpieza/paso1.html",
-    filename: "./paso1.html",
-  }),
-  new HtmlWebpackPlugin({
-    template: "./src/solicitar-limpieza/paso2.html",
-    filename: "./paso2.html",
-  }),
-  new HtmlWebpackPlugin({
-    template: "./src/solicitar-limpieza/paso3.html",
-    filename: "./paso3.html",
-  }),
+ 
 
   new MiniCssExtractPlugin({
     filename: '[name].css',

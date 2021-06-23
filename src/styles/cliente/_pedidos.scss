@@ -1,9 +1,6 @@
-.mis-pedidos {
-	
+.mis-pedidos, .mis-locales, .mi-local {
 	@include card-page; 
 	background: #F7F7F7 url("../assets/img/pedidos.jpg") no-repeat top center; 
-	
-
 	.section-header {
 		padding-top: 45px; 
 		padding-bottom: 20px; 
@@ -13,12 +10,33 @@
 			color: $c-secondary; 
 			padding: 0 1rem;
 		}
-		
 	}
-	
 	.card-page-content {
 		padding-top: 70px; padding-bottom: 70px; 
 	}
+	@media (max-width: $end-sm) {
+		.container-fluid {
+			padding-left: 0;
+	    	padding-right: 0;
+		}
+		.card-page-container {
+			margin-top: 0; 
+		}
+		.card-page-content {
+			padding-top: 20px; 
+		}
+	}
+	@media (min-width: $start-md) {
+		.section-header {
+			padding-bottom: 40px; padding-top: 55px;
+			h4 {padding: 0; }
+		}
+	}
+	@media (min-width: $start-lg) {
+		background-size: 100%;
+	}
+}
+.mis-pedidos {
 	.menu-header {
 		align-items: center; 
 		padding-bottom: 25px; 
@@ -37,10 +55,13 @@
 	
 
 	.visitas-mobile-dropdown {
+		margin: 0 -14px 16px; 
 		.btn-misc {
 			display: flex; flex-direction: row; 
-			padding:15px 0; margin-top: 0;
-			font: 700 30px/1.2em $font-display; 
+			/*padding: 15px 0;*/ margin-top: 0;
+			padding: 9px 16px;
+			border: 1px solid $border-color; 
+			font: 700 18px/1.2em $font-display; 
 			width: 100%; 
 			align-items: center; 
 			*, a {color: $text-dark;}
@@ -50,10 +71,7 @@
 				display: inline-block; margin-left: auto; 
 				transition: transform 0.2s ease-in-out;
 			}
-			&:not(.collapsed) {
-				border-bottom: 1px solid $text-dark;
-			}
-			&.show, &:not(.collapsed) {
+			&.show {
 				i {
 					transform: rotate(-180deg);
 					
@@ -61,19 +79,17 @@
 			}
 		}
 		#mobileVisitaMenu {
-			height: 104px; 
-			.menu {
-				margin: 0; padding: 0; list-style: none; 
-				li {
-					a {
-						display: block;
-						margin: 15px 0;
-						font: 400 24px/1.2em $font-display; 
-						color: $text-dark; 
-						&.active {font-weight: 700; }
-						&:hover, &:active, &:focus {
-							background-color: $bg-light-1;
-						}
+			padding: 0; 
+			width: 100%;
+			li {
+				a {
+					padding: 10px 16px;
+					line-height: normal; 
+					display: block;
+					color: $text-dark; 
+					&.active {font-weight: 700; }
+					&:hover, &:active, &:focus {
+						background-color: $bg-light-1;
 					}
 				}
 			}
@@ -93,7 +109,7 @@
 		.data {
 			border-bottom: 1px solid $border-color; 
 			background-color: $bg-light-1;
-			h5, h4 {margin-bottom: 0; font-size: 20px;}
+			h4 {margin-bottom: 0; font-size: 20px;}
 		}
 		.pedido {
 			border-bottom: 1px solid $border-color; 
@@ -137,21 +153,8 @@
 			&:hover, &:focus, &:active {text-decoration: underline;}
 		}
 	}
-	@media (max-width: $end-sm) {
-		.container-fluid {
-			padding-left: 0;
-	    	padding-right: 0;
-		}
-		.card-page-container {
-			margin-top: 0; 
-		
-		}
-	}
+	
 	@media (min-width: $start-md) {
-		.section-header {
-			padding-bottom: 40px; padding-top: 55px;
-			h4 {padding: 0; }
-		}
 		.menu-header .btn { 
 			width: auto; font-weight: bold;
 			font-size: 1rem; 
@@ -176,7 +179,7 @@
 		}
 	}
 	@media (min-width: $start-lg) {
-		background-size: 100%;
+		//background-size: 100%;
 		.menu-header {
 			.menu-item { font-size: 26px; }
 			.btn { 

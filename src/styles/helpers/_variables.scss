@@ -32,8 +32,19 @@ $c-vidrio: #EBF4FD;
 
 //Warnings
 $c-error: #E61010;
+$c-error-text: $c-error;
+$c-error-bg: #fde5e6;
+
+
 $c-warning: #D5C129;
-$c-success: #7CAC2B; 
+$c-warning-bg: #fff3cd;
+$c-warning-text: #664d03; 
+
+$c-success-bg: #d1e7dd;
+$c-success-text: #0f5132;
+$c-success: $c-success-text;
+
+
 
 $gradient-secondary-start: $c-secondary;
 $gradient-secondary-end: #92EDA0;

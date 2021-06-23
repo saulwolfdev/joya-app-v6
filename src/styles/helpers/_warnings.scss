@@ -1,0 +1,56 @@
+@mixin notification-settings {
+	font: 400 16px/1.5em $font; 
+
+	i {margin-right: 8px; }
+
+	&.error {
+		color: $c-error; 
+		background-color: rgba($c-error, 0.1);
+
+		a {
+			color: $c-error;
+			text-decoration: underline; 
+		}
+	}
+	&.warning {
+		color: $c-warning-text; 
+		background-color: $c-warning-bg;
+
+		a {
+			color: $c-warning-text;
+			text-decoration: underline; 
+		}
+	}
+	&.success {
+		color: $c-success-text; 
+		background-color: $c-success-bg;
+
+		a {
+			color: $c-success-text;
+			text-decoration: underline; 
+		}
+	}
+}
+.notification-general-settings {
+	@include notification-settings;
+
+}
+
+.alert {
+	@extend .notification-general-settings;
+	box-shadow: inset 0 5px 10px rgba(#000, 0.1);
+	padding: 16px 0; 
+
+	
+}
+
+.form-notification {
+	margin: 0;
+	padding: 6px 12px 8px; 
+	border-radius: 2px; 
+
+	@extend .notification-general-settings;
+}
+
+
+

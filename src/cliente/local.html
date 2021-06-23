@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+	
+<head>
+	<link rel="manifest" href="webmanifest.manifest"> 
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Joya - Cliente - Editar local</title>
+	<meta name="title" content="Joya - Cliente - Editar local">
+	<meta name="description" content="Lorem ipsum sid dolor amet" />
+
+	<link rel="icon" href="/favicons/favicon.ico"><!-- 32×32 -->
+	<link rel="icon" href="/favicons/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png"><!-- 180×180 -->
+	
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+	<link href="/fontawesome/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../main.css">
+
+</head>
+<body class="dev-user-login">
+	<div id="wrapper">
+		<div class="overlay"></div>
+		<header class="fixed-top-scroll fixed-top">
+	        <nav class="navbar">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-auto logo-div">
+	                        <h1 class="site-title">
+	                            <a class="navbar-brand main-logo" href="#" rel="home" style="background-image: url('/img/logo@2x.png');">Joya</a>
+	                        </h1>
+	                    </div>
+	                    <!-- NOTA: sólo uno de los user-navs va a estar presente en el HTML en cada momento, esto será manejado según esté logueado o no el usuario. La técnica de ocultar uno de los menúes con css es únicamente para la maqueta -->
+	                    <div class="col menu-col user-nav">
+	                    	<button class="navbar-toggler user-toggle hamburger is-closed" type="button" data-toggle="offcanvas" data-target="#main-menu-user" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                				<span class="hamb-top"></span>
+	                            <span class="hamb-middle"></span>
+	                            <span class="hamb-bottom"></span>
+	                        </button>
+	                        <nav class="navbar navbar-inverse navbar-fixed-top" id="main-menu" role="navigation">
+	                            <div class="nav sidebar-nav col">
+						         	<ul class="menu user-menu">
+						         		<li class="username d-lg-none"><span class="a">
+		                        			<i class="far fa-user-circle"></i>
+		                        			Carolina	                        			
+		                        		</span></li>
+		                        		<li class="ayuda"><a href="#">Ayuda</a></li>
+		                        		<li><a href="#" class="destacado">Solicitar limpieza de vidriera</a></li>
+		                        		<li class="separator"></li>
+		                        		<li class="user-item"><a href="#">Tus pedidos</a></li>
+		                        		<li class="user-options dropdown closed">
+		                        			<span class="a user-item">
+		                        				<i class="far fa-user-circle"></i>
+		                        				Carolina
+		                        				<i class="far fa-chevron-down"></i>
+		                        			</span>
+		                        			<ul class="sub-menu">
+		                        				<li><a href="#">Tus pedidos</a></li>
+		                        				<li><a href="#">Configuración de cuenta</a></li>
+		                        				<li><a href="#">Salir</a></li>
+		                        			</ul>
+		                        		</li>
+		                        	</ul>
+		                        </div>
+		                    </nav>
+	                    </div>
+	                </div>
+	            </div>
+	        </nav>
+	    </header>
+	    <div class="main-content">
+	    	<div class="mi-local">
+	    		<div class="container-fluid">
+	    			<div class="row">
+	    				<div class="section-header row">
+	    					<div class="col col-md-12">
+	    					<h4>Tus locales</h4>
+	    					<h3 class="d-md-block d-none">Tus vidrieras siempre limpias</h3>
+	    					</div>
+	    				</div>
+	    				<div class="col-12 card-page-container">
+	    					<div class="card-page-content">
+	    						<div class="inner-container">
+	    							<div class="row intro-local">
+		    							<div class="col-md-6 local-data">
+		    								<p class="supertitulo">Local</p>
+		    								<h4>Kentucky Santa Fe</h4>	
+				    						<div class="data-table row">
+				    							<div class="col-md-6 direccion data-piece">
+				    								<p class="label">Dirección</p>
+				    								<p class="data">Av. Santa Fe 2702</p>
+				    							</div>
+				    							<div class="col-md-6 barrio data-piece">
+				    								<p class="label">Barrio</p>
+				    								<p class="data">Palermo, Comuna 12</p>
+				    							</div>
+				    							<div class="col-md-6 superfice data-piece">
+				    								<p class="label">Superficie</p>
+				    								<p class="data">64m<sup>2</sup> <i class="c-success far fa-check-circle"></i></p>
+				    							</div>
+				    							<div class="col-md-6 tiempo data-piece">
+				    								<p class="label">Tiempo estimado</p>
+				    								<p class="data">10 minutos</p>
+				    							</div>
+				    							<div class="indicaciones col-12 data-piece">
+				    								
+				    							</div>
+				    						</div>
+		    							</div>
+		    							<div class="col-md-6 local-imagen">
+		    								<img src="img/kentucky.jpg" alt="" class="img-fluid">
+		    							</div>
+	    							</div>
+	    							<div class="row info-block">
+	    								<h5><span>Datos</span></h5>
+	    								<div class="form">
+		    								<div class="row">
+								        		<div class="col-12 form-element">
+													<label for="telefono" class="form-label">Teléfono local</label>
+													<input type="text" class="form-control" name="telefono" value="+5491151234567">
+												</div>
+												<div class="form-element col-12">
+				    								<label for="indicaciones" class="form-label">Indicaciones adicionales</label>
+				    								<textarea name="indicaciones" id="" rows="4" class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut ante eget nulla sodales efficitur. Cras tempor neque risus, nec porta urna lobortis ac.</textarea>
+			    								</div>
+			    								<div class="col-12 data-piece">
+				    								<a href="#" class="btn btn-primary btn-small">Guardar</a>
+				    							</div>
+								        	</div>
+							        	</div>
+
+	    							</div>
+	    							<div class="row info-block">
+	    								<h5><span>Actividad</span></h5>
+	    								<div class="data-table row">
+			    							<div class="col-md-3 data-piece">
+			    								<p class="label">Registro</p>
+			    								<p class="data">11/12/2021</p>
+			    							</div>
+			    							<div class="col-md-3 data-piece">
+			    								<p class="label">Último pedido</p>
+			    								<p class="data">Mi 15/4/2020, 15:05hs</p>
+			    							</div>
+			    							<div class="col-md-3 data-piece">
+			    								<p class="label">Pedidos totales</p>
+			    								<p class="data">254</p>
+			    							</div>
+			    						</div>
+	    							</div>
+	    							
+	    						</div>
+
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2 logo">
+						<img src="/img/logo-small@2x.jpg" alt="Joya" class="img-fluid" width="85" height="31">
+						<p class="copy">© 2021 Joya</p>
+					</div>
+					<div class="col-md-10 link-blocks">
+						<div class="row">
+							<div class="col col-lg-4 link-block">
+								<p class="title">Servicio</p>
+								<ul>
+									<li><a href="#">Contratá JOYA</a></li>	
+									<li><a href="#">Política de cancelación</a></li>
+									<li><a href="#">Ayuda</a></li>
+									<li><a href="#">Términos y condiciones</a></li>
+									<li><a href="#">Política de privacidad</a></li>
+								</ul>
+					
+							</div>
+							<div class="col col-lg-4 link-block">
+								<p class="title">Nosotros</p>
+								<ul>
+									<li><a href="#">Sobre nosotros</a></li>
+									<li><a href="#">Convertite en vidrierista JOYA</a></li>
+								</ul>
+							
+							</div>
+							<div class="col col-lg-4 link-block">
+								<p class="title">Contacto</p>
+								<ul>
+									<li>
+										<i class="far fa-envelope"></i>
+										<a href="mailto:ayuda@joya.com">ayuda@joya.com</a>
+									</li>
+									<li>
+										<i class="far fa-phone"></i>
+										<a href="tel:+5491145674568">011.4567.4568</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+//Contains toasts, latest above rest.
+.toast-container {
+	position: fixed;
+    left: 30px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: max-content;
+    max-width: 100%;
+    pointer-events: none;
+
+    & > .joyaToast {
+    	margin-bottom: 0;
+    	margin-top: 0.75rem; 
+    	font: normal 1rem/1.2em $font;
+    	position: relative; 
+    }
+    z-index: 1000;
+}
+
+
+//Based on: https://tympanus.net/Development/NotificationStyles/other-loadingcircle.html
+/* Common, default styles for the notification box */
+.ns-box {
+	z-index: 1000;
+	pointer-events: none;
+	display: flex; 
+	align-items: center; 
+
+	&.ns-show {
+		pointer-events: auto;
+	}
+	a {
+		color: inherit;
+		opacity: 0.7;
+		font-weight: 700;
+		
+		&:hover, &:focus { opacity: 1; }
+	}
+	p {
+		margin: 0;
+	}
+
+	&.ns-show,
+	&.ns-visible {
+		pointer-events: auto;
+	}
+}
+
+
+
+.ns-close {
+	line-height: 19px;
+	margin-top: 2px;
+	position: absolute; right: 18px;
+	overflow: hidden;
+	cursor: pointer;
+	backface-visibility: hidden;
+
+	&:hover, 
+	&:focus {
+		outline: none;
+	}
+
+	&::before {
+		content: '\f00d';
+		font-family: $font-icons; 
+		color: $text-dark; 
+		opacity: 0.7;
+	}
+
+	&:hover::before { opacity: 1; }
+}
+
+[class^="ns-effect-"].ns-other.ns-hide,
+[class*=" ns-effect-"].ns-other.ns-hide {
+	animation-direction: normal;
+}
+
+/* SVG Windshield Wiper */
+.ns-effect-loadingcircle {
+	width: 250px;
+	min-height: 70px;
+	border-radius: 40px;
+	background: #fff;
+	font-weight: 700;
+	padding: 16px 36px 16px 30px;
+	position: relative;
+	z-index: 100;
+}
+
+//Optional: progress bar
+/*
+.shape-progress {
+	bottom: 40px;
+	left: 40px;
+}
+
+.shape-progress svg {
+	width: 70px;
+	height: 70px;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.shape-progress path {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 5;
+	stroke-dasharray: 204; 
+	stroke-dashoffset: 204;
+	opacity: 0;
+}
+
+
+.ns-effect-loadingcircle.ns-show + svg path {
+	-webkit-animation: animDash 3s;
+	animation: animDash 3s;
+}
+
+@-webkit-keyframes animDash {
+	0% { opacity: 1; stroke-dashoffset: 204; }
+	33% { stroke-dashoffset: 160; }
+	50% { stroke-dashoffset: 150; }
+	85% { stroke-dashoffset: 30; }
+	100% { opacity: 1; stroke-dashoffset: 0; }
+}
+
+@keyframes animDash {
+	0% { opacity: 1; stroke-dashoffset: 204; }
+	33% { stroke-dashoffset: 160; }
+	50% { stroke-dashoffset: 150; }
+	85% { stroke-dashoffset: 30; }
+	100% { opacity: 1; stroke-dashoffset: 0; }
+}
+*/
+.ns-effect-loadingcircle.ns-show {
+	opacity: 0;
+	//-webkit-animation-name: animResize;
+	animation-name: animResize;
+	//-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	//-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	//-webkit-animation-timing-function: cubic-bezier(0.25, 0.25, 0.4, 1.6);
+	animation-timing-function: cubic-bezier(0.25, 0.25, 0.4, 1.6);
+
+
+	&.success {
+		animation-name: animResizeSuccess;
+
+	}
+	&.warning {
+		animation-name: animResizeWarning;	
+	}
+	&.error {
+		animation-name: animResizeError;	
+	}
+
+}
+
+@keyframes animResize {
+	0% { opacity: 1; width: 70px; background: transparent; color: transparent; }
+	100% { opacity: 1; width: 250px; background: #fff; color: $text-dark;}
+}
+
+@keyframes animResizeSuccess {
+	0% { opacity: 1; width: 70px; background: transparent; color: transparent; }
+	100% { opacity: 1; width: 250px; background: $c-success-bg;  color: $c-success-text; }
+}
+@keyframes animResizeError {
+	0% { opacity: 1; width: 70px; background: transparent;  color: transparent; }
+	100% { opacity: 1; width: 250px; background: $c-error-bg; color: $c-error-text; }
+}
+@keyframes animResizeWarning {
+	0% { opacity: 1; width: 70px; background: transparent; color: transparent; }
+	100% { opacity: 1; width: 250px; background: $c-warning-bg;  color: $c-warning-text; }
+}
+.ns-effect-loadingcircle.ns-show .ns-box-inner,
+.ns-effect-loadingcircle.ns-show .ns-close {
+	animation-name: animFade;
+	animation-duration: 0.3s;
+	opacity: 0;
+	//-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	//-webkit-animation-delay: 3.3s;
+	//animation-delay: 3.3s;
+}
+
+.ns-effect-loadingcircle.ns-hide {
+	opacity: 1;
+	animation-name: animFadeOut;
+	animation-duration: 0.3s;
+}
+/*
+@-webkit-keyframes animFade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+*/
+@keyframes animFade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes animFadeOut {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+//Joya color combos
+.ns-box.ns-effect-loadingcircle {
+	&.error {
+		color: $c-error; 
+		background-color: rgba($c-error, 0.1);
+
+		a {
+			color: $c-error;
+			text-decoration: underline; 
+		}
+	}
+	&.warning {
+		color: $c-warning-text; 
+		background-color: $c-warning-bg;
+
+		a {
+			color: $c-warning-text;
+			text-decoration: underline; 
+		}
+	}
+	&.success {
+		color: $c-success-text; 
+		background-color: $c-success-bg;
+
+		a {
+			color: $c-success-text;
+			text-decoration: underline; 
+		}
+	}
+}

@@ -43,7 +43,9 @@
 			border-left: 1px solid $border-color; 
 		}
 	}
-	.btn-set {justify-self: flex-end; margin-left: auto; }
+	.btn-set {
+		justify-self: flex-end; margin-left: auto; 
+	}
 	.row.stats {
 		border-top: 1px solid $border-color; border-bottom: none; //padding-bottom: 6px; 
 	}
@@ -58,18 +60,30 @@
 	.breadcrumb {
 		margin-bottom: 13px; 
 	}
+	@media (max-width: $end-sm) {
+		h3 {font-size: 24px;}
+	}
 	@media (max-width: $end-md) {
 		.stat {
 			padding-left: 14px; border: none; 
 		}	
 		.stat.block-start {border-left: none; }
+
 	}
+
 
 }
 .vidrierista-individual, .cliente-individual {
 	.admin-sintesis {
 		border-bottom: none; 
-		.btn-set {justify-self: flex-end; margin-left: auto; }
+		.btn-set {
+			justify-self: flex-end; margin-top: 10px; 
+			margin-left: 0; 
+			@media (min-width: $start-md) {
+				margin-left: auto; 
+				margin-top: 0px; 
+			}
+		}
 		.row.stats {
 			border-top: 1px solid $border-color; 
 			border-bottom: 1px solid $border-color; 

@@ -15,6 +15,8 @@
 @import "./helpers/general"; 
 @import "./helpers/text"; 
 @import "./helpers/color-blocks";
+@import "./helpers/warnings";
+@import "./components/notifications";
 @import "./components/buttons";
 @import "./components/forms";
 @import "./components/modal";
@@ -38,6 +40,7 @@
 @import "./cliente/solicitud-limpieza/paso3";
 @import "./cliente/solicitud-limpieza";
 @import "./cliente/pedidos";
+@import "./cliente/locales";
 
 
 ///////////VIDRERISTA///////////////
@@ -47,7 +50,7 @@
  ////////ADMIN/////////////
 @import "./admin/header";
 @import "./admin/footer";
-@import "./admin/helpers/warnings";
+
 @import "./admin/helpers/variables";
 @import "./admin/helpers/general";
 

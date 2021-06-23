@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+	
+<head>
+	<link rel="manifest" href="webmanifest.manifest"> 
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Joya - Cliente - Mis locales</title>
+	<meta name="title" content="Joya - Cliente - Mis locales">
+	<meta name="description" content="Lorem ipsum sid dolor amet" />
+
+	<link rel="icon" href="/favicons/favicon.ico"><!-- 32×32 -->
+	<link rel="icon" href="/favicons/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png"><!-- 180×180 -->
+	
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+	<link href="/fontawesome/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../main.css">
+
+</head>
+<body class="dev-user-login">
+	<div id="wrapper">
+		<div class="overlay"></div>
+		<header class="fixed-top-scroll fixed-top">
+	        <nav class="navbar">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-auto logo-div">
+	                        <h1 class="site-title">
+	                            <a class="navbar-brand main-logo" href="#" rel="home" style="background-image: url('/img/logo@2x.png');">Joya</a>
+	                        </h1>
+	                    </div>
+	                    <!-- NOTA: sólo uno de los user-navs va a estar presente en el HTML en cada momento, esto será manejado según esté logueado o no el usuario. La técnica de ocultar uno de los menúes con css es únicamente para la maqueta -->
+	                    <div class="col menu-col user-nav">
+	                    	<button class="navbar-toggler user-toggle hamburger is-closed" type="button" data-toggle="offcanvas" data-target="#main-menu-user" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                				<span class="hamb-top"></span>
+	                            <span class="hamb-middle"></span>
+	                            <span class="hamb-bottom"></span>
+	                        </button>
+	                        <nav class="navbar navbar-inverse navbar-fixed-top" id="main-menu" role="navigation">
+	                            <div class="nav sidebar-nav col">
+						         	<ul class="menu user-menu">
+						         		<li class="username d-lg-none"><span class="a">
+		                        			<i class="far fa-user-circle"></i>
+		                        			Carolina	                        			
+		                        		</span></li>
+		                        		<li class="ayuda"><a href="#">Ayuda</a></li>
+		                        		<li><a href="#" class="destacado">Solicitar limpieza de vidriera</a></li>
+		                        		<li class="separator"></li>
+		                        		<li class="user-item"><a href="#">Tus pedidos</a></li>
+		                        		<li class="user-options dropdown closed">
+		                        			<span class="a user-item">
+		                        				<i class="far fa-user-circle"></i>
+		                        				Carolina
+		                        				<i class="far fa-chevron-down"></i>
+		                        			</span>
+		                        			<ul class="sub-menu">
+		                        				<li><a href="#">Tus pedidos</a></li>
+		                        				<li><a href="#">Configuración de cuenta</a></li>
+		                        				<li><a href="#">Salir</a></li>
+		                        			</ul>
+		                        		</li>
+		                        	</ul>
+		                        </div>
+		                    </nav>
+	                    </div>
+	                </div>
+	            </div>
+	        </nav>
+	    </header>
+	    <div class="main-content">
+	    	<div class="mis-locales">
+	    		<div class="container-fluid">
+	    			<div class="row">
+	    				<div class="section-header row">
+	    					<div class="col col-md-12">
+	    					<h4>Tus locales</h4>
+	    					<h3 class="d-md-block d-none">Tus vidrieras siempre limpias</h3>
+	    					</div>
+	    					<div class="col-auto btn-set d-md-none">
+								<a href="#" class="btn btn-primary btn-small">
+									+ Visita
+								</a>
+							</div>
+	    				</div>
+	    				<div class="col-12 card-page-container">
+	    					<div class="card-page-content">
+	    						<div class="inner-container">
+
+
+				    				<div class="header-row">
+					    				<h3>Locales</h3>
+					    				<a href="#" class="btn btn-primary">+ Nuevo local</a>
+				    				</div>
+				    				
+				    				<div class="locales row">
+				    					<!-- Local verificado -->
+				    					<div class="col-lg-6 local">
+				    						
+					    					<div class="card">
+					    						<div class="data-main row">
+					    							<div class="col">
+					    								<h4>Kentucky Santa Fe</h4>
+					    								<p class="direccion">Av. Santa Fe 2702, Palermo, Comuna 12</p>
+					    							</div>
+					    							<div class="col-auto">
+					    								<div class="imagen-local local-verificado" style="background-image: url(/img/beneficios-side.jpg)"></div>
+					    							</div>
+					    						</div>
+					    						<div class="data-table row">
+					    							<div class="col-auto superfice">
+					    								<p class="label">Superficie</p>
+					    								<p class="data">64m<sup>2</sup> <i class="c-success far fa-check-circle"></i></p>
+					    							</div>
+					    							<div class="col-auto tiempo">
+					    								<p class="label">Tiempo estimado</p>
+					    								<p class="data">10 minutos</p>
+					    							</div>
+					    							<div class="col-auto pedidos">
+					    								<p class="label">Pedidos</p>
+					    								<p class="data">254</p>
+					    							</div>
+					    						</div>
+					    						<div class="btn-set">
+					    							<div class="alertas"></div>
+					    							<a class="btn btn-outline btn-small">Editar</a>
+					    						</div>
+					    					</div>
+					    				</div>
+				    					<!-- Local con problemas: no tiene imagen -->
+				    					<div class="col-lg-6 local">
+					    					<div class="card">
+					    						<div class="data-main row">
+					    							<div class="col">
+					    								<h4>Kentucky Santa Fe</h4>
+					    								<p class="direccion">Av. Santa Fe 2702, Palermo, Comuna 12</p>
+					    							</div>
+					    							<div class="col-auto">
+					    								<div class="imagen-local sin-imagen"></div>
+					    							</div>
+					    						</div>
+					    						<div class="data-table row">
+					    							<div class="col-auto superfice">
+					    								<p class="label">Superficie</p>
+					    								<p class="data">64m<sup>2</sup> <i class="c-success far fa-check-circle"></i></p>
+					    							</div>
+					    							<div class="col-auto tiempo">
+					    								<p class="label">Tiempo estimado</p>
+					    								<p class="data">10 minutos</p>
+					    							</div>
+					    							<div class="col-auto pedidos">
+					    								<p class="label">Pedidos</p>
+					    								<p class="data">254</p>
+					    							</div>
+					    						</div>
+					    						<div class="btn-set">
+					    							<div class="alertas"><i class="far fa-exclamation-triangle"></i>Foto de fachada pendiente</div>
+					    							<a class="btn btn-outline btn-small">Editar</a>
+					    						</div>
+					    					</div>
+					    				</div>
+				    					<!-- Local con problemas: superficie a confirmar -->
+				    					<div class="col-lg-6 local">
+					    					<div class="card">
+					    						<div class="data-main row">
+					    							<div class="col">
+					    								<h4>Kentucky Santa Fe</h4>
+					    								<p class="direccion">Av. Santa Fe 2702, Palermo, Comuna 12</p>
+					    							</div>
+					    							<div class="col-auto">
+					    								<div class="imagen-local" style="background-image: url(/img/beneficios-side.jpg)"></div>
+					    							</div>
+					    						</div>
+					    						<div class="data-table row">
+					    							<div class="col-auto superfice">
+					    								<p class="label">Superficie</p>
+					    								<p class="data">80m<sup>2</sup> <span class="superficie-anterior">64m<sup>2</span></p>
+					    							</div>
+					    							<div class="col-auto tiempo">
+					    								<p class="label">Tiempo estimado</p>
+					    								<p class="data">10 minutos</p>
+					    							</div>
+					    							<div class="col-auto pedidos">
+					    								<p class="label">Pedidos</p>
+					    								<p class="data">254</p>
+					    							</div>
+					    						</div>
+					    						<div class="btn-set">
+					    							<div class="alertas"><i class="far fa-exclamation-triangle"></i>Superficie a confirmar</div>
+					    							<a class="btn btn-outline btn-small">Editar</a>
+					    						</div>
+					    					</div>
+					    				</div>
+				    					<!-- Local nuevo (sin imagen y todo a confirmar)-->
+				    					<div class="col-lg-6 local">
+					    					<div class="local card nuevo">
+					    						<div class="data-main row">
+					    							<div class="col">
+					    								<h4>Kentucky Santa Fe</h4>
+					    								<p class="direccion">Av. Santa Fe 2702, Palermo, Comuna 12</p>
+					    							</div>
+					    							<div class="col-auto">
+					    								<div class="imagen-local sin-imagen"></div>
+					    							</div>
+					    						</div>
+					    						<div class="data-table row">
+					    							<div class="col-auto superfice">
+					    								<p class="label">Superficie</p>
+					    								<p class="data">64m<sup>2</sup></p>
+					    							</div>
+					    							<div class="col-auto tiempo">
+					    								<p class="label">Tiempo estimado</p>
+					    								<p class="data">10 minutos</p>
+					    							</div>
+					    							<div class="col-auto pedidos">
+					    								<p class="label">Pedidos</p>
+					    								<p class="data">254</p>
+					    							</div>
+					    						</div>
+					    						<div class="btn-set">
+					    							<div class="alertas">
+					    								<i class="far fa-exclamation-triangle"></i>Foto de fachada pendiente
+					    								<br><i class="far fa-exclamation-triangle"></i>Superficie a confirmar
+					    							</div>
+					    							<a class="btn btn-outline btn-small">Editar</a>
+					    						</div>
+					    					</div>
+					    				</div>
+				    				</div>
+
+
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2 logo">
+						<img src="/img/logo-small@2x.jpg" alt="Joya" class="img-fluid" width="85" height="31">
+						<p class="copy">© 2021 Joya</p>
+					</div>
+					<div class="col-md-10 link-blocks">
+						<div class="row">
+							<div class="col col-lg-4 link-block">
+								<p class="title">Servicio</p>
+								<ul>
+									<li><a href="#">Contratá JOYA</a></li>	
+									<li><a href="#">Política de cancelación</a></li>
+									<li><a href="#">Ayuda</a></li>
+									<li><a href="#">Términos y condiciones</a></li>
+									<li><a href="#">Política de privacidad</a></li>
+								</ul>
+					
+							</div>
+							<div class="col col-lg-4 link-block">
+								<p class="title">Nosotros</p>
+								<ul>
+									<li><a href="#">Sobre nosotros</a></li>
+									<li><a href="#">Convertite en vidrierista JOYA</a></li>
+								</ul>
+							
+							</div>
+							<div class="col col-lg-4 link-block">
+								<p class="title">Contacto</p>
+								<ul>
+									<li>
+										<i class="far fa-envelope"></i>
+										<a href="mailto:ayuda@joya.com">ayuda@joya.com</a>
+									</li>
+									<li>
+										<i class="far fa-phone"></i>
+										<a href="tel:+5491145674568">011.4567.4568</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

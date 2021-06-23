@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Joya - Cliente - Visitas pasadas</title>
+    <title>Joya - Cliente - Ajustes de cuenta</title>
 	<meta name="title" content="Joya - Cliente - Visitas pasadas">
 	<meta name="description" content="Lorem ipsum sid dolor amet" />
 
@@ -78,131 +78,71 @@
 	    			<div class="row">
 	    				<div class="section-header row">
 	    					<div class="col col-md-12">
-	    					<h4>Tus pedidos</h4>
+	    					<h4>Tu cuenta</h4>
 	    					<h3 class="d-md-block d-none">Tus vidrieras siempre limpias</h3>
 	    					</div>
-	    					<div class="col-auto btn-set d-md-none">
-								<a href="#" class="btn btn-primary btn-small">
-									+ Visita
-								</a>
-							</div>
 	    				</div>
 	    				<div class="col-12 card-page-container">
 	    					<div class="card-page-content">
 	    						<div class="inner-container">
-	    							<div class="d-md-none menu-header-mobile">
-	    								<div class="visitas-mobile-dropdown">
-	    								 	<a class="btn btn-misc collapsed" data-bs-toggle="collapse" href="#mobileVisitaMenu" role="button" aria-expanded="false" aria-controls="mobileVisitaMenu">
-										    	Visitas pasadas <i class="far fa-chevron-down"></i>	
-										  	</a>
-		    								<div class="collapse" id="mobileVisitaMenu">
-											    <ul class="menu" aria-labelledby="localesFilter">
-												    <li><a class="item" href="pedidos-proximos.html" >Visitas próximas</a></li>
-													<li><a class="item" href="pedidos-pasados.html">Visitas pasadas</a></li>
-												  </ul>
+	    							<div class="row"><div class="col-xl-9">
+			    						<h3>Datos de cuenta</h3>
+			    						<div class="form form-block">
+			    							<div class="row">
+								        		<div class="col form-element">
+													<label for="nombre" class="form-label">Nombre</label>
+													<input type="text" class="form-control" name="nombre" value="Carolina">
+												</div>
+												<div class="col form-element">
+													<label for="apellido" class="form-label">Apellido</label>
+													<input type="text" class="form-control" name="apellido" value="Fernández">
+												</div>
+								        	</div>
+								        	<div class="row">
+								        		<div class="col form-element">
+													<label for="telefono" class="form-label">Teléfono</label>
+													<input type="text" class="form-control" name="telefono" value="+5491151234567">
+												</div>
+												<div class="col form-element">
+													<label for="email" class="form-label">Email</label>
+													<input type="text" class="form-control" name="email" value="carolina@kentucky.com.ar" disabled>
+												</div>
+								        	</div>
+											<div class="row">
+								        		<div class="col form-element">
+													<label for="contrasenia" class="form-label">Contraseña</label>
+													<input type="password" class="form-control" name="contrasenia">
+												</div>
+												<div class="col form-element">
+													<label for="repetircontrasenia" class="form-label">Repetir contraseña</label>
+													<input type="text" class="form-control" name="repetircontrasenia">
+												</div>
+								        	</div>
+										</div>	
+										<div class="form form-block">
+											<h4>Datos de facturación:</h4>
+							        		<div class="form-element">
+												<label for="razonsocial" class="form-label">Razón social</label>
+												<input type="text" class="form-control" name="razonsocial" value="Kentucky S.A.">
 											</div>
-	    								</div>
-	    							</div>
-		    						<div class="row menu-header d-none d-md-flex">
-		    							<div class="col-auto menu-item">
-		    								<a href="pedidos-proximos.html" class="">Visitas próximas</a>
-		    							</div>
-		    							<div class="col-auto menu-item">
-		    								<a href="pedidos-pasados.html" class="active">Visitas pasadas</a>
-		    							</div>
-		    							<div class="col-auto btn-set">
-		    								<a href="#" class="btn btn-primary btn-round">
-		    									+
-		    									<span class="d-lg-inline d-none"> Agendar visita</span>
-		    									<span class="d-none d-md-inline d-lg-none"> Visita</span>
-		    								</a>
-		    							</div>
-		    						</div>
+										
+											<div class="form-element">
+												<label for="cuit" class="form-label">CUIT</label>
+												<input type="text" class="form-control" name="cuit" value="94-75213547-5">
+											</div>
+					        	
+							        		<div class="form-element">
+												<label for="direccion" class="form-label">Dirección</label>
+												<input type="text" class="form-control" name="direccion" value="Av. Santa Fe 2565">
+											</div>
+										</div>	
+										<div class="btn-set">
+											<button class="btn btn-primary">Guardar cambios</button>
+										</div>
+									</div></div>
+								</div>
 
-		    						<div class="pedidos-pasados">
-		    							<div class="visita-pasada row">
-		    								<div class="col nombre-local">
-		    									Kentucky Santa Fe
-		    								</div>
-    										<div class="col detalle">
-												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
-												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
-											</div>
-    										<div class="col-auto acciones">
-    											<a href="#">Detalles</a>
-    										</div>
-		    							</div>
-		    							<div class="visita-pasada row">
-		    								<div class="col nombre-local">
-		    									Kentucky Santa Fe
-		    								</div>
-    										<div class="col detalle">
-												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
-												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
-											</div>
-    										<div class="col-auto acciones">
-    											<a href="#">Detalles</a>
-    										</div>
-		    							</div>
-		    							<div class="visita-pasada row">
-		    								<div class="col nombre-local">
-		    									Kentucky Santa Fe
-		    								</div>
-    										<div class="col detalle">
-												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
-												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
-											</div>
-    										<div class="col-auto acciones">
-    											<a href="#">Detalles</a>
-    										</div>
-		    							</div>
-		    							<div class="visita-pasada row">
-		    								<div class="col nombre-local">
-		    									Kentucky Santa Fe
-		    								</div>
-    										<div class="col detalle">
-												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
-												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
-											</div>
-    										<div class="col-auto acciones">
-    											<a href="#">Detalles</a>
-    										</div>
-		    							</div>
-		    							<div class="visita-pasada row">
-		    								<div class="col nombre-local">
-		    									Kentucky Santa Fe
-		    								</div>
-    										<div class="col detalle">
-												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
-												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
-											</div>
-    										<div class="col-auto acciones">
-    											<a href="#">Detalles</a>
-    										</div>
-		    							</div>
-		    						</div>
-		    						<div class="btn-set">
-										<nav aria-label="..." class="table-pagination">
-											<ul class="pagination">
-												<li class="page-item disabled">
-												<li class="page-item">
-													<a class="page-link" href="#" aria-label="Anterior">
-													<span aria-hidden="true">&laquo;</span>
-													</a>
-											    </li>
-												<li class="page-item"><a class="page-link" href="#">1</a></li>
-												<li class="page-item active" aria-current="page">
-													<a class="page-link" href="#">2</a>
-												</li>
-												<li class="page-item"><a class="page-link" href="#">3</a></li>
-												<li class="page-item">
-													<a class="page-link" href="#" aria-label="Siguiente">
-													<span aria-hidden="true">&raquo;</span>
-													</a>
-											    </li>
-											</ul>
-										</nav>
-									</div>
+		    						
 	    						</div>
 	    					</div>
 	    				</div>
