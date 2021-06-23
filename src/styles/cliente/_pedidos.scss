@@ -153,7 +153,22 @@
 			&:hover, &:focus, &:active {text-decoration: underline;}
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+	@media (max-width: $end-sm) {
+		.container-fluid {
+			padding-left: 0;
+	    	padding-right: 0;
+		}
+		.card-page-container {
+			margin-top: 0; 
+		}
+		.card-page-content {
+			padding-top: 20px; 
+		}
+	}
+>>>>>>> 44325dd10a1156407b3f24b10930e35e8505dbbb
 	@media (min-width: $start-md) {
 		.menu-header .btn { 
 			width: auto; font-weight: bold;
