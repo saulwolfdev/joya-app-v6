@@ -17,6 +17,7 @@
 	}
 	.link-section {
 		li {
+			font: 400 15px $font-display, sans-serif; 
 			a {vertical-align: text-top; margin: 0; }
 		}
 	}
@@ -56,4 +57,11 @@
 		}
 		
 	}
+
+	@for $i from 1 to (length($recorrido-colores) + 1) {
+	    .recorrido-#{$i} {
+	    	i {font-size: 30px; display: block;}
+	    }
+	}
 }
+

@@ -7,7 +7,7 @@
 		color: $c-error; 
 		background-color: rgba($c-error, 0.1);
 
-		a {
+		a:not(.btn) {
 			color: $c-error;
 			text-decoration: underline; 
 		}
@@ -16,7 +16,7 @@
 		color: $c-warning-text; 
 		background-color: $c-warning-bg;
 
-		a {
+		a:not(.btn) {
 			color: $c-warning-text;
 			text-decoration: underline; 
 		}
@@ -25,7 +25,7 @@
 		color: $c-success-text; 
 		background-color: $c-success-bg;
 
-		a {
+		a:not(.btn) {
 			color: $c-success-text;
 			text-decoration: underline; 
 		}

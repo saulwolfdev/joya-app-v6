@@ -1,0 +1,28 @@
+$recorrido-colores: #964B9B, #FA9E32, #8C8C0A, #FFCD05, #14467D, #6E2864, #642300, #78BEE6;
+$gradient-colores: ( #AA4981,#C63F3F,#B57021,#7C8035,#8FB145,#35BA5E,#35BABA);
+
+$c-flex: #587E1B;
+$c-urgente: #CB2323;
+$c-fijo: #7D2588; 
+
+@for $i from 1 to (length($gradient-colores) + 1) {
+	.recorrido-#{$i} {
+		text-align: center;
+		color: nth($gradient-colores, $i);
+	}
+	.recorridos-tablas .list-collapse:nth-child(#{length($gradient-colores)}n+#{$i}) .collapse-bar {
+		i.circle {background-color:  nth($gradient-colores, $i);}
+		.horario, .title {color:  nth($gradient-colores, $i);}
+	}
+}
+table.admin-table {
+	tr.recorrido-flexible {
+		i.circle {background-color: $c-flex;}
+	}
+	tr.recorrido-urgente {
+		i.circle {background-color: $c-urgente;}
+	}
+	tr.recorrido-fijo {
+		i.circle {background-color: $c-fijo;}
+	}
+}

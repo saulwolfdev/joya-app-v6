@@ -1,0 +1,86 @@
+.recorridos-lista {
+	.alert {
+		min-height: 78px; 
+		font: 400 20px/27px $font; 
+		i {
+			font-size: 22px; 
+			line-height: 36px;
+	    	vertical-align: top; 
+		}
+		.number {
+			font: 600 30px/1.2em $font-display; 	
+			padding: 0 5px; 
+		}
+		.btn {margin-top: 0; }
+		.row {
+			align-items: center;
+		}
+	}
+	.info-fecha {
+		display: flex; 
+		flex-direction: row; 
+	}
+	.recorridos-tablas {
+		padding-top: 30px; 
+		
+		.cell-estado {
+			width: 45px; text-align: center;
+			i {
+				margin-right: 0; 
+			}
+		}
+		.cell-accion {
+			width: 170px; text-align: center; 
+			.btn {width: 100%; }
+		}
+
+		//Estado de recorridos
+		.recorrido-borrador .cell-estado i:before {
+			content: "\f071";
+			font-family: $font-icons;
+			color: $c-error; 
+			font-style: normal; 
+		}
+		.recorrido-encurso, .recorrido-noasignado, .recorrido-asignado, .recorrido-completado {
+			i {
+				border-radius: 50%; 
+				width: 12px; height: 12px; 
+				display: inline-block; 
+			}	
+		}
+		.recorrido-encurso .cell-estado i {
+			background-color: $c-primary; 
+		}
+		.recorrido-noasignado .cell-estado i {
+			background-color: $c-warning; 
+		}
+		.recorrido-asignado .cell-estado i {
+			background-color: #ccc; 
+		}
+		.recorrido-completado .cell-estado i {
+			background-color: $c-success; 
+		}	
+	}
+}
+.btn-dia, .tag-dia {
+	@extend .btn-mini; 
+	line-height: 30px; 
+	background-image: none; 
+	padding-left: 22px; padding-right: 22px; 
+}
+.btn-dia {
+	@extend .btn-outline; 
+}
+.tag-dia {
+	@extend .btn-primary; 
+}
+.nav-dias {
+	font-size: 22px; 
+	a {
+		padding: 5px 10px;
+		color: $text-dark; 
+		&:hover, &:focus, &:active {
+			color: $c-primary; 
+		}
+	}
+}

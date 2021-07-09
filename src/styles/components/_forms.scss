@@ -117,7 +117,7 @@ input {
 }
 .form-rounded {
     $input-margin-y: 1.5rem; 
-    input.form-control, select.form-select {
+    input.form-control, .form-select {
         height: $btn-height-big;  
         border-radius: $btn-height-big/2; 
         padding-left: $btn-height-big/3;
@@ -167,7 +167,8 @@ input {
 }
 
 
-.form .label {@extend label; } 
+.form .label {@extend label;}
+.form-label {color: $text-dark-secondary; } 
 
 .error-msg {
     color: $c-error;
@@ -183,4 +184,18 @@ input {
 
 .form-block {
     margin-bottom: 50px; 
+}
+
+.simple-form {
+    h3 {padding-bottom: 20px; }
+    .form-block:nth-last-child(2) {
+        margin-bottom: 20px; 
+    }
+    .btn-set {
+        margin-bottom: 30px; 
+        .btn {
+            vertical-align: center; 
+            i {margin: 0 0 0 8px; }
+        }
+    }
 }

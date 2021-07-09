@@ -1,0 +1,54 @@
+.list-collapse {
+	.collapse-bar {
+		background-color: $bg-light-1;
+		padding: 14px 14px 14px 15px;
+		font-weight: bold; 
+		border-top: 1px solid $border-color; 
+		border-bottom: 2px solid $border-color; 
+
+		
+		&:not(.collapse-con-filtros), &.collapse-con-filtros > span:first-child {
+			&::before {
+				position: relative; //left: -1 * $accordion-spacing-left; 
+				display: inline-block;
+				margin-left: 0; 
+				margin-right: 17px; 
+				background-image: none; 
+				font: 400 14px/20px $font-icons; 
+				content: "\f077";
+				width: 20px; 
+				height: 20px; 
+				transition: transform 0.2s ease;
+				transform-origin: center center; 
+				text-align: center; 
+				transform: rotate(0deg);
+			}
+		}
+		&:not(.collapse-con-filtros), &.collapse-con-filtros > span:first-child {
+			&.collapsed::before {
+				transform: rotate(180deg);
+			}
+		}
+		.filtros-recorridos {
+			margin-left: 20px; 
+		}
+	}
+	.collapse-table {
+		& > *:first-child {
+			//margin-top: 30px; 
+		}
+		& > *:last-child {
+			margin-bottom: 30px; 
+		}
+	}
+
+	table.admin-table thead tr {
+		border-top: none; 
+		th {
+			font-weight: normal; 
+			padding-top: 8px; padding-bottom: 8px; 
+			color: $text-dark-secondary; 
+
+		}
+	}
+}

@@ -1,5 +1,7 @@
 
 header.admin-header  {
+	box-shadow: 0 1px 6px rgba(0,0,0,0.16); 
+	z-index: 1; position: relative;
 	a, .a {font: 400 16px/24px $font; vertical-align: -webkit-baseline-middle; }
 	i.fa-chevron-down {
 		font: 400 12px/24px $font-icons; 

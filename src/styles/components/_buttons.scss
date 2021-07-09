@@ -1,5 +1,6 @@
 $btn-height: 50px;
 $btn-height-small: 40px; 
+$btn-height-mini: 30px; 
 $btn-height-big: 60px; 
 
 @mixin default-focus {
@@ -77,6 +78,11 @@ a.btn-primary, a.btn-secondary, a.btn-outline {display: inline-block;}
 		height: $btn-height-small; line-height: $btn-height-small; 
 		border-radius: $btn-height-small/2;
 		padding-left: $btn-height-small; padding-right: $btn-height-small; 
+	}
+	&.btn-mini {
+		height: $btn-height-mini; line-height: $btn-height-mini; 
+		border-radius: $btn-height-mini/2;
+		padding-left: $btn-height-mini; padding-right: $btn-height-mini; 
 	}
 }
 

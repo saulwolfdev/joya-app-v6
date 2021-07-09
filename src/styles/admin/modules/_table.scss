@@ -1,11 +1,6 @@
 table.admin-table {
 	i.circle {
-		display: inline-block; 
-		width: 12px; height: 12px; 
-		border-radius: 50%; 
 		background-color: $c-primary;
-
-		margin: 0 8px; 
 	}
 	
 	.ordenable {
@@ -52,7 +47,18 @@ table.admin-table {
 
 	}
 	.btn {margin-top: 0; }
-
+	.cell-mas {
+		.btn-tertiary {
+			padding: 5px 10px;
+	    	text-align: center;
+	    	i {margin-right: 0; }
+	    }
+	    width: 65px; 
+	}
+	.cell-select {
+		text-align: center; 
+		input {margin: 0;}
+	}
 	@media (max-width: $end-md) {
 		font-size: 15px; 
 		.btn-small {

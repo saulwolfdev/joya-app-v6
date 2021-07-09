@@ -1,0 +1,10 @@
+.descuentos-lista {
+	.btn-set {
+		width: 100%; 
+		.btn {margin: 0 5px; }
+		@media (min-width: $start-sm) {
+			width: auto; 
+			.btn {margin: 0 10px; }
+		}
+	}
+}

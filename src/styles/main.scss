@@ -8,8 +8,6 @@
 //INTERNAL CONFIG
 @import "./helpers/variables";
 @import "./helpers/mixins-6v";
-@import "./helpers/dev-only"; //ELIMINAR ANTES DE PUBLICAR
-@import "./styleguide"; //ELIMINAR ANTES DE PUBLICAR
 
 //ESTILOS COMPARTIDOS
 @import "./helpers/general"; 
@@ -20,6 +18,7 @@
 @import "./components/buttons";
 @import "./components/forms";
 @import "./components/modal";
+
 
 //////////LAYOUT - CLIENTE /////////
 @import "./components/header";
@@ -41,6 +40,7 @@
 @import "./cliente/solicitud-limpieza";
 @import "./cliente/pedidos";
 @import "./cliente/locales";
+@import "./cliente/cuenta"; 
 
 
 ///////////VIDRERISTA///////////////
@@ -52,9 +52,11 @@
 @import "./admin/footer";
 
 @import "./admin/helpers/variables";
+@import "./admin/helpers/recorridos";
 @import "./admin/helpers/general";
 
 //Secciones
+@import "./components/list-collapse";
 @import "./admin/modules/sintesis";
 @import "./admin/modules/table";
 @import "./admin/modules/table-filter";
@@ -65,4 +67,12 @@
 @import "./admin/local-individual";
 @import "./admin/locales-lista";
 @import "./admin/vidrieristas-lista";
-@import "./admin/vidrierista-individual";
+@import "./admin/vidrierista-individual"; 
+@import "./admin/descuentos-lista";
+@import "./admin/descuento-crear";
+@import "./admin/agenda";
+@import "./admin/recorridos";
+
+//ADICIONALES
+@import "./helpers/dev-only"; //ELIMINAR ANTES DE PUBLICAR
+@import "./styleguide"; //ELIMINAR ANTES DE PUBLICAR

@@ -21,7 +21,16 @@ body {
 		padding-left: 2rem; padding-right: 2rem; 
 	}
 }
+.container-max {
+	padding: 0 40px; 
+}
 .section {
 	padding-top: 35px; padding-bottom: 35px;
 	position: relative; 
+}
+i.circle {
+	display: inline-block; 
+	width: 12px; height: 12px; 
+	border-radius: 50%; 
+	margin: 0 8px; 
 }

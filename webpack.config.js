@@ -103,8 +103,42 @@ const plugins = [
     template: "./src/admin/vidrierista.html",
     filename: "./admin-vidrierista.html",
   }),
- 
-
+  new HtmlWebpackPlugin({
+    template: "./src/admin/descuentos.html",
+    filename: "./admin-descuentos.html",
+  }), 
+  new HtmlWebpackPlugin({
+    template: "./src/admin/descuento-crear.html",
+    filename: "./admin-descuento-crear.html",
+  }), 
+  new HtmlWebpackPlugin({
+    template: "./src/admin/descuento-crear-porcentaje.html",
+    filename: "./admin-descuento-crear-porcentaje.html",
+  }), 
+  new HtmlWebpackPlugin({
+    template: "./src/admin/agenda.html",
+    filename: "./admin-agenda.html",
+  }), 
+  new HtmlWebpackPlugin({
+    template: "./src/admin/agenda-futuro.html",
+    filename: "./admin-agenda-futuro.html",
+  }), 
+  new HtmlWebpackPlugin({
+    template: "./src/admin/agenda-pasado.html",
+    filename: "./admin-agenda-pasado.html",
+  }), 
+  new HtmlWebpackPlugin({
+    template: "./src/admin/recorridos-armar-paso1.html",
+    filename: "./admin-recorridos-armar-paso1.html",
+  }), 
+  new HtmlWebpackPlugin({
+    template: "./src/admin/recorridos-armar-paso3.html",
+    filename: "./admin-recorridos-armar-paso3.html",
+  }), 
+  new HtmlWebpackPlugin({
+    template: "./src/admin/recorridos-armar-paso4.html",
+    filename: "./admin-recorridos-armar-paso4.html",
+  }), 
   new MiniCssExtractPlugin({
     filename: '[name].css',
     ignoreOrder: false

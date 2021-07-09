@@ -1,0 +1,164 @@
+//Paso 1 (mapa)
+.recorridos-armar {
+	height: calc(100vh - 75px) ; max-height: calc(100vh - 75px); 
+	& > .row {height: 100%; }
+	
+	.admin-sintesis {
+		background: none; 
+	}
+	.filter-row {
+		.filtro:not(:last-child) {
+			padding-right: 18px; 
+		}
+		.form-select {
+			$fs-height: 40px; 
+			height: $fs-height;
+    		border-radius: $fs-height / 2;
+    		margin: 0;
+    		span {
+    			width: 150px;
+    			overflow: hidden; 
+			    text-overflow: ellipsis;
+			    display: inline-block;
+			    white-space: nowrap;
+    		}
+		}
+		
+	}
+	.lista-dia {
+		padding: 0 40px; 
+	}
+	.map-block {
+		@include primary-gradient;
+	}
+	
+	.collapse-bar {
+		display: flex; flex-flow: row; align-items: center; 
+		border-bottom-width: 1px; 
+		.divisor {margin: 0 8px; }
+		.divisor, .cantidad {font-weight: normal; }
+		.btn-set { margin-left: auto; }
+		.filtros-visibilidad {
+			margin-left: auto;
+			width: 40px; text-align: center; 
+			i {cursor: pointer;}
+		}
+		.btn-set + .filtros-visibilidad {margin-left: 0; }
+		i.circle {border: 1px solid $border-color; margin-left: 0; }
+		.btn-primary {vertical-align: bottom; margin: 0 16px; }
+	}
+	
+	#modalComunas {
+		.modal-body {
+			column-count: 2; 
+			.form-check {
+				padding-bottom: 8px;
+			}
+			.label, label, .form .label {font-size: 1rem; }
+		}
+	}
+	.mas-acciones a {
+		font-family: $font; 
+		font-size: 0.875rem; 
+		color: $text-dark; 
+		text-decoration: underline; 
+		&:hover, &:focus, &:active {
+			color: $c-primary; 
+		}
+	}
+	.recorridos-tablas {
+		.list-collapse:first-child {
+			.table-responsive {
+				margin-bottom: 0; 
+			}
+			margin-bottom: 30px; 
+
+		}
+		.cell-alertas, .cell-horario-icono {
+			width: 40px; 
+			i {margin: 0; padding: 0; }
+		}
+		.cell-horario-icono {padding-right: 0; width: 40px; text-align: center; }
+		table.admin-table td, table.admin-table th {
+			vertical-align: top; 
+			&:not(:last-child) {
+				padding-right: 0; 
+			}
+		}
+		.cell-nombre {
+			font-weight: 700; 
+			.aclaracion {font-weight: 400; }
+		}
+	}
+	.recorridos-seleccionados {
+		padding: 24px 0; 
+		font-weight: bold; 
+		position: fixed; bottom: 0; width: 100%; 
+		.row {align-items: center; }
+		.btn-set .btn {
+			margin: 0 15px; 
+		}
+	}
+	.footer-admin {margin-top: 60px; }
+}
+
+
+//Paso 3
+.admin-recorrido-armar {
+	@extend .admin-descuento-crear;
+
+	.calculadora {
+		margin: 40px 0;
+		.valor-sugerido {
+			font-size: 32px;
+    		line-height: 38px;
+			font-weight: bold; 
+			font-family: $font-display; 
+
+			.currency {margin-right: 8px; }
+		}
+	}
+	
+}
+.admin-recorrido-armar, .admin-recorrido-confirmar {
+	.btn-set {
+		.btn:not(:last-child) {
+			margin-right: 16px;
+		}
+	}
+}
+//Paso 4
+.admin-recorrido-confirmar {
+	@extend .admin-descuento-crear;
+
+	.recorrido-card {
+		max-width: 500px; 
+		.img-container {
+			background-color: $c-vidrio;
+			background-position: center; 
+			background-size: cover; 
+		}
+		.precio {
+			margin-bottom: 0;
+		}
+		.card-body {padding: 20px; }
+		.card-text {
+			display: flex; flex-direction: row; 
+			line-height: normal;
+			i {
+				width: 30px; 
+				flex-shrink: 0; 
+			}
+
+		}
+	}
+	.col-small {
+		max-width: 150px; 
+	}
+	.form-element .btn-set {
+		.btn:not(:first-child) {margin-left: 15px; }
+	}
+}
+.asignar-vidrierista-modal {
+	
+}

@@ -31,7 +31,7 @@
 	                <div class="row">
 	                    <div class="col-auto logo-div">
 	                        <h1 class="site-title">
-	                            <a class="navbar-brand main-logo" href="#" rel="home" style="background-image: url('/img/logo@2x.png');">Joya</a>
+	                            <a class="navbar-brand main-logo" href="/" rel="home" style="background-image: url('/img/logo@2x.png');">Joya</a>
 	                        </h1>
 	                    </div>
 	                    <!-- NOTA: sólo uno de los user-navs va a estar presente en el HTML en cada momento, esto será manejado según esté logueado o no el usuario. La técnica de ocultar uno de los menúes con css es únicamente para la maqueta -->
@@ -73,7 +73,7 @@
 	        </nav>
 	    </header>
 	    <div class="main-content">
-	    	<div class="mis-pedidos">
+	    	<div class="mi-cuenta">
 	    		<div class="container-fluid">
 	    			<div class="row">
 	    				<div class="section-header row">
@@ -85,71 +85,71 @@
 	    				<div class="col-12 card-page-container">
 	    					<div class="card-page-content">
 	    						<div class="inner-container">
-	    							<div class="row"><div class="col-xl-9">
-			    						<h3>Datos de cuenta</h3>
-			    						<div class="form form-block">
-			    							<div class="row">
-								        		<div class="col form-element">
-													<label for="nombre" class="form-label">Nombre</label>
-													<input type="text" class="form-control" name="nombre" value="Carolina">
+	    							<div class="row">
+	    								<div class="col-xl-9">
+				    						<h3>Datos de cuenta</h3>
+				    						<div class="form form-block">
+				    							<div class="row">
+									        		<div class="col form-element">
+														<label for="nombre" class="form-label">Nombre</label>
+														<input type="text" class="form-control" name="nombre" value="Carolina">
+													</div>
+													<div class="col form-element">
+														<label for="apellido" class="form-label">Apellido</label>
+														<input type="text" class="form-control" name="apellido" value="Fernández">
+													</div>
+									        	</div>
+									        	<div class="row">
+									        		<div class="col form-element">
+														<label for="telefono" class="form-label">Teléfono</label>
+														<input type="text" class="form-control" name="telefono" value="+5491151234567">
+													</div>
+													<div class="col form-element">
+														<label for="email" class="form-label">Email</label>
+														<input type="text" class="form-control" name="email" value="carolina@kentucky.com.ar" disabled>
+													</div>
+									        	</div>
+												<div class="row">
+									        		<div class="col form-element">
+														<label for="contrasenia" class="form-label">Contraseña</label>
+														<input type="password" class="form-control" name="contrasenia">
+													</div>
+													<div class="col form-element">
+														<label for="repetircontrasenia" class="form-label">Repetir contraseña</label>
+														<input type="text" class="form-control" name="repetircontrasenia">
+													</div>
+									        	</div>
+											</div>	
+											<div class="form form-block">
+												<h4>Datos de facturación:</h4>
+								        		<div class="form-element">
+													<label for="razonsocial" class="form-label">Razón social</label>
+													<input type="text" class="form-control" name="razonsocial" value="Kentucky S.A.">
 												</div>
-												<div class="col form-element">
-													<label for="apellido" class="form-label">Apellido</label>
-													<input type="text" class="form-control" name="apellido" value="Fernández">
+											
+												<div class="form-element">
+													<label for="cuit" class="form-label">CUIT</label>
+													<input type="text" class="form-control" name="cuit" value="94-75213547-5">
 												</div>
-								        	</div>
-								        	<div class="row">
-								        		<div class="col form-element">
-													<label for="telefono" class="form-label">Teléfono</label>
-													<input type="text" class="form-control" name="telefono" value="+5491151234567">
+						        	
+								        		<div class="form-element">
+													<label for="direccion" class="form-label">Dirección</label>
+													<input type="text" class="form-control" name="direccion" value="Av. Santa Fe 2565">
 												</div>
-												<div class="col form-element">
-													<label for="email" class="form-label">Email</label>
-													<input type="text" class="form-control" name="email" value="carolina@kentucky.com.ar" disabled>
-												</div>
-								        	</div>
-											<div class="row">
-								        		<div class="col form-element">
-													<label for="contrasenia" class="form-label">Contraseña</label>
-													<input type="password" class="form-control" name="contrasenia">
-												</div>
-												<div class="col form-element">
-													<label for="repetircontrasenia" class="form-label">Repetir contraseña</label>
-													<input type="text" class="form-control" name="repetircontrasenia">
-												</div>
-								        	</div>
-										</div>	
-										<div class="form form-block">
-											<h4>Datos de facturación:</h4>
-							        		<div class="form-element">
-												<label for="razonsocial" class="form-label">Razón social</label>
-												<input type="text" class="form-control" name="razonsocial" value="Kentucky S.A.">
+											</div>	
+											<div class="btn-set">
+												<button class="btn btn-primary">Guardar cambios</button>
 											</div>
-										
-											<div class="form-element">
-												<label for="cuit" class="form-label">CUIT</label>
-												<input type="text" class="form-control" name="cuit" value="94-75213547-5">
-											</div>
-					        	
-							        		<div class="form-element">
-												<label for="direccion" class="form-label">Dirección</label>
-												<input type="text" class="form-control" name="direccion" value="Av. Santa Fe 2565">
-											</div>
-										</div>	
-										<div class="btn-set">
-											<button class="btn btn-primary">Guardar cambios</button>
 										</div>
-									</div></div>
+									</div>
 								</div>
-
-		    						
-	    						</div>
-	    					</div>
-	    				</div>
-	    			</div>
-	    		</div>
-	    	</div>
-	    </div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    
 		<footer>
 			<div class="container-fluid">
 				<div class="row">

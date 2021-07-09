@@ -89,53 +89,6 @@
 	position: relative;
 	z-index: 100;
 }
-
-//Optional: progress bar
-/*
-.shape-progress {
-	bottom: 40px;
-	left: 40px;
-}
-
-.shape-progress svg {
-	width: 70px;
-	height: 70px;
-	left: 0;
-	top: 0;
-	z-index: 100;
-}
-
-.shape-progress path {
-	fill: none;
-	stroke: #fff;
-	stroke-width: 5;
-	stroke-dasharray: 204; 
-	stroke-dashoffset: 204;
-	opacity: 0;
-}
-
-
-.ns-effect-loadingcircle.ns-show + svg path {
-	-webkit-animation: animDash 3s;
-	animation: animDash 3s;
-}
-
-@-webkit-keyframes animDash {
-	0% { opacity: 1; stroke-dashoffset: 204; }
-	33% { stroke-dashoffset: 160; }
-	50% { stroke-dashoffset: 150; }
-	85% { stroke-dashoffset: 30; }
-	100% { opacity: 1; stroke-dashoffset: 0; }
-}
-
-@keyframes animDash {
-	0% { opacity: 1; stroke-dashoffset: 204; }
-	33% { stroke-dashoffset: 160; }
-	50% { stroke-dashoffset: 150; }
-	85% { stroke-dashoffset: 30; }
-	100% { opacity: 1; stroke-dashoffset: 0; }
-}
-*/
 .ns-effect-loadingcircle.ns-show {
 	opacity: 0;
 	//-webkit-animation-name: animResize;
@@ -194,12 +147,7 @@
 	animation-name: animFadeOut;
 	animation-duration: 0.3s;
 }
-/*
-@-webkit-keyframes animFade {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
-*/
+
 @keyframes animFade {
 	0% { opacity: 0; }
 	100% { opacity: 1; }

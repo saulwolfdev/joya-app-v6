@@ -6,23 +6,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Joya - Vidrierista individual</title>
-	<meta name="title" content="Joya - Vidrierista individual">
+    <title>Joya - Admin - Crear descuento</title>
+	<meta name="title" content="Joya - Admin - Crear descuento">
 	<meta name="description" content="Lorem ipsum sid dolor amet" />
 
 	<link rel="icon" href="/favicons/favicon.ico"><!-- 32×32 -->
 	<link rel="icon" href="/favicons/icon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png"><!-- 180×180 -->
+	<link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png"><!-- 180×180 -->
 	
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
 	<link href="/fontawesome/css/all.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="/dist/style.css">
+	<link rel="stylesheet" href="../main.css">
 
 </head>
-<body class="">
+<body class="dev-user-login">
 	<div id="wrapper">
 		<div class="overlay"></div>
 		<header class="fixed-top-scroll fixed-top admin-header">
@@ -40,7 +40,6 @@
 	                            <span class="hamb-middle"></span>
 	                            <span class="hamb-bottom"></span>
 	                        </button>
-	                        
 	                        <nav class="navbar navbar-inverse navbar-fixed-top" id="main-menu" role="navigation">
 	                            <div class="nav sidebar-nav col">
 	                            	<ul class="menu admin-menu">
@@ -111,129 +110,74 @@
 	            </div>
 	        </nav>
 	    </header>
-	    <div class="main-content vidrierista-individual">
-	    	<div class="alert warning">
+	    <div class="main-content">
+	    	<div class="admin-descuento-crear">
 	    		<div class="container-fluid">
-	    			<i class="far fa-bell"></i>Nuevo postulante
-	    		</div> 
-	    	</div>
-	    	<div class="admin-sintesis">
-	    		<div class="container-fluid">
-    				<div class="row sintesis-header ">
-    					<div class="col-12 breadcrumb">
+	    			<div class="row">
+	    				<div class="col-12 breadcrumb">
 	    					<div class="inner-container">
-	    						<a href="#"><i class="far fa-arrow-left"></i> Volver</a>
+	    						<a href="admin-descuentos.html"><i class="far fa-arrow-left"></i> Volver</a>
 	    					</div>
 	    				</div>
-	    				<div class="col-auto">
-	    					<h3>Sergio Soriano</h3>	
-	    					<p class="aclaracion email"><a href="mailto:bla@gmail.com">ssoriano@gmail.com</a></p>	
-	    				</div>
-	    				<div class="col-auto estado">
-	    					<p>
-		    					<!-- Elegir la que corresponda según el vidrierista. Sólo 1 opción. -->
-		    					<span class="c-success">Activo</span>
-		    					<span class="c-warning">Postulante</span>
-		    					<span class="c-error">Suspendido</span>
-		    				</p>
-	    				</div>
-	    				<div class="btn-set col-auto">
-	    					<button class="btn btn-primary btn-small">Contactar</button>
-	    					<button class="btn btn-misc"><i class="far fa-ellipsis-h"></i></button>
-	    				</div>
-
-    				</div>
-    				<div class="row stats d-none d-md-flex">
-    					<div class="col-auto stat">
-    						<p class="label">Recorridos (este mes/total)</p>
-    						<p class="value"><span class="number strong">156</span> <span class="separator">/</span> <span class="number">897</span> </p>
-    						<p class="aclaracion">8 meses de antigüedad</p>
-    					</div>
-    					<div class="col-auto stat block-start">
-    						<p class="label">Ganancias (este mes/total)</p>
-    						<p class="value"><span class="number strong">$5600</span> <span class="separator">/</span> <span class="number">$12540</span> </p>
-    					</div>
-    					<!-- No se desarrolla esto por ahora -->
-    					<div class="col-auto stat  block-start">
-    						<p class="label">Calif. promedio</p>
-    						<p class="value"><span class="number strong">4.5 <i class="fas fa-star"></i></span></p>
-    					</div>
-    				</div>
-	    		</div>
-	    	</div>
-	    	<div class="more-content">
-	    		<div class="menu">
-	    			<div class="container-fluid">
-	    				<ul>
-			    			<li><a href="#">Trabajos</a></li>
-			    			<li><a href="#">Pagos</a></li>
-			    			<li><a href="#">Reseñas</a></li>
-			    			<li class="active"><a href="#">Perfil</a></li>
-			    		</ul>
-		    		</div>
-	    		</div>
-	    		<div class="content-block vidrierista-perfil">
-	    			<div class="container-fluid">
-	    				<div class="row perfil">
-		    				<div class="col-md-8 vidrierista-data">
-	    						<div class="data-table row">
-	    							<div class="col-md-6 data-piece">
-	    								<p class="label">Nombre</p>
-	    								<p class="data">Sergio Soriano</p>
-	    							</div>
-	    							<div class="col-md-6 data-piece">
-	    								<p class="label">Estado</p>
-	    								<p class="data">
-	    									<!-- Elegir la que corresponda según el vidrierista. Sólo 1 opción. -->
-					    					<span class="c-success">Activo</span>
-					    					<span class="c-warning">Postulante</span>
-					    					<span class="c-error">Suspendido</span>
-					    				</p>
-	    							</div>
-									<div class="col-md-6 data-piece">
-	    								<p class="label">Email</p>
-	    								<p class="data"><a href="#">ssoriano@gmail.com</a></p>
-	    							</div>
-									<div class="col-md-6 data-piece">
-	    								<p class="label">Celular</p>
-	    								<p class="data">+54 11 1234 5678</p>
-	    							</div>
-	    							<div class="col-md-12 data-piece">
-	    								<p class="label">Dirección</p>
-	    								<p class="data">Av. Santa Fe 2702, Buenos Aires</p>
-	    							</div>
-	    							
-	    							<div class="col-md-6 data-piece">
-	    								<p class="label">Fecha de nacimiento</p>
-	    								<p class="data">1/12/1992</p>
-	    							</div>
-	    							<div class="col-md-6 data-piece">
-	    								<p class="label">Nacionalidad</p>
-	    								<p class="data">Argentino</p>
-	    							</div>
-	    							<div class="col-md-6 data-piece">
-	    								<p class="label">Registro</p>
-	    								<p class="data">21/1/2021</p>
-	    							</div>
-	    							<div class="col-md-6 data-piece">
-	    								<p class="label">Última actividad</p>
-	    								<p class="data">Mi 15/4/2021, 15:05hs</p>
-	    							</div>
-	    							<div class="col-md-12 direccion data-piece">
-	    								<p class="label">Contraseña</p>
-	    								<p class="data">Última actualización 10/4/2020, 11:45hs. <a href="#">Resetear contraseña</a></p>
-	    							</div>
-	    							<div class="col-md-12 direccion data-piece">
-	    								<p class="label">Notas</p>
-	    								<p class="data">
-	    									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus sint dolorum enim harum, est, molestias porro aliquam aliquid voluptatem aut.
-	    								</p>
-	    							</div>
-	    						</div>
-		    				</div>
-		    				<div class="col-md-4 col-lg-3 offset-lg-1 vidrierista-acciones">
-		    					<a href="#" class="btn btn-primary">Editar perfil</a>
-		    				</div>
+	    				<div class="col-12 card-page-container">
+	    					<div class="card-page-content">
+	    						<div class="inner-container">
+	    							<div class="row">
+	    								<div class="col-xl-9">
+				    						<h3>Nuevo descuento</h3>
+				    						<div class="form form-block">
+				    							<div class="row">
+									        		<div class="col form-element">
+														<label for="codigo" class="form-label">Código de descuento<span class="obligatorio">*</span></label>
+														<input type="text" class="form-control" name="codigo" placeholder="CODIGODEDESCUENTO">
+														<p class="form-text">Se recomienda utilizar un código fácil de recordar. Sin embargo, se debe evitar que sea adivinable (por ejemplo, si se pone DESCUENTO1, DESCUENTO2,... un usuario podría probar si existen en DESCUENTO3, etc).</p>
+													</div>
+									        	</div>
+									        	<div class="row">
+									        		<div class="col form-element">
+														<label for="tipo-descuento" class="form-label">Tipo<span class="obligatorio">*</span></label>
+														<select name="tipo-descuento" class="form-select" aria-label="Tipo de descuento">
+														  <option>Elegir tipo</option>
+														  <option value="monto" >Monto fijo</option>
+														  <option value="porcentaje" selected>Porcentaje</option>
+														</select>
+													</div>
+													<div class="col form-element">
+														<label for="porcentaje" class="form-label">Porcentaje<span class="obligatorio">*</span></label>
+														<div class="input-group">
+															
+															<input type="text" class="form-control" placeholder="150" name="porcentaje">
+															<span class="input-group-text">%</span>
+														</div>
+													</div>
+									        	</div>
+												<div class="row">
+									        		<div class="col form-element">
+														<label for="tope" class="form-label">Tope descuento</label>
+														<div class="input-group">
+															<span class="input-group-text">$</span>
+															<input type="text" class="form-control" name="tope">
+														</div>
+													</div>
+									        	</div>
+									        	<div class="row">
+									        		<div class="col form-element">
+														<label for="vencimiento" class="form-label">Fecha de vencimiento</label>
+														<input type="date" name="vencimiento" class="form-control">
+													</div>
+													<div class="col form-element">
+														<label for="limiteusos" class="form-label">Límite de usos</label>
+														<input type="text" name="limiteusos" class="form-control">
+													</div>
+									        	</div>
+											</div>		
+											<div class="btn-set">
+												<button class="btn btn-primary">Guardar cambios</button>
+											</div>
+										</div>
+									</div>
+								</div>
+	    					</div>
 	    				</div>
 	    			</div>
 	    		</div>
