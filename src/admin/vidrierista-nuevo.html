@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Joya - Admin - Crear recorrido</title>
-	<meta name="title" content="Joya - Admin - Crear recorrido">
+    <title>Joya - Admin - Nuevo vidrierista</title>
+	<meta name="title" content="Joya - Admin - Nuevo vidrierista">
 	<meta name="description" content="Lorem ipsum sid dolor amet" />
 
 	<link rel="icon" href="/favicons/favicon.ico"><!-- 32×32 -->
@@ -103,7 +103,7 @@
 	    			<div class="row">
 	    				<div class="col-12 breadcrumb">
 	    					<div class="inner-container">
-	    						<a href="admin-recorridos-armar-paso1.html"><i class="far fa-arrow-left"></i> Volver</a>
+	    						<a href="admin-vidrieristas.html"><i class="far fa-arrow-left"></i> Volver</a>
 	    					</div>
 	    				</div>
 	    				<div class="col-12 card-page-container">
@@ -111,109 +111,59 @@
 	    						<div class="inner-container">
 	    							<div class="row">
 	    								<div class="col-xl-10">
-				    						<h3>Crear recorrido</h3>
+				    						<h3>Nuevo vidrierista</h3>
 				    						<div class="form form-block">
 				    							<div class="row">
 									        		<div class="col form-element">
 														<label for="nombre" class="form-label">Nombre<span class="obligatorio">*</span></label>
-														<input type="text" class="form-control" name="nombre" placeholder="Nombre del recorrido">
+														<input type="text" class="form-control" name="nombre" placeholder="Nombre">
 													</div>
 													<div class="col form-element">
-														<label for="fecha" class="form-label">Fecha<span class="obligatorio">*</span></label>
-														<!-- Contemplar posibilidad de incluir un datepicker de react -->
-														<input type="date" name="fecha" class="form-control"><!-- esto se debería autocompletar con el día en el que estaba el usuario cuando apretó el botón de armar recorrido -->
+														<label for="apellido" class="form-label">Apellido<span class="obligatorio">*</span></label>
+														<input type="text" class="form-control" name="apellido" placeholder="Apellido">
 													</div>
-
-													
-													
-									        	</div>
+												</div>
 									        	<div class="row">
 													<div class="col form-element">
-														<label for="cant-barrios" class="form-label">Barrios<span class="obligatorio">*</span></label>
-														<input type="text" class="form-control" placeholder="" name="cant-barrios">
+														<label for="telefono" class="form-label">Teléfono<span class="obligatorio">*</span></label>
+														<input type="text" class="form-control" placeholder="" name="telefono">
 													</div>
 													<div class="col form-element">
-														<label for="horario-ini" class="form-label">Horario de inicio<span class="obligatorio">*</span></label>
-														<input type="time" class="form-control" placeholder="" name="horario-ini">
-													</div>
-													<div class="col form-element">
-														<label for="horario-fin" class="form-label">Horario de fin<span class="obligatorio">*</span></label>
-														<input type="time" class="form-control" placeholder="" name="horario-fin">
+														<label for="email" class="form-label">Email<span class="obligatorio">*</span></label>
+														<input type="email" class="form-control" placeholder="" name="email">
 													</div>
 												</div>
 												<div class="row">
 													<div class="col form-element">
-														<label for="cant-locales" class="form-label">Locales<span class="obligatorio">*</span></label>
-														<input type="text" class="form-control" placeholder="" name="cant-locales">
-													</div>
-									        		<div class="col form-element">
-														<label for="tiempo" class="form-label">Tiempo de viaje<span class="obligatorio">*</span></label>
-														<div class="input-group">
-															<input type="text" class="form-control" placeholder="" name="tiempo">
-															<span class="input-group-text">hs</span>
-														</div>
-													</div>
-													<div class="col form-element">
-														<label for="distancia" class="form-label">Distancia<span class="obligatorio">*</span></label>
-														<div class="input-group">
-															<input type="text" class="form-control" placeholder="" name="distancia">
-															<span class="input-group-text">km</span>
-														</div>
-														
+														<label for="cbu" class="form-label">CBU</label>
+														<input type="text" class="form-control" placeholder="" name="cbu">
 													</div>
 												</div>
-												<div class="calculadora bg-light-1 px-5 py-4">
-													<h4>Precio sugerido del recorrido</h4>
-													<div class="row">
-														<div class="col form-element">
-															<label for="valor-hora" class="form-label">Valor hora<span class="obligatorio">*</span></label>
-															<div class="input-group">
-																<span class="input-group-text">$</span>
-																<input type="text" class="form-control" placeholder="150" name="valor-hora">
-															</div>
-														</div>
-										        		<div class="col form-element">
-															<label for="tiempo-limpieza" class="form-label">Tiempo de limpieza por local<span class="obligatorio">*</span></label>
-															<div class="input-group">
-																<input type="text" class="form-control" placeholder="7" name="tiempo-limpieza">
-																<span class="input-group-text">min</span>
-															</div>
-														</div>
-														<div class="col form-element">
-															<label for="distancia" class="form-label">Total</label>
-															<div class="valor-sugerido"><span class="currency">$</span><span class="valor">750</span></div>
-															
-														</div>
+												<div class="row">
+													<div class="col form-element">
+														<label for="notas" class="form-label">Notas</label>
+														<textarea class="form-control" name="notas" rows="3"></textarea>
 													</div>
 												</div>
 												<div class="row">
 													<div class="col-lg-4 form-element">
-														<label for="monto" class="form-label">Monto<span class="obligatorio">*</span></label>
-														<div class="input-group">
-															<span class="input-group-text">$</span>
-															<input type="text" class="form-control" name="monto">
-														</div>
+														<label for="estado-vidrierista" class="form-label">Estado<span class="obligatorio">*</span></label>
+														<select name="estado-vidrierista" class="form-select" aria-label="Estado vidrierista">
+														  <option value="postulante">Postulante</option><!-- Nuevo sin evaluar -->
+														  <option value="descartado">Descartado</option><!-- Nuevo, no les gustó lo descartaron antes de que sea vidrierista-->
+														  <option value="activo">Activo</option><!-- aceptado, en actividad -->
+														  <option value="inactivo">Inactivo</option><!-- aceptado, no activo -->
+														  <option value="suspendido">Suspendido</option><!-- fue aceptado y después eliminado por algún problema -->
+														</select>
 													</div>
 									        		<div class="col-lg-8 form-element">
 									        			<label for="descripcion" class="form-label">Descripción</label>
 									        			<input type="text" class="form-control" name="descripcion">
 									        		</div>
 									        	</div>
-									        	<div class="row">
-									        		<div class="col-lg-4 form-element">
-									        			<label for="url" class="form-label">URL</label>
-									        			<input type="text" class="form-control" name="url">
-									        		</div>
-									        		<div class="col form-element">
-														<label for="captura-recorrido" class="form-label">Captura del recorrido</label>
-														<input class="form-control" type="file" id="formFile">
-													</div>
-													
-									        	</div>
 											</div>		
 											<div class="btn-set">
-												<button class="btn btn-secondary">Guardar</button>
-												<a class="btn btn-primary ms-auto" href="admin-recorridos-armar-paso4.html">Confirmar <i class="far fa-arrow-right"></i></a>
+												<a class="btn btn-primary ms-auto" href="#">Guardar</i></a>
 											</div>
 										</div>
 									</div>

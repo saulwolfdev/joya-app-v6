@@ -45,15 +45,16 @@
 
 ///////////VIDRERISTA///////////////
 @import "./vidrierista/home"; 
+@import "./vidrierista/recorridos-publicados";
 
 
  ////////ADMIN/////////////
-@import "./admin/header";
-@import "./admin/footer";
-
 @import "./admin/helpers/variables";
-@import "./admin/helpers/recorridos";
 @import "./admin/helpers/general";
+
+@import "./admin/modules/header";
+@import "./admin/modules/footer";
+@import "./admin/helpers/recorridos";
 
 //Secciones
 @import "./components/list-collapse";
@@ -72,6 +73,7 @@
 @import "./admin/descuento-crear";
 @import "./admin/agenda";
 @import "./admin/recorridos";
+@import "./admin/pagos";
 
 //ADICIONALES
 @import "./helpers/dev-only"; //ELIMINAR ANTES DE PUBLICAR

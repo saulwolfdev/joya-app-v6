@@ -77,6 +77,10 @@ const plugins = [
     template: "./src/home-vidrierista.html",
     filename: "./home-vidrierista.html",
   }),
+   new HtmlWebpackPlugin({
+    template: "./src/recorridos-publicados.html",
+    filename: "./recorridos-publicados.html",
+  }),
 
   //Administrador
   new HtmlWebpackPlugin({
@@ -102,6 +106,10 @@ const plugins = [
   new HtmlWebpackPlugin({
     template: "./src/admin/vidrierista.html",
     filename: "./admin-vidrierista.html",
+  }),
+  new HtmlWebpackPlugin({
+    template: "./src/admin/vidrierista-nuevo.html",
+    filename: "./admin-vidrierista-nuevo.html",
   }),
   new HtmlWebpackPlugin({
     template: "./src/admin/descuentos.html",
@@ -138,6 +146,14 @@ const plugins = [
   new HtmlWebpackPlugin({
     template: "./src/admin/recorridos-armar-paso4.html",
     filename: "./admin-recorridos-armar-paso4.html",
+  }), 
+  new HtmlWebpackPlugin({
+    template: "./src/admin/pagos.html",
+    filename: "./admin-pagos.html",
+  }), 
+  new HtmlWebpackPlugin({
+    template: "./src/admin/pagos-historial.html",
+    filename: "./admin-pagos-historial.html",
   }), 
   new MiniCssExtractPlugin({
     filename: '[name].css',

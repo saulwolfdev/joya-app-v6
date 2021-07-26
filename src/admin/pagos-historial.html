@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Joya - Admin - Descuentos</title>
-	<meta name="title" content="Joya - Admin - Descuentos">
+    <title>Joya - Admin - Pagos</title>
+	<meta name="title" content="Joya - Admin - Pagos">
 	<meta name="description" content="Lorem ipsum sid dolor amet" />
 
 	<!--<base href="file:///D:/BitBucket%20Repos/joya-front-end/">-->
@@ -99,65 +99,66 @@
 	            </div>
 	        </nav>
 		</header>
-	    <div class="main-content descuentos-lista">
+	    <div class="main-content pagos-lista">
 	    	<div class="admin-sintesis">
 	    		<div class="container-fluid">
     				<div class="row sintesis-header">
-	    				<h3 class="col-auto">Descuentos</h3>	
+	    				<h3 class="col-auto">Pagos</h3>	
 	    				<div class="btn-set col-auto">
-	    					<button class="btn btn-small btn-primary">+ Descuento</button>
 	    					<button class="btn btn-outline btn-small"><span class="d-md-inline d-none">Descargar</span> CSV</button>
 	    				</div>
     				</div>
-    				<!--<div class="row stats d-none d-md-flex">
+    				<div class="row stats d-none d-md-flex">
     					<div class="col-auto stat">
-    						<p class="label">Total</p>
-    						<p class="value"><span class="number strong">105</span></p>
+    						<p class="label">Pendientes</p>
+    						<p class="value"><span class="number">8</span><span class="separador">/</span><span class="number strong">$9000</span></p>
     					</div>
     					<div class="col-auto stat">
-    						<p class="label">Activos</p>
-    						<p class="value"><span class="number">80</span> </p>
-    					</div>
-    					<div class="col-auto stat">
-    						<p class="label">Nuevos</p>
+    						<p class="label">Este mes</p>
     						<div class="row">
     							<div class="col-auto">
-    								<p class="value"><span class="number">75</span></p>		
+    								<p class="value"><span class="number">$100.4 k</span> </p>		
     							</div>
     							<div class="col-auto interpretation">
 	    							<p class="value worse">-2%</p>
 	    							<p class="aclaracion">vs. mes anterior</p>
     							</div>
     						</div>
-    						
-    						
     					</div>
     					<div class="col-auto stat block-start">
-    						<p class="label">Revisión pendiente</p>
-    						<p class="value c-error"><span class="number">25</span></p>
+    						<p class="label">Total histórico</p>
+    						<p class="value"><span class="number">$400.4k</span></p>
     					</div>
-    				</div>-->
+    				</div>
 	    		</div>
 	    	</div>
 	    	<div class="more-content">
-	    		<div class="content-block clientes-lista">
+	    		<div class="menu">
+	    			<div class="container-fluid">
+	    				<ul>
+			    			<li><a href="admin-pagos.html">Pendientes</a></li>
+			    			<li class="active"><a href="admin-pagos-historial.html">Historial</a></li>
+			    		</ul>
+		    		</div>
+	    		</div>
+	    		<div class="content-block pagos-lista">
 	    			<div class="container-fluid">
 	    				<div class="filter-row form form-rounded form-small">
 	    					<div class="col-auto title">Filtros:</div>
 	    					<div class="col-auto filtro">
-	    						<p class="label">Tipo</p>
-	    						<select class="form-select" aria-label="Fecha de alta" name="alta" id="fechaAlta">
-	    							<option value="a" selected="selected">Todos</option>
-	    							<option value="b">Monto fijo</option>
-	    							<option value="c">Porcentaje</option>
+	    						<p class="label">Fecha</p>
+	    						<select class="form-select" aria-label="Fecha" name="fecha" id="fecha">
+	    							<option value="a" selected="selected">Todas</option>
+	    							<option value="b">Este mes</option>
+	    							<option value="c">Últimos 3 meses</option>
 	    						</select>
 	    					</div>
 	    					<div class="col-auto filtro">
-	    						<p class="label">Estado</p>
-	    						<select class="form-select" aria-label="Estado" name="estado" id="estado">
-	    							<option value="a" selected="selected">Todos</option>
-	    							<option value="b">Vigente</option>
-	    							<option value="c">Finalizado</option>
+	    						<p class="label">Monto</p>
+	    						<select class="form-select" aria-label="Factura" name="factura" id="factura">
+	    							<option value="a">Todos</option>
+	    							<option value="b" selected>Mayor a $5000</option>
+	    							<option value="c">Menor a $5000</option>
 	    						</select>
 	    					</div>
 	    					<div class="col-12 col-md expansible-search-right">	
@@ -165,57 +166,77 @@
 	    					</div>
 	    				</div>
 
-
-	    				<div class="clientes-all">
+	    				<div class="pagos-all">
 	    					<div class="table-responsive">
 		    					<table class="table admin-table table-hover">
 								  <thead>
 								    <tr>
-								      <th scope="col" class="cell-estado"></th>
-								      <th scope="col" class="cell-nombre ordenable down">Código</th>
-								      <th scope="col" class="cell-tipo ordenable up">Tipo</th>
-								      <th scope="col" class="cell-valor ordenable">Valor</th>
-								      <th scope="col" class="cell-vencimiento ordenable">Vencimiento</th>
-								      <th scope="col" class="cell-stock ordenable">Cupones disponibles</th>
+								      <th scope="col" class="cell-fecha ordenable up">Fecha</th>
+								      <th scope="col" class="cell-nombre ordenable">Vidrierista</th>
+								      <th scope="col" class="cell-cuenta">Cuenta destino</th>
+								      <th scope="col" class="cell-concepto ordenable down">Concepto</th>
+								      <th scope="col" class="cell-monto ordenable">Monto</th>
+								      <th scope="col" class="cell-factura ordenable">Factura</th>
 								      <th scope="col" class="cell-accion"></th>
 								    </tr>
 								  </thead>
 								  <tbody>
-								    <tr class="descuento-vigente">
-								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-										<td scope="col" class="cell-nombre">
-											PROMOVERANO
-											<span class="aclaracion">Creado: 07/04/2020</span>
+								    <tr class="">
+								    	<th scope="col" class="cell-fecha">7 May</th>
+										<td scope="col" class="cell-nombre">Grant Marshall</td>
+										<td scope="col" class="cell-cuenta">
+											123465478
+											<span class="aclaracion">CUIT: 27-12513548-0</span>
 										</td>
-										<td scope="col" class="cell-tipo">Monto fijo</td>
-										<td scope="col" class="cell-valor">	
-											$200
-											<span class="aclaracion">Compra mínima: $500</span>
-										</td>
-										<td scope="col" class="cell-vencimiento">15/12/2021</td>
-										<td scope="col" class="cell-stock">Ilimitados</td>
+										<td scope="col" class="cell-concepto">Diciembre 2021</td>									
+										<td scope="col" class="cell-monto">$7186</td>
+										<td scope="col" class="cell-factura"><a href="#" class="download"><i class="far fa-arrow-down"></i></a>3502421-001</td>
 										<td scope="col" class="cell-accion">
-											<a href="#" class="btn btn-outline btn-small">Editar</a>
+											<a href="#" class="btn btn-outline btn-small">Ver</a>
 										</td>
 								    </tr>
-								    <tr class="descuento-expirado">
-								    	<td scope="col" class="cell-estado"><i class="circle"></i></td>
-										<td scope="col" class="cell-nombre">
-											JOYAESLASOLUCION
-											<span class="aclaracion">Creado el 07/04/2020</span>
+								    <tr class="">
+								    	<th scope="col" class="cell-fecha">7 May</th>
+										<td scope="col" class="cell-nombre">Grant Marshall</td>
+										<td scope="col" class="cell-cuenta c-error">
+											<i class="far fa-exclamation-triangle"></i> Reclamar
 										</td>
-										<td scope="col" class="cell-tipo">Porcentaje</td>
-										<td scope="col" class="cell-valor">
-											30%
-											<span class="aclaracion">Tope: $300</span>
-										</td>
-										<td scope="col" class="cell-vencimiento">-</td>
-										<td scope="col" class="cell-stock">10 de 500</td>
+										<td scope="col" class="cell-concepto">Diciembre 2021</td>									
+										<td scope="col" class="cell-monto">$7186</td>
+										<td scope="col" class="cell-factura"><a href="#" class="download"><i class="far fa-arrow-down"></i></a>3502421-001</td>
 										<td scope="col" class="cell-accion">
-											<a href="#" class="btn btn-outline btn-small">Editar</a>
+											<a href="#" class="btn btn-outline btn-small">Ver</a>
 										</td>
 								    </tr>
-
+								    <tr class="">
+								    	<th scope="col" class="cell-fecha">7 May</th>
+										<td scope="col" class="cell-nombre">Grant Marshall</td>
+										<td scope="col" class="cell-cuenta c-error">
+											<i class="far fa-exclamation-triangle"></i> Reclamar
+										</td>
+										<td scope="col" class="cell-concepto">Diciembre 2021</td>									
+										<td scope="col" class="cell-monto">$7186</td>
+										<td scope="col" class="cell-factura c-error">
+											<i class="far fa-exclamation-triangle"></i> Reclamar
+										</td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Ver</a>
+										</td>
+								    </tr>
+								    <tr class="">
+								    	<th scope="col" class="cell-fecha">7 May</th>
+										<td scope="col" class="cell-nombre">Grant Marshall</td>
+										<td scope="col" class="cell-cuenta">
+											123465478
+											<span class="aclaracion">CUIT: 27-12513548-0</span>
+										</td>
+										<td scope="col" class="cell-concepto">Diciembre 2021</td>									
+										<td scope="col" class="cell-monto">$7186</td>
+										<td scope="col" class="cell-factura"><a href="#" class="download"><i class="far fa-arrow-down"></i></a>3502421-001</td>
+										<td scope="col" class="cell-accion">
+											<a href="#" class="btn btn-outline btn-small">Ver</a>
+										</td>
+								    </tr>
 								  </tbody>
 								</table>
 							</div>

@@ -5,6 +5,10 @@
 	
 	.admin-sintesis {
 		background: none; 
+		.btn-small {
+			padding-left: 20px; padding-right: 20px; 
+			
+		}
 	}
 	.filter-row {
 		.filtro:not(:last-child) {
@@ -131,27 +135,9 @@
 .admin-recorrido-confirmar {
 	@extend .admin-descuento-crear;
 
-	.recorrido-card {
-		max-width: 500px; 
-		.img-container {
-			background-color: $c-vidrio;
-			background-position: center; 
-			background-size: cover; 
-		}
-		.precio {
-			margin-bottom: 0;
-		}
-		.card-body {padding: 20px; }
-		.card-text {
-			display: flex; flex-direction: row; 
-			line-height: normal;
-			i {
-				width: 30px; 
-				flex-shrink: 0; 
-			}
 
-		}
-	}
+	.info-block {margin-top: 0; }
+	
 	.col-small {
 		max-width: 150px; 
 	}
@@ -159,6 +145,38 @@
 		.btn:not(:first-child) {margin-left: 15px; }
 	}
 }
-.asignar-vidrierista-modal {
-	
+.admin-recorrido-armar, .admin-recorrido-confirmar {
+	&:after {
+		background-image: url("../assets/img/bg_mapa.jpg");
+		background-size: cover; background-repeat: no-repeat;
+		opacity: 0.7;
+	}
+
+}
+.recorrido-card {
+	.img-container {
+		background-color: $c-vidrio;
+		background-position: center; 
+		background-size: cover; 
+		height: 170px;
+	}
+	.precio {
+		margin-bottom: 12px;
+	}
+	.card-body {padding: 20px; }
+	.card-text {
+		display: flex; flex-direction: row; 
+		line-height: normal;
+		i {
+			width: 30px; 
+			flex-shrink: 0; 
+		}
+
+	}
+	margin-bottom: 50px; 
+
+	@media (min-width: $start-md) {
+		max-width: 500px; 
+		.img-container {height: auto; }
+	}
 }

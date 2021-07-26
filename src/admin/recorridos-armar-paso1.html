@@ -44,60 +44,46 @@
 	                        <nav class="navbar navbar-inverse navbar-fixed-top" id="main-menu" role="navigation">
 	                            <div class="nav sidebar-nav col">
 	                            	<ul class="menu admin-menu">
-	                            		<li><a href="#">Agenda</a></li>
-	                            		<li><a href="#">Recorridos</a></li>
-	                            		<li class="user-options dropdown closed">
-		                        			<span class="a">
-		                        				Vidrieristas
+	                            		<li><a href="admin-agenda.html">Agenda</a></li>
+	                            		<li class="dropdown closed">
+	                            			<a class="a" href="admin-recorridos-armar-paso1.html">
+		                        				Recorridos
 		                        				<i class="far fa-chevron-down"></i>
-		                        			</span>
+		                        			</a>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
+		                        				<li><a href="admin-recorridos-armar-paso1.html">Ver pedidos</a></li>
+		                        				<li><a href="admin-recorridos-armar-paso3.html">Nuevo recorrido</a></li>
 		                        			</ul>
-		                        		</li>
-		                        		<li class="user-options dropdown closed">
-		                        			<span class="a">
+	                            		</li>
+	                            		<li><a href="admin-vidrieristas.html">Vidrieristas</a></li>
+		                        		<li class="dropdown closed"> 
+		                        			<a href="admin-clientes.html" class="a">
 		                        				Clientes
 		                        				<i class="far fa-chevron-down"></i>
-		                        			</span>
+		                        			</a>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
+		                        				<li><a href="admin-clientes.html">Clientes</a></li>
+		                        				<li><a href="admin-locales.html">Locales</a></li>
+		                        				<li><a href="admin-descuentos.html">Descuentos</a></li>
 		                        			</ul>
 		                        		</li>
-		                        		<li class="user-options dropdown closed">
-		                        			<span class="a">
-		                        				Locales
-		                        				<i class="far fa-chevron-down"></i>
-		                        			</span>
-		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
-		                        			</ul>
-		                        		</li>
-		                        		<li class="user-options dropdown closed">
+		                        		<li class="dropdown closed">
 		                        			<span class="a user-item">
 		                        				Balance
 		                        				<i class="far fa-chevron-down"></i>
 		                        			</span>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
+		                        				<a href="admin-pagos.html">Pagos pendientes</a>
+		                        				<li><a href="admin-pagos-historial.html">Historial</a></li>
 		                        			</ul>
 		                        		</li>
 	                            		<li class="user-options dropdown closed">
 		                        			<span class="a">
 		                        				<i class="far fa-user-circle d-none d-lg-inline"></i>
-		                        				<span class="d-none d-xl-block">Carolina</span>
+		                        				<span class="d-none d-xl-block">Agustín</span>
 		                        				<i class="far fa-chevron-down"></i>
 		                        			</span>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
 		                        				<li><a href="#">Configuración de cuenta</a></li>
 		                        				<li><a href="#">Salir</a></li>
 		                        			</ul>
@@ -110,7 +96,7 @@
 	                </div>
 	            </div>
 	        </nav>
-	    </header>
+		</header>
 	    <div class="main-content recorridos-armar">
 	    	
 	    	<div class="row mx-0 ">
@@ -127,6 +113,7 @@
 							</div>
 							<div class="btn-set col-auto">
 		    					<button class="btn btn-outline btn-small">CSV</button>
+		    					<a class="btn btn-outline btn-small" href="admin-recorridos-armar-paso3.html">Crear recorrido</a>
 		    				</div>
 						</div>
 
@@ -280,9 +267,8 @@
 													<div class="btn-group">
 														<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
 														<ul class="dropdown-menu">
-														    <li><a class="dropdown-item" href="#">Editar recorrido</a></li>
-														    <li><a class="dropdown-item" href="#">Publicar</a></li>
-														    <li><a class="dropdown-item" href="#">Desintegrar</a></li>
+														    <li><a class="dropdown-item" href="#">Ver local</a></li>
+														    <li><a class="dropdown-item" href="#">Contactar dueño</a></li>
 														</ul>
 													</div>
 												</td>
@@ -299,9 +285,8 @@
 													<div class="btn-group">
 														<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
 														<ul class="dropdown-menu">
-														    <li><a class="dropdown-item" href="#">Editar recorrido</a></li>
-														    <li><a class="dropdown-item" href="#">Publicar</a></li>
-														    <li><a class="dropdown-item" href="#">Desintegrar</a></li>
+														    <li><a class="dropdown-item" href="#">Ver local</a></li>
+														    <li><a class="dropdown-item" href="#">Contactar dueño</a></li>
 														</ul>
 													</div>
 												</td>
@@ -318,9 +303,8 @@
 													<div class="btn-group">
 														<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
 														<ul class="dropdown-menu">
-														    <li><a class="dropdown-item" href="#">Editar recorrido</a></li>
-														    <li><a class="dropdown-item" href="#">Publicar</a></li>
-														    <li><a class="dropdown-item" href="#">Desintegrar</a></li>
+														    <li><a class="dropdown-item" href="#">Ver local</a></li>
+														    <li><a class="dropdown-item" href="#">Contactar dueño</a></li>
 														</ul>
 													</div>
 												</td>
@@ -337,9 +321,8 @@
 													<div class="btn-group">
 														<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
 														<ul class="dropdown-menu">
-														    <li><a class="dropdown-item" href="#">Editar recorrido</a></li>
-														    <li><a class="dropdown-item" href="#">Publicar</a></li>
-														    <li><a class="dropdown-item" href="#">Desintegrar</a></li>
+														    <li><a class="dropdown-item" href="#">Ver local</a></li>
+														    <li><a class="dropdown-item" href="#">Contactar dueño</a></li>
 														</ul>
 													</div>
 												</td>
@@ -356,9 +339,8 @@
 													<div class="btn-group">
 														<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
 														<ul class="dropdown-menu">
-														    <li><a class="dropdown-item" href="#">Editar recorrido</a></li>
-														    <li><a class="dropdown-item" href="#">Publicar</a></li>
-														    <li><a class="dropdown-item" href="#">Desintegrar</a></li>
+														    <li><a class="dropdown-item" href="#">Ver local</a></li>
+														    <li><a class="dropdown-item" href="#">Contactar dueño</a></li>
 														</ul>
 													</div>
 												</td>
@@ -375,9 +357,8 @@
 													<div class="btn-group">
 														<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
 														<ul class="dropdown-menu">
-														    <li><a class="dropdown-item" href="#">Editar recorrido</a></li>
-														    <li><a class="dropdown-item" href="#">Publicar</a></li>
-														    <li><a class="dropdown-item" href="#">Desintegrar</a></li>
+														    <li><a class="dropdown-item" href="#">Ver local</a></li>
+														    <li><a class="dropdown-item" href="#">Contactar dueño</a></li>
 														</ul>
 													</div>
 												</td>
@@ -394,9 +375,8 @@
 													<div class="btn-group">
 														<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
 														<ul class="dropdown-menu">
-														    <li><a class="dropdown-item" href="#">Editar recorrido</a></li>
-														    <li><a class="dropdown-item" href="#">Publicar</a></li>
-														    <li><a class="dropdown-item" href="#">Desintegrar</a></li>
+														    <li><a class="dropdown-item" href="#">Ver local</a></li>
+														    <li><a class="dropdown-item" href="#">Contactar dueño</a></li>
 														</ul>
 													</div>
 												</td>
@@ -413,9 +393,8 @@
 													<div class="btn-group">
 														<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
 														<ul class="dropdown-menu">
-														    <li><a class="dropdown-item" href="#">Editar recorrido</a></li>
-														    <li><a class="dropdown-item" href="#">Publicar</a></li>
-														    <li><a class="dropdown-item" href="#">Desintegrar</a></li>
+														    <li><a class="dropdown-item" href="#">Ver local</a></li>
+														    <li><a class="dropdown-item" href="#">Contactar dueño</a></li>
 														</ul>
 													</div>
 												</td>
@@ -432,9 +411,8 @@
 													<div class="btn-group">
 														<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
 														<ul class="dropdown-menu">
-														    <li><a class="dropdown-item" href="#">Editar recorrido</a></li>
-														    <li><a class="dropdown-item" href="#">Publicar</a></li>
-														    <li><a class="dropdown-item" href="#">Desintegrar</a></li>
+														    <li><a class="dropdown-item" href="#">Ver local</a></li>
+														    <li><a class="dropdown-item" href="#">Contactar dueño</a></li>
 														</ul>
 													</div>
 												</td>
@@ -451,9 +429,8 @@
 													<div class="btn-group">
 														<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
 														<ul class="dropdown-menu">
-														    <li><a class="dropdown-item" href="#">Editar recorrido</a></li>
-														    <li><a class="dropdown-item" href="#">Publicar</a></li>
-														    <li><a class="dropdown-item" href="#">Desintegrar</a></li>
+														    <li><a class="dropdown-item" href="#">Ver local</a></li>
+														    <li><a class="dropdown-item" href="#">Contactar dueño</a></li>
 														</ul>
 													</div>
 												</td>
@@ -474,19 +451,6 @@
 	    			MAPA ACA
 	    		</div>
 	    	</div>
-	    	<div class="recorridos-seleccionados bg-dark">
-	    		<div class="container-max">
-		    		<div class="row">
-		    			<div class="col-auto">
-		    				5 locales seleccionados
-		    			</div>
-		    			<div class="col-auto btn-set">
-		    				<button class="btn btn-primary btn-small">Agrupar en nuevo recorrido</button>
-		    				<button class="btn btn-secondary btn-small">Mover a recorrido existente</button>
-		    			</div>
-		    		</div>
-		    	</div>
-			</div>
 	    </div>
 	</div>
 </body>

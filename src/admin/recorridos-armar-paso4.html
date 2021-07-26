@@ -40,63 +40,50 @@
 	                            <span class="hamb-middle"></span>
 	                            <span class="hamb-bottom"></span>
 	                        </button>
+	                        
 	                        <nav class="navbar navbar-inverse navbar-fixed-top" id="main-menu" role="navigation">
 	                            <div class="nav sidebar-nav col">
 	                            	<ul class="menu admin-menu">
-	                            		<li><a href="#">Agenda</a></li>
-	                            		<li><a href="#">Recorridos</a></li>
-	                            		<li class="user-options dropdown closed">
-		                        			<span class="a">
-		                        				Vidrieristas
+	                            		<li><a href="admin-agenda.html">Agenda</a></li>
+	                            		<li class="dropdown closed">
+	                            			<a class="a" href="admin-recorridos-armar-paso1.html">
+		                        				Recorridos
 		                        				<i class="far fa-chevron-down"></i>
-		                        			</span>
+		                        			</a>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
+		                        				<li><a href="admin-recorridos-armar-paso1.html">Ver pedidos</a></li>
+		                        				<li><a href="admin-recorridos-armar-paso3.html">Nuevo recorrido</a></li>
 		                        			</ul>
-		                        		</li>
-		                        		<li class="user-options dropdown closed">
-		                        			<span class="a">
+	                            		</li>
+	                            		<li><a href="admin-vidrieristas.html">Vidrieristas</a></li>
+		                        		<li class="dropdown closed"> 
+		                        			<a href="admin-clientes.html" class="a">
 		                        				Clientes
 		                        				<i class="far fa-chevron-down"></i>
-		                        			</span>
+		                        			</a>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
+		                        				<li><a href="admin-clientes.html">Clientes</a></li>
+		                        				<li><a href="admin-locales.html">Locales</a></li>
+		                        				<li><a href="admin-descuentos.html">Descuentos</a></li>
 		                        			</ul>
 		                        		</li>
-		                        		<li class="user-options dropdown closed">
-		                        			<span class="a">
-		                        				Locales
-		                        				<i class="far fa-chevron-down"></i>
-		                        			</span>
-		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
-		                        			</ul>
-		                        		</li>
-		                        		<li class="user-options dropdown closed">
+		                        		<li class="dropdown closed">
 		                        			<span class="a user-item">
 		                        				Balance
 		                        				<i class="far fa-chevron-down"></i>
 		                        			</span>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
+		                        				<a href="admin-pagos.html">Pagos pendientes</a>
+		                        				<li><a href="admin-pagos-historial.html">Historial</a></li>
 		                        			</ul>
 		                        		</li>
 	                            		<li class="user-options dropdown closed">
 		                        			<span class="a">
 		                        				<i class="far fa-user-circle d-none d-lg-inline"></i>
-		                        				<span class="d-none d-xl-block">Carolina</span>
+		                        				<span class="d-none d-xl-block">Agustín</span>
 		                        				<i class="far fa-chevron-down"></i>
 		                        			</span>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
 		                        				<li><a href="#">Configuración de cuenta</a></li>
 		                        				<li><a href="#">Salir</a></li>
 		                        			</ul>
@@ -109,7 +96,7 @@
 	                </div>
 	            </div>
 	        </nav>
-	    </header>
+		</header>
 	    <div class="main-content">
 	    	<div class="admin-recorrido-confirmar">
 	    		<div class="container-fluid">
@@ -122,13 +109,15 @@
 	    				<div class="col-12 card-page-container">
 	    					<div class="card-page-content">
 	    						<div class="inner-container">
-	    							<div class="row">
-	    								<div class="col-xl-10">
-	    									<div class="supertitulo">Vie. 24 de julio</div>
-				    						<h3>Título del recorrido</h3>
-				    						<div class="card mb-3 recorrido-card">
+		    						<div class="row">
+		    							<div class="col-12">
+		    								<div class="supertitulo">Vie. 24 de julio</div>
+		    								<h3>Título del recorrido</h3>
+		    							</div>
+		    							<div class="col-lg-6 order-lg-2">
+				    						<div class=" card recorrido-card">
 												<div class="row g-0">
-													<div class="col-md-6">
+													<div class="col-md-6 order-2 order-md-1">
 														<div class="card-body">
 															<h3 class="precio">$ 750</h3>
 															<p class="card-text">
@@ -148,75 +137,78 @@
 													<div class="col-md-6 img-container" style="background-image: url('/img/hero-vidrieristas.jpg');"></div>
 												</div>
 											</div>
-				    						
-				    						<div class="info-block">
-				    							<div class="row">
-									        		<div class="col col-small form-element">
-														<p class="form-label">Total</p>
-														<p class="form-value">$750</p>
-													</div>
-													<div class="col form-element">
-														<p class="form-label">Fecha</p>
-														<p class="form-value">Vie. 24 de julio</p>
-													</div>
-									        	</div>
-									        	<div class="row">
-													<div class="col col-small form-element">
-														<p class="form-label">Locales</p>
-														<p class="form-value">17</p>
-													</div>
-													<div class="col form-element">
-														<p class="form-label">Barrios</p>
-														<p class="form-value">3</p>
-													</div>
+										</div>
+		    						
+			    						<div class="info-block col-lg-6">
+			    							<div class="row">
+								        		<div class="col col-small form-element">
+													<p class="form-label">Total</p>
+													<p class="form-value">$750</p>
 												</div>
-												<div class="row">
-													<div class="col form-element">
-														<p class="form-label">Distancia</p>
-														<p class="form-value">6.8km</p>
-													</div>
+												<div class="col form-element">
+													<p class="form-label">Fecha</p>
+													<p class="form-value">Vie. 24 de julio</p>
 												</div>
-												<div class="row">
-													<div class="col col-small form-element">
-														<p class="form-label">Franja horaria</p>
-														<p class="form-value">9:00 - 14:00</p>
-													</div>
-													<div class="col form-element">
-														<p class="form-label">Tiempo de viaje est.</p>
-														<p class="form-value">1.4hs</p>
-													</div>
+								        	</div>
+								        	<div class="row">
+												<div class="col col-small form-element">
+													<p class="form-label">Locales</p>
+													<p class="form-value">17</p>
 												</div>
-												
-												<div class="row">
-													<div class="col-12 form-element">
-														<p class="form-label">Descripción</p>
-														<p class="form-value">Descripción del recorrido, idealmente los barrios involucrados.</p>
-													</div>
-													<div class="col-12 form-element">
-														<p class="form-label">Link recorrido</p>
-														<p class="form-value btn-set"><a href="#">http://www.google.mymaps.com/</a><a href="#" class="btn btn-mini btn-primary">Copiar URL</a></p>
-													</div>
-													<div class="col-12 form-element vidrierista-asignado">
-														<p class="form-label">Vidrierista</p>
-														<p class="form-value">Juan Pérez</p>
-													</div>
-													<div class="col-12 form-element vidrierista-asignado">
-														<p class="form-label">Vidrierista</p>
-														<p class="form-value"><a href="#" class="btn btn-primary btn-mini">Asignar</a></p>
-													</div>
+												<div class="col form-element">
+													<p class="form-label">Barrios</p>
+													<p class="form-value">3</p>
 												</div>
 											</div>
-											<div class="dev-note">
-												<strong>Recorrido NO publicado:</strong> no se ve ni se puede asignar vidrierista. Se puede editar o publicar.<br>
-												<strong>Recorrido SI publicado:</strong> se puede asignar o ver vidriersta. No se puede editar ni publicar.
+											<div class="row">
+												<div class="col form-element">
+													<p class="form-label">Distancia</p>
+													<p class="form-value">6.8km</p>
+												</div>
 											</div>
-											<div class="btn-set">
-												<button class="btn btn-primary">Publicar</button>
-												<a class="btn btn-secondary" href="admin-recorridos-armar-paso3.html">Editar</a>
+											<div class="row">
+												<div class="col col-small form-element">
+													<p class="form-label">Franja horaria</p>
+													<p class="form-value">9:00 - 14:00</p>
+												</div>
+												<div class="col form-element">
+													<p class="form-label">Tiempo de viaje est.</p>
+													<p class="form-value">1.4hs</p>
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="col-12 form-element">
+													<p class="form-label">Descripción</p>
+													<p class="form-value">Descripción del recorrido, idealmente los barrios involucrados.</p>
+												</div>
+												<div class="col-12 form-element">
+													<p class="form-label">Link recorrido</p>
+													<p class="form-value btn-set"><a href="#">http://www.google.mymaps.com/</a><a href="#" class="btn btn-mini btn-primary">Copiar URL</a></p>
+												</div>
+												<div class="col-12 form-element vidrierista-asignado">
+													<p class="form-label">Vidrierista</p>
+													<p class="form-value">Juan Pérez</p>
+												</div>
+												<div class="col-12 form-element vidrierista-asignado">
+													<p class="form-label">Vidrierista</p>
+													<p class="form-value"><a href="#" class="btn btn-primary btn-mini">Asignar</a></p>
+												</div>
 											</div>
 										</div>
 									</div>
+									<div class="dev-note">
+										<strong>Notas de desarrollo:</strong><br>
+										- Recorrido NO publicado: no se ve ni se puede asignar vidrierista. Se puede editar o publicar.<br>
+										- Recorrido SI publicado: se puede asignar o ver vidriersta. No se puede editar ni publicar.<br>
+										- Vidrierista asignado: Acá se muestran las dos opciones, con y sin vidrierista asignado. Sólo se muestra uno por vez.
+									</div>
+									<div class="btn-set">
+										<button class="btn btn-primary">Publicar</button>
+										<a class="btn btn-secondary" href="admin-recorridos-armar-paso3.html">Editar</a>
+									</div>
 								</div>
+								
 	    					</div>
 	    				</div>
 	    			</div>
