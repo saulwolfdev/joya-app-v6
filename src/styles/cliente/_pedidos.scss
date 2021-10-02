@@ -1,4 +1,4 @@
-.mis-pedidos, .mis-locales, .mi-local, .mi-cuenta {
+.mis-pedidos, .mis-locales, .mi-local, .mi-cuenta, .mis-facturas {
 	@include card-page; 
 	background: #F7F7F7 url("../assets/img/pedidos.jpg") no-repeat top center; 
 	.section-header {
@@ -36,7 +36,7 @@
 		background-size: 100%;
 	}
 }
-.mis-pedidos {
+.mis-pedidos, .mis-facturas {
 	.menu-header {
 		align-items: center; 
 		padding-bottom: 25px; 
@@ -127,6 +127,7 @@
 		}
 		.acciones {
 			i {color: $text-dark-secondary;}
+
 		}
 	}
 	.pedidos-pasados {
@@ -147,10 +148,14 @@
 			span {font-weight: normal; }
 			.aclaracion {color: $text-dark-secondary;}
 		}
-		.acciones a {
-			color: $text-dark;
-			padding: 0 15px; 
-			&:hover, &:focus, &:active {text-decoration: underline;}
+		.acciones {
+			.dropdown-item i {margin-right: 8px; width: 20px; text-align: center; }
+			a.text-link {
+				color: $text-dark;
+				padding: 0 15px; 
+				i {margin-right: 8px; }
+				&:hover, &:focus, &:active {text-decoration: underline;}
+			}
 		}
 	}
 	
@@ -191,5 +196,29 @@
 		.menu-header {
 			.menu-item { font-size: 30px; }
 		}
+	}
+}
+.mis-facturas {
+	@media (min-width: $start-md) {
+		.visita-pasada .col.nombre-local {
+		    width: auto;
+		}
+	}
+	@media (max-width: $end-sm) {
+		.visita-pasada .col.nombre-local {
+			width: 100%; padding-bottom: 0.5em; 
+		}
+	}
+}
+#supportModal {
+	ul {list-style: none; padding-left: 10px; }
+	li {
+		a {
+			color: $text-dark;
+			&:hover, &:focus, &:active {
+				color: $c-primary; text-decoration: underline;
+			}
+		}
+	 	i {margin-right: 8px;  vertical-align: middle; }
 	}
 }

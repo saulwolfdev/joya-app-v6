@@ -48,10 +48,10 @@
 		                        			<i class="far fa-user-circle"></i>
 		                        			Carolina	                        			
 		                        		</span></li>
-		                        		<li class="ayuda"><a href="#">Ayuda</a></li>
-		                        		<li><a href="#" class="destacado">Solicitar limpieza de vidriera</a></li>
+		                        		<li class="ayuda"><a href="https://wa.me/521123456XXXX/?text=urlencodedtext" target="_blank"><i class="fab fa-whatsapp"></i>Ayuda</a></li>
+		                        		<li><a href="/cliente-paso1.html?clwclass=step1%20localnuevo" class="destacado">Solicitar limpieza de vidriera</a></li>
 		                        		<li class="separator"></li>
-		                        		<li class="user-item"><a href="#">Tus pedidos</a></li>
+		                        		<li class="user-item"><a href="/cliente-pedidos-proximos.html">Tus pedidos</a></li>
 		                        		<li class="user-options dropdown closed">
 		                        			<span class="a user-item">
 		                        				<i class="far fa-user-circle"></i>
@@ -59,9 +59,10 @@
 		                        				<i class="far fa-chevron-down"></i>
 		                        			</span>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
+		                        				<li><a href="/cliente-pedidos-proximos.html">Tus pedidos</a></li>
+		                        				<li><a href="/cliente-facturas.html">Tus facturas</a></li>
+		                        				<li><a href="/cliente-cuenta.html">Configuración de cuenta</a></li>
+		                        				<li><a href="/cliente-home.html">Salir</a></li>
 		                        			</ul>
 		                        		</li>
 		                        	</ul>
@@ -106,6 +107,7 @@
 					    							<div class="col">
 					    								<h4>Kentucky Santa Fe</h4>
 					    								<p class="direccion">Av. Santa Fe 2702, Palermo, Comuna 12</p>
+					    								<p class="telefono">+54 11 4357-5465</p>
 					    							</div>
 					    							<div class="col-auto">
 					    								<div class="imagen-local local-verificado" style="background-image: url(/img/beneficios-side.jpg)"></div>
@@ -127,7 +129,8 @@
 					    						</div>
 					    						<div class="btn-set">
 					    							<div class="alertas"></div>
-					    							<a class="btn btn-outline btn-small">Editar</a>
+					    							<a class="btn btn-outline btn-small" href="/cliente-local.html">Editar</a>
+					    							<button class="btn btn-outline btn-small btn-round" data-bs-toggle="modal" data-bs-target="#confirmModal"><i class="far fa-trash-alt"></i></button>
 					    						</div>
 					    					</div>
 					    				</div>
@@ -138,6 +141,7 @@
 					    							<div class="col">
 					    								<h4>Kentucky Santa Fe</h4>
 					    								<p class="direccion">Av. Santa Fe 2702, Palermo, Comuna 12</p>
+					    								<p class="telefono">+54 11 4357-5465</p>
 					    							</div>
 					    							<div class="col-auto">
 					    								<div class="imagen-local sin-imagen"></div>
@@ -159,7 +163,8 @@
 					    						</div>
 					    						<div class="btn-set">
 					    							<div class="alertas"><i class="far fa-exclamation-triangle"></i>Foto de fachada pendiente</div>
-					    							<a class="btn btn-outline btn-small">Editar</a>
+					    							<a class="btn btn-outline btn-small" href="/cliente-local.html">Editar</a>
+
 					    						</div>
 					    					</div>
 					    				</div>
@@ -170,6 +175,7 @@
 					    							<div class="col">
 					    								<h4>Kentucky Santa Fe</h4>
 					    								<p class="direccion">Av. Santa Fe 2702, Palermo, Comuna 12</p>
+					    								<p class="telefono">+54 11 4357-5465</p>
 					    							</div>
 					    							<div class="col-auto">
 					    								<div class="imagen-local" style="background-image: url(/img/beneficios-side.jpg)"></div>
@@ -191,7 +197,7 @@
 					    						</div>
 					    						<div class="btn-set">
 					    							<div class="alertas"><i class="far fa-exclamation-triangle"></i>Superficie a confirmar</div>
-					    							<a class="btn btn-outline btn-small">Editar</a>
+					    							<a class="btn btn-outline btn-small" href="/cliente-local.html">Editar</a>
 					    						</div>
 					    					</div>
 					    				</div>
@@ -202,6 +208,7 @@
 					    							<div class="col">
 					    								<h4>Kentucky Santa Fe</h4>
 					    								<p class="direccion">Av. Santa Fe 2702, Palermo, Comuna 12</p>
+					    								<p class="telefono">+54 11 4357-5465</p>
 					    							</div>
 					    							<div class="col-auto">
 					    								<div class="imagen-local sin-imagen"></div>
@@ -226,7 +233,8 @@
 					    								<i class="far fa-exclamation-triangle"></i>Foto de fachada pendiente
 					    								<br><i class="far fa-exclamation-triangle"></i>Superficie a confirmar
 					    							</div>
-					    							<a class="btn btn-outline btn-small">Editar</a>
+					    							<a class="btn btn-outline btn-small" href="/cliente-local.html">Editar</a>
+					    							<button class="btn btn-outline btn-small btn-round" data-bs-toggle="modal" data-bs-target="#confirmModal"><i class="far fa-trash-alt"></i></button>
 					    						</div>
 					    					</div>
 					    				</div>
@@ -288,6 +296,20 @@
 			</div>
 		</footer>
 	</div>
-
+	<div class="modal fade confirmModal" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      <div class="modal-body">
+	        <h4>Estás seguro?</h4>
+	        <p>Estás por eliminar el local <strong>Kentucky Santa Fe</strong>. Esta acción no se puede deshacer. Estás seguro?</p>
+	      </div>
+	      <div class="modal-footer">
+	       	<button type="button" class="btn btn-error left-icon"><i class="far fa-trash-alt"></i>Eliminar</button>
+	        <button type="button" class="btn btn-outline">Cancelar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 </body>
 </html>

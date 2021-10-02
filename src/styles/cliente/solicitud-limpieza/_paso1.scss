@@ -18,6 +18,7 @@
 			&:hover, &:active, &:focus {color: $c-primary; }
 		}
 		.medidas {
+			display: flex; flex-flow: column; justify-content: center; 
 			.icon {width: 40px;}
 			> .row {padding: 18px 0; align-items: center; }
 
@@ -46,6 +47,8 @@
 	
 		.representacion {
 			display: flex; flex-direction: column; justify-content: center; align-items: center; 
+			&:after { padding-bottom: 100%; content: ""; display: block;  }
+			position: relative;
 		}
 		.vidriera {
 			$max: 4; 
@@ -60,7 +63,8 @@
 			background-size: cover; 
 			transition: all 0.3s ease-out;  
 
-			position: relative; 
+			position: absolute; 
+			//top: 
 			display: flex; 
 			justify-content: center; align-items: center; 
 

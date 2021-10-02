@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Joya - Cliente - Editar local</title>
-	<meta name="title" content="Joya - Cliente - Editar local">
+    <title>Joya - Cliente - Facturas</title>
+	<meta name="title" content="Joya - Cliente - Facturas">
 	<meta name="description" content="Lorem ipsum sid dolor amet" />
 
 	<link rel="icon" href="/favicons/favicon.ico"><!-- 32×32 -->
@@ -74,88 +74,117 @@
 	        </nav>
 	    </header>
 	    <div class="main-content">
-	    	<div class="mi-local">
+	    	<div class="mis-facturas">
 	    		<div class="container-fluid">
 	    			<div class="row">
 	    				<div class="section-header row">
 	    					<div class="col col-md-12">
-	    					<h4>Tus locales</h4>
+	    					<h4>Tus facturas</h4>
 	    					<h3 class="d-md-block d-none">Tus vidrieras siempre limpias</h3>
 	    					</div>
+	    					<div class="col-auto btn-set d-md-none">
+								<a href="#" class="btn btn-primary btn-small">
+									+ Visita
+								</a>
+							</div>
 	    				</div>
 	    				<div class="col-12 card-page-container">
 	    					<div class="card-page-content">
 	    						<div class="inner-container">
-	    							<div class="row intro-local">
-		    							<div class="col-md-6 local-data">
-		    								<p class="supertitulo">Local</p>
-		    								<h4>Kentucky Santa Fe</h4>	
-				    						<div class="data-table row">
-				    							<div class="col-md-6 direccion data-piece">
-				    								<p class="label">Dirección</p>
-				    								<p class="data">Av. Santa Fe 2702</p>
-				    							</div>
-				    							<div class="col-md-6 barrio data-piece">
-				    								<p class="label">Barrio</p>
-				    								<p class="data">Palermo, Comuna 12</p>
-				    							</div>
-				    							<div class="col-md-6 superfice data-piece">
-				    								<p class="label">Superficie</p>
-				    								<p class="data">64m<sup>2</sup> <i class="c-success far fa-check-circle"></i></p>
-				    							</div>
-				    							<div class="col-md-6 tiempo data-piece">
-				    								<p class="label">Tiempo estimado</p>
-				    								<p class="data">10 minutos</p>
-				    							</div>
-				    							<div class="indicaciones col-12 data-piece">
-				    								
-				    							</div>
-				    						</div>
-		    							</div>
-		    							<div class="col-md-6 local-imagen">
-		    								<img src="img/kentucky.jpg" alt="" class="img-fluid">
-		    							</div>
-	    							</div>
-	    							<div class="row info-block">
-	    								<h5><span>Datos</span></h5>
-	    								<div class="form">
-		    								<div class="row">
-								        		<div class="col-12 form-element">
-													<label for="telefono" class="form-label">Teléfono local</label>
-													<input type="text" class="form-control" name="telefono" value="+5491151234567">
-												</div>
-												<div class="form-element col-12">
-				    								<label for="indicaciones" class="form-label">Indicaciones adicionales</label>
-				    								<textarea name="indicaciones" id="" rows="4" class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut ante eget nulla sodales efficitur. Cras tempor neque risus, nec porta urna lobortis ac.</textarea>
-			    								</div>
-			    								<div class="col-12 data-piece btn-set">
-				    								<a href="#" class="btn btn-primary btn-small">Guardar</a>
-				    								<button href="#" class="btn btn-outline btn-small left-icon" data-bs-toggle="modal" data-bs-target="#confirmModal"><i class="far fa-trash-alt"></i>Eliminar</button>		
-				    							</div>
-								        	</div>
-							        	</div>
-
-	    							</div>
-	    							<div class="row info-block">
-	    								<h5><span>Actividad</span></h5>
-	    								<div class="data-table row">
-			    							<div class="col-md-3 data-piece">
-			    								<p class="label">Registro</p>
-			    								<p class="data">11/12/2021</p>
-			    							</div>
-			    							<div class="col-md-3 data-piece">
-			    								<p class="label">Último pedido</p>
-			    								<p class="data">Mi 15/4/2020, 15:05hs</p>
-			    							</div>
-			    							<div class="col-md-3 data-piece">
-			    								<p class="label">Pedidos totales</p>
-			    								<p class="data">254</p>
-			    							</div>
-			    						</div>
-	    							</div>
 	    							
-	    						</div>
+		    						<div class="row menu-header d-none d-md-flex">
+		    							<div class="col-auto menu-item">
+		    								<span>Tus facturas</span>
+		    							</div>
+		    							<div class="col-auto btn-set">
+		    								<a href="#" class="btn btn-primary btn-round">
+		    									+
+		    									<span class="d-lg-inline d-none"> Agendar visita</span>
+		    									<span class="d-none d-md-inline d-lg-none"> Visita</span>
+		    								</a>
+		    							</div>
+		    						</div>
 
+		    						<div class="pedidos-pasados">
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Kentucky Santa Fe
+		    								</div>
+    										<div class="col detalle">
+												<p class="descripcion">Lunes 20 de Dic.</p>
+											</div>
+    										<div class="col-auto acciones">
+    											<a href="#" class="text-link"><i class="far fa-file-download"></i>Factura</a>
+    										</div>
+		    							</div>
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Kentucky Santa Fe
+		    								</div>
+    										<div class="col detalle">
+												<p class="descripcion">Lunes 20 de Dic.</p>
+											</div>
+    										<div class="col-auto acciones">
+    											<a href="#" class="text-link"><i class="far fa-file-download"></i>Factura</a>
+    										</div>
+		    							</div>
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Kentucky Santa Fe
+		    								</div>
+    										<div class="col detalle">
+												<p class="descripcion">Lunes 20 de Dic.</p>
+											</div>
+    										<div class="col-auto acciones">
+    											<a href="#" class="text-link"><i class="far fa-file-download"></i>Factura</a>
+    										</div>
+		    							</div>
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Como quieres que te quiera - Alto Palermo
+		    								</div>
+    										<div class="col detalle">
+												<p class="descripcion">Lunes 20 de Dic.</p>
+											</div>
+    										<div class="col-auto acciones">
+    											<a href="#" class="text-link"><i class="far fa-file-download"></i>Factura</a>
+    										</div>
+		    							</div>
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Kentucky Santa Fe
+		    								</div>
+    										<div class="col detalle">
+												<p class="descripcion">Lunes 20 de Dic.</p>
+											</div>
+    										<div class="col-auto acciones">
+    											<a href="#" class="text-link"><i class="far fa-file-download"></i>Factura</a>
+    										</div>
+		    							</div>
+		    						</div>
+		    						<div class="btn-set">
+										<nav aria-label="..." class="table-pagination">
+											<ul class="pagination">
+												<li class="page-item disabled">
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Anterior">
+													<span aria-hidden="true">&laquo;</span>
+													</a>
+											    </li>
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item active" aria-current="page">
+													<a class="page-link" href="#">2</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Siguiente">
+													<span aria-hidden="true">&raquo;</span>
+													</a>
+											    </li>
+											</ul>
+										</nav>
+									</div>
+	    						</div>
 	    					</div>
 	    				</div>
 	    			</div>
@@ -210,20 +239,33 @@
 			</div>
 		</footer>
 	</div>
-	<div class="modal fade confirmModal" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-lg">
-	    <div class="modal-content">
-	      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	      <div class="modal-body">
-	        <h4>Estás seguro?</h4>
-	        <p>Estás por eliminar el local <strong>Kentucky Santa Fe</strong>. Esta acción no se puede deshacer. Estás seguro?</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-error left-icon"><i class="far fa-trash-alt"></i>Eliminar</button>
-	        <button type="button" class="btn btn-outline">Cancelar</button>
-	      </div>
-	    </div>
-	  </div>
+	<!-- Modal Ayuda -->
+	<div class="modal fade" id="calificarModal" tabindex="-1" aria-labelledby="calificarModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<div class="modal-body">
+					<h4>Calificá la visita</h4>
+					<p>Nos interesa tu opinión. Contános cómo fue la visita</p>
+					<div class="rating">
+						<input id="rating-5" type="radio" name="rating" value="5"/><label for="rating-5"><i class="fas fa-star"></i></label>
+						<input id="rating-4" type="radio" name="rating" value="4"/><label for="rating-4"><i class="fas fa-star"></i></label>
+						<input id="rating-3" type="radio" name="rating" value="3"/><label for="rating-3"><i class="fas fa-star"></i></label>
+						<input id="rating-2" type="radio" name="rating" value="2"/><label for="rating-2"><i class="fas fa-star"></i></label>
+						<input id="rating-1" type="radio" name="rating" value="1"/><label for="rating-1"><i class="fas fa-star"></i></label>
+					</div>
+					<!-- Textarea -->
+					<div class="form-element">
+						<label for="notas" class="form-label">Notas</label>
+						<textarea class="form-control" name="notas" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+			        <button type="button" class="btn btn-primary left-icon">Calificar</button>
+				</div>
+			</div>
+			
+		</div>
 	</div>
 </body>
 </html>

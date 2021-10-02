@@ -8,10 +8,22 @@
 		padding-bottom: 30px; 
 		.btn {margin-left: auto; }
 	}
+	.local { 
+		.data-main .col p:not(:last-child) {
+			margin-bottom: 0; 
+		}
+		
+	
+	}
 }
 
 
 //Local individual
-.mi-local { 
-	//Outline compartido con pedidos. Ver _pedidos.scss
+//Outline compartido con pedidos. Ver _pedidos.scss
+.mi-local {
+	.btn-set {
+		.btn:not(:last-child) {
+			margin-right: 15px;
+		}
+	}
 }

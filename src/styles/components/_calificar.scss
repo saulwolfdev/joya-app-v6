@@ -1,0 +1,21 @@
+.rating {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	color: #ddd; 
+	text-align: left; 
+	margin-bottom: 30px; 
+
+	label {
+		font-size: 30px; 
+	}
+
+	input {
+		display: none;
+	}
+	label:hover,
+	label:hover ~ label,
+	input:checked + label,
+	input:checked + label ~ label {
+		color: #ffc107; /* Personal color choice. Lifted from Bootstrap 4 */
+	}
+}

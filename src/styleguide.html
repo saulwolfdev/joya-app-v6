@@ -36,7 +36,7 @@
 			<p class="h1">1. Color</p>
 			<p class="h3">Colores principales</p>
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-lg-8">
 					<p>The primary color is the color displayed most frequently across the platform and components. <br>
 					The secondary color is used to accent select parts of the UI such as buttons, floating acition buttons and progress bars. Each color has a corresponding gradient used for backgrounds. </p>
 					<p>Base Colors are used for background of the Chat area.</p>
@@ -238,7 +238,7 @@
 		<div class="section icons-section container">
 			<p class="h1">3. Iconos</p>
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-lg-8">
 					<p><strong>Font Awesome Pro 5.7.2</strong> está disponible. Variantes cargadas: todas. Según los íconos que se usen, se evaluará reducir las variantes cargadas al finalizar el proyecto.</p>
 					<p>Los íconos que se muestran a continuación son los que se han usado ya en el proyecto. Si se desea utilizar un ícono nuevo, agregarlo a esta lista primero.</p>
 				</div>
@@ -269,16 +269,19 @@
 						<i class="far fa-bell"></i>
 
 						<!-- Admin -->
-						<i class="far fa-ellipsis-h"></i> 
-						<i class="far fa-check-circle"></i><i class="far fa-check-circle c-success"></i>
-						<i class="far fa-exclamation-triangle"></i><i class="far fa-exclamation-triangle c-error"></i>
-						<i class="far fa-th"></i>
-						<i class="far fa-th-list"></i>
-						<i class="far fa-download"></i>
+						<i title="fa-ellipsis-h" class="far fa-ellipsis-h"></i> 
+						<i title="fa-check-circle" class="far fa-check-circle"></i>
+							<i title="fa-check-circle.c-success" class="far fa-check-circle c-success"></i>
+						<i title="fa-exclamation-triangle" class="far fa-exclamation-triangle"></i>
+							<i title="fa-exclamation-triangle.c-error" class="far fa-exclamation-triangle c-error"></i>
+						<i title="fa-th" class="far fa-th"></i>
+						<i title="fa-th-list" class="far fa-th-list"></i>
+						<i title="fa-download" class="far fa-download"></i>
 						<i class="far fa-eye" title="fa-eye"></i>
 						<i class="far fa-eye-slash" title="fa-eye-slash"></i>
 						<i class="far fa-store" title="fa-store"></i>
 						<i class="far fa-map-marker-alt" title="fa-map-marker-alt"></i>
+						<i class="far fa-trash-alt" title="fa-trash-alt"></i>
 
 
 					</p>
@@ -302,9 +305,9 @@
 				</div>
 				<div class="col-md-4">
 					<h4>Font Awesome Pro Brands</h4>
-					<p>None in use yet. </p>
 					<p class="icons">
-						<!--<i class="far fa-times"></i>
+						<i class="fab fa-whatsapp" title="fa-whatsapp"></i>
+						<!--
 						<i class="far fa-plus"></i>
 						<i class="far fa-arrow-left"></i>
 						<i class="far fa-arrow-right"></i>
@@ -324,15 +327,27 @@
 			
 			<div class="light-background">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-lg-8">
 						<div class="sub-section">
 							<h3>Tamaños</h3>
 							<div class="row">
 								<div class="col">
 									<button class="btn btn-big btn-primary">.btn.btn-big (60px)</button>
+									<button class="btn btn-big btn-primary btn-round"  title=".btn.btn-big.btn-primary.btn-round">
+										<i class="far fa-bell"></i>
+									</button>
+								</div>
+								<div class="col">
 									<button class="btn btn-primary">.btn (50px)</button>
+									<button class="btn btn-primary btn-round"  title=".btn.btn-primary.btn-round">
+										<i class="far fa-bell"></i>
+									</button>
+								</div>
+								<div class="col">
 									<button class="btn btn-small btn-primary">.btn.btn-small (40px)</button>
-									
+									<button class="btn btn-small btn-primary btn-round"  title=".btn.btn-primary.btn-round.btn-small">
+										<i class="far fa-bell"></i>
+									</button>
 								</div>
 								
 							</div>
@@ -340,33 +355,51 @@
 						<div class="sub-section">
 							<h3>Estilos</h3>
 							<div class="row">
-								<div class="col-md-3">
-									<h4>Normal</h4>
-									<button class="btn btn-primary">Primary</button>
-									<br>
-									<button class="btn btn-secondary"> Secondary </button>
-									<br>
-									<a class="btn btn-tertiary"> Tertiary </a>
-									<br>
-									<button class="btn btn-outline">Outline</button>
+								<div class="col-xl-6 mb-5">
+									<div class="row">
+										<div class="col-md-6">
+											<h4>Normal</h4>
+											<button class="btn btn-primary">Primary</button>
+											<br>
+											<button class="btn btn-secondary"> Secondary </button>
+											<br>
+											<button class="btn btn-outline">Outline</button>
+											<br>
+											<button class="btn btn-error">Error</button>
+											<br>
+											<a class="btn btn-tertiary"> Tertiary </a>
+										</div>
+										<div class="col-md-6">
+											<h4>Normal .btn-round</h4>
+											<button class="btn btn-primary btn-round"><i class="far fa-arrow-right"></i></button><br>
+											<button class="btn btn-secondary btn-round"><i class="far fa-arrow-right"></i></button><br>
+											<button class="btn btn-outline btn-round"><i class="far fa-arrow-right"></i></button><br>
+											<button class="btn btn-error btn-round"><i class="far fa-trash-alt"></i></button><br>
+											
+										</div>
+									</div>
 								</div>
-								<div class="col-md-3">
-									<h4>Normal .btn-round</h4>
-									<button class="btn btn-primary btn-round"><i class="far fa-arrow-right"></i></button><br>
-									<button class="btn btn-secondary btn-round"><i class="far fa-arrow-right"></i></button><br>
-									
-								</div>
-								<div class="col-md-3">
-									<h4>Disabled</h4>
-									<button class="btn btn-primary disabled secondary-gradient"> Primary </button><br>
-									<button class="btn btn-secondary disabled"> Secondary </button><br>
-									<a class="btn btn-tertiary disabled"> Tertiary </a>
-									<br><button class="btn btn-outline disabled">Outline</button>
-								</div>
-								<div class="col-md-3">
-									<h4>Disabled .btn-round</h4>
-									<button class="btn btn-primary btn-round disabled"><i class="far fa-arrow-right"></i></button><br>
-									<a class="btn btn-secondary btn-round disabled"><i class="far fa-arrow-right"></i></a><br>
+								<div class="col-xl-6 mb-5">
+									<div class="row">
+										<div class="col-md-6">
+											<h4>Disabled</h4>
+											<button class="btn btn-primary disabled secondary-gradient"> Primary </button><br>
+											<button class="btn btn-secondary disabled"> Secondary </button>
+											<br>
+											<button class="btn btn-outline disabled">Outline</button>
+											<br>
+											<button class="btn btn-error disabled">Error</button>
+											<br>
+											<a class="btn btn-tertiary disabled"> Tertiary </a>
+										</div>
+										<div class="col-md-6">
+											<h4>Disabled .btn-round</h4>
+											<button class="btn btn-primary btn-round disabled"><i class="far fa-arrow-right"></i></button><br>
+											<a class="btn btn-secondary btn-round disabled"><i class="far fa-arrow-right"></i></a><br>
+											<button class="btn btn-outline btn-round disabled"><i class="far fa-arrow-right"></i></button><br>
+											<button class="btn btn-error btn-round disabled"><i class="far fa-arrow-right"></i></button><br>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -394,6 +427,11 @@
 							<label for="nombre_local" class="form-label">Nombre del local</label>
 							<input type="text" class="form-control invalid" placeholder="Nombre del local..." name="nombre_local">
 							<div class="error-msg"><i class="far fa-exclamation-circle"></i> Las contraseñas no coinciden</div>
+						</div>
+						<!-- Textarea -->
+						<div class="form-element">
+							<label for="notas" class="form-label">Notas</label>
+							<textarea class="form-control" name="notas" rows="3"></textarea>
 						</div>
 					</div>
 				
@@ -448,6 +486,7 @@
 							<input type="text" class="form-control invalid" placeholder="Nombre del local..." name="nombre_local">
 							<div class="error-msg"><i class="far fa-exclamation-circle"></i> Las contraseñas no coinciden</div>
 						</div>
+						
 					</div>
 				
 					<div class="col-md-6">
@@ -488,7 +527,7 @@
 
 			<div class="light-background">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-lg-8">
 						<div class="sub-section">
 							<h3>Tamaños</h3>
 							<div class="row">
@@ -546,7 +585,7 @@
 			
 			<div class="light-background">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-lg-8">
 						
 						<div class="row">
 							<div class="col-md-6">

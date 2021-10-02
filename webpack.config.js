@@ -60,6 +60,10 @@ const plugins = [
     filename: "./cliente-pedidos-pasados.html",
   }),
   new HtmlWebpackPlugin({
+    template: "./src/cliente/facturas.html",
+    filename: "./cliente-facturas.html",
+  }),
+  new HtmlWebpackPlugin({
     template: "./src/cliente/solicitar-limpieza/paso1.html",
     filename: "./cliente-paso1.html",
   }),

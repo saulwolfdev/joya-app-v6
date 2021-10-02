@@ -48,10 +48,10 @@
 		                        			<i class="far fa-user-circle"></i>
 		                        			Carolina	                        			
 		                        		</span></li>
-		                        		<li class="ayuda"><a href="#">Ayuda</a></li>
-		                        		<li><a href="#" class="destacado">Solicitar limpieza de vidriera</a></li>
+		                        		<li class="ayuda"><a href="https://wa.me/521123456XXXX/?text=urlencodedtext" target="_blank"><i class="fab fa-whatsapp"></i>Ayuda</a></li>
+		                        		<li><a href="/cliente-paso1.html?clwclass=step1%20localnuevo" class="destacado">Solicitar limpieza de vidriera</a></li>
 		                        		<li class="separator"></li>
-		                        		<li class="user-item"><a href="#">Tus pedidos</a></li>
+		                        		<li class="user-item"><a href="/cliente-pedidos-proximos.html">Tus pedidos</a></li>
 		                        		<li class="user-options dropdown closed">
 		                        			<span class="a user-item">
 		                        				<i class="far fa-user-circle"></i>
@@ -59,9 +59,10 @@
 		                        				<i class="far fa-chevron-down"></i>
 		                        			</span>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
+		                        				<li><a href="/cliente-pedidos-proximos.html">Tus pedidos</a></li>
+		                        				<li><a href="/cliente-facturas.html">Tus facturas</a></li>
+		                        				<li><a href="/cliente-cuenta.html">Configuración de cuenta</a></li>
+		                        				<li><a href="/cliente-home.html">Salir</a></li>
 		                        			</ul>
 		                        		</li>
 		                        	</ul>
@@ -98,18 +99,18 @@
 										  </a>
 
 										  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="mobileVisitaMenu">
-										    <li><a class="item active" href="pedidos-proximos.html">Visitas próximas</a></li>
-											<li><a class="item" href="pedidos-pasados.html">Visitas pasadas</a></li>
+										    <li><a class="item active" href="cliente-pedidos-proximos.html">Visitas próximas</a></li>
+											<li><a class="item" href="cliente-pedidos-pasados.html">Visitas pasadas</a></li>
 										  </ul>
 										</div>
 										<!-- fin menú modificado -->
 	    							</div>
 		    						<div class="row menu-header d-none d-md-flex">
 		    							<div class="col-auto menu-item">
-		    								<a href="pedidos-proximos.html" class="">Visitas próximas</a>
+		    								<a href="cliente-pedidos-proximos.html" class="">Visitas próximas</a>
 		    							</div>
 		    							<div class="col-auto menu-item">
-		    								<a href="pedidos-pasados.html" class="active">Visitas pasadas</a>
+		    								<a href="cliente-pedidos-pasados.html" class="active">Visitas pasadas</a>
 		    							</div>
 		    							<div class="col-auto btn-set">
 		    								<a href="#" class="btn btn-primary btn-round">
@@ -130,7 +131,18 @@
 												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
 											</div>
     										<div class="col-auto acciones">
-    											<a href="#">Detalles</a>
+    											<div class="d-lg-block d-none">
+    												<button href="#" class="btn btn-primary btn-small" data-bs-toggle="modal" data-bs-target="#calificarModal">Calificar</button>
+    												<a href="#" class="text-link"><i class="far fa-file-download"></i>Factura</a>
+    											</div>
+    											<div class="btn-group d-lg-none">
+													<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
+													<ul class="dropdown-menu">
+													    <li><a class="dropdown-item" href="#"><i class="far fa-file-download"></i>Factura</a></li>
+													    <li><a data-bs-toggle="modal" data-bs-target="#calificarModal" class="dropdown-item"><i class="far fa-star"></i>Calificar</a></li>
+													    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#supportModal"><i class="far fa-exclamation-triangle"></i>Reportar problema</a></li>
+													</ul>
+												</div>
     										</div>
 		    							</div>
 		    							<div class="visita-pasada row">
@@ -142,7 +154,18 @@
 												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
 											</div>
     										<div class="col-auto acciones">
-    											<a href="#">Detalles</a>
+    											<div class="d-lg-block d-none">
+    												<button href="#" class="btn btn-primary btn-small" data-bs-toggle="modal" data-bs-target="#calificarModal">Calificar</button>
+    												<a href="#" class="text-link"><i class="far fa-file-download"></i>Factura</a>
+    											</div>
+    											<div class="btn-group d-lg-none">
+													<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
+													<ul class="dropdown-menu">
+													    <li><a class="dropdown-item" href="#"><i class="far fa-file-download"></i>Factura</a></li>
+													    <li><a data-bs-toggle="modal" data-bs-target="#calificarModal" class="dropdown-item"><i class="far fa-star"></i>Calificar</a></li>
+													    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#supportModal"><i class="far fa-exclamation-triangle"></i>Reportar problema</a></li>
+													</ul>
+												</div>
     										</div>
 		    							</div>
 		    							<div class="visita-pasada row">
@@ -154,7 +177,41 @@
 												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
 											</div>
     										<div class="col-auto acciones">
-    											<a href="#">Detalles</a>
+    											<div class="d-lg-block d-none">
+    												<button href="#" class="btn btn-primary btn-small" data-bs-toggle="modal" data-bs-target="#calificarModal">Calificar</button>
+    												<a href="#" class="text-link"><i class="far fa-file-download"></i>Factura</a>
+    											</div>
+    											<div class="btn-group d-lg-none">
+													<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
+													<ul class="dropdown-menu">
+													    <li><a class="dropdown-item" href="#"><i class="far fa-file-download"></i>Factura</a></li>
+													    <li><a data-bs-toggle="modal" data-bs-target="#calificarModal" class="dropdown-item"><i class="far fa-star"></i>Calificar</a></li>
+													    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#supportModal"><i class="far fa-exclamation-triangle"></i>Reportar problema</a></li>
+													</ul>
+												</div>
+    										</div>
+		    							</div>
+		    							<div class="visita-pasada row">
+		    								<div class="col nombre-local">
+		    									Como quieres que te quiera - Alto Palermo
+		    								</div>
+    										<div class="col detalle">
+												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
+												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
+											</div>
+    										<div class="col-auto acciones">
+    											<div class="d-lg-block d-none">
+    												<button href="#" class="btn btn-primary btn-small" data-bs-toggle="modal" data-bs-target="#calificarModal">Calificar</button>
+    												<a href="#" class="text-link"><i class="far fa-file-download"></i>Factura</a>
+    											</div>
+    											<div class="btn-group d-lg-none">
+													<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
+													<ul class="dropdown-menu">
+													    <li><a class="dropdown-item" href="#"><i class="far fa-file-download"></i>Factura</a></li>
+													    <li><a data-bs-toggle="modal" data-bs-target="#calificarModal" class="dropdown-item"><i class="far fa-star"></i>Calificar</a></li>
+													    <li><a class="dropdown-item" href="#"><i class="far fa-exclamation-triangle" data-bs-toggle="modal" data-bs-target="#supportModal"></i>Reportar problema</a></li>
+													</ul>
+												</div>
     										</div>
 		    							</div>
 		    							<div class="visita-pasada row">
@@ -165,20 +222,16 @@
 												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
 												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
 											</div>
+											<!-- Versión alternativa 2 - Esconde el problema en todos los tamaños -->
     										<div class="col-auto acciones">
-    											<a href="#">Detalles</a>
-    										</div>
-		    							</div>
-		    							<div class="visita-pasada row">
-		    								<div class="col nombre-local">
-		    									Kentucky Santa Fe
-		    								</div>
-    										<div class="col detalle">
-												<h5>Lunes 20 de Dic. <span>/ Entre 9 y 10hs</span></h5> 
-												<p class="descripcion">$150 / <span class="aclaracion">Fabián Sanchez de Castaños</span></p>
-											</div>
-    										<div class="col-auto acciones">
-    											<a href="#">Detalles</a>
+    											<div class="btn-group">
+													<a href="#" class="btn btn-tertiary" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-ellipsis-h"></i></a>
+													<ul class="dropdown-menu">
+													    <li><a class="dropdown-item" href="#"><i class="far fa-file-download"></i>Factura</a></li>
+													    <li><a data-bs-toggle="modal" data-bs-target="#calificarModal" class="dropdown-item"><i class="far fa-star"></i>Calificar</a></li>
+													    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#supportModal"><i class="far fa-exclamation-triangle"></i>Reportar problema</a></li>
+													</ul>
+												</div>
     										</div>
 		    							</div>
 		    						</div>
@@ -259,6 +312,33 @@
 			</div>
 		</footer>
 	</div>
-
+	<!-- Modal Ayuda -->
+	<div class="modal fade" id="calificarModal" tabindex="-1" aria-labelledby="calificarModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<div class="modal-body">
+					<h4>Calificá la visita</h4>
+					<p>Nos interesa tu opinión. Contános cómo fue la visita</p>
+					<div class="rating">
+						<input id="rating-5" type="radio" name="rating" value="5"/><label for="rating-5"><i class="fas fa-star"></i></label>
+						<input id="rating-4" type="radio" name="rating" value="4"/><label for="rating-4"><i class="fas fa-star"></i></label>
+						<input id="rating-3" type="radio" name="rating" value="3"/><label for="rating-3"><i class="fas fa-star"></i></label>
+						<input id="rating-2" type="radio" name="rating" value="2"/><label for="rating-2"><i class="fas fa-star"></i></label>
+						<input id="rating-1" type="radio" name="rating" value="1"/><label for="rating-1"><i class="fas fa-star"></i></label>
+					</div>
+					<!-- Textarea -->
+					<div class="form-element">
+						<label for="notas" class="form-label">Notas</label>
+						<textarea class="form-control" name="notas" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+			        <button type="button" class="btn btn-primary left-icon">Calificar</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 </body>
 </html>

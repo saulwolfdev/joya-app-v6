@@ -48,10 +48,10 @@
 		                        			<i class="far fa-user-circle"></i>
 		                        			Carolina	                        			
 		                        		</span></li>
-		                        		<li class="ayuda"><a href="#">Ayuda</a></li>
-		                        		<li><a href="#" class="destacado">Solicitar limpieza de vidriera</a></li>
+		                        		<li class="ayuda"><a href="https://wa.me/521123456XXXX/?text=urlencodedtext" target="_blank"><i class="fab fa-whatsapp"></i>Ayuda</a></li>
+		                        		<li><a href="/cliente-paso1.html?clwclass=step1%20localnuevo" class="destacado">Solicitar limpieza de vidriera</a></li>
 		                        		<li class="separator"></li>
-		                        		<li class="user-item"><a href="#">Tus pedidos</a></li>
+		                        		<li class="user-item"><a href="/cliente-pedidos-proximos.html">Tus pedidos</a></li>
 		                        		<li class="user-options dropdown closed">
 		                        			<span class="a user-item">
 		                        				<i class="far fa-user-circle"></i>
@@ -59,9 +59,10 @@
 		                        				<i class="far fa-chevron-down"></i>
 		                        			</span>
 		                        			<ul class="sub-menu">
-		                        				<li><a href="#">Tus pedidos</a></li>
-		                        				<li><a href="#">Configuración de cuenta</a></li>
-		                        				<li><a href="#">Salir</a></li>
+		                        				<li><a href="/cliente-pedidos-proximos.html">Tus pedidos</a></li>
+		                        				<li><a href="/cliente-facturas.html">Tus facturas</a></li>
+		                        				<li><a href="/cliente-cuenta.html">Configuración de cuenta</a></li>
+		                        				<li><a href="/cliente-home.html">Salir</a></li>
 		                        			</ul>
 		                        		</li>
 		                        	</ul>
@@ -126,16 +127,51 @@
 													<label for="razonsocial" class="form-label">Razón social</label>
 													<input type="text" class="form-control" name="razonsocial" value="Kentucky S.A.">
 												</div>
-											
-												<div class="form-element">
-													<label for="cuit" class="form-label">CUIT</label>
-													<input type="text" class="form-control" name="cuit" value="94-75213547-5">
+												<div class="row">
+													<div class="form-element col-md">
+														<label for="cuit" class="form-label">CUIT</label>
+														<input type="text" class="form-control" name="cuit" value="94-75213547-5">
+													</div>
+													<div class="form-element col-md">
+														<label for="condicion_iva" class="form-label">Condición frente al IVA</label>
+														<select class="form-select" aria-label="Condición frente al IVA"  name="condicion_iva">
+														  <option selected="">Elegir...</option>
+														  <option value="1">Responsable inscripto</option>
+														  <option value="2">Monotributista</option>
+														  <option value="3">Consumidor final</option>
+														  <option value="3">IVA Exento</option>
+														</select>
+													</div>	
 												</div>
-						        	
-								        		<div class="form-element">
-													<label for="direccion" class="form-label">Dirección</label>
-													<input type="text" class="form-control" name="direccion" value="Av. Santa Fe 2565">
+												<div class="row">
+													<div class="form-element col-md">
+														<label for="direccion" class="form-label">Dirección</label>
+														<input type="text" class="form-control" name="direccion" value="Av. Santa Fe 2565">
+													</div>	
+													<div class="form-element col-md-auto">
+														<label for="cp" class="form-label">Código Postal</label>
+														<input type="text" class="form-control" name="cp" value="1024">
+													</div>	
 												</div>
+								        		
+												<div class="row">
+													<div class="form-element col-md">
+														<label for="localidad" class="form-label">Localidad</label>
+														<input type="text" class="form-control" name="localidad" value="CABA">
+													</div>	
+
+													<div class="form-element col-md">
+														<label for="pcia" class="form-label">Provincia</label>
+														<select class="form-select" aria-label="Provincia"  name="pcia">
+														  <option selected="">Elegir provincia...</option>
+														  <option value="1">Ciudad Autónoma de Buenos Aires</option>
+														  <option value="2">pcia 2</option>
+														  <option value="3">pcia 3</option>
+														</select>
+													</div>	
+													
+												</div>
+												
 											</div>	
 											<div class="btn-set">
 												<button class="btn btn-primary">Guardar cambios</button>
